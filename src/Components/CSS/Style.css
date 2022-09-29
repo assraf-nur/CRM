@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+body{
+    font-family: 'Inter';
+}
 #button-addon2 {
   background-color: #5156be;
   color: white;
@@ -14,14 +18,24 @@
   padding: 6px 10px 1px 10px;
   border-radius: 5px;
 }
-.nav-container{
-    padding-left: 70px;
-    padding-right: 70px;
+.nav-container {
+  padding-left: 70px;
+  padding-right: 70px;
 }
-.navicons{
-    margin-left: 10px;
+.navicons {
+  margin-left: 10px;
 }
-#profile-pic{
-    width: 40px;
-    height: 40px;
+#profile-pic {
+  width: 40px;
+  height: 40px;
+}
+#sub-nav {
+  background-color: #fbfaff;
+}
+.sub-nav-menu {
+  color: #495057;
+  font-family: "Inter";
+}
+.sub-nav-icon{
+    color: #495057;
 }
