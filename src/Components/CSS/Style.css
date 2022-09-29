@@ -38,4 +38,11 @@ body{
 }
 .sub-nav-icon{
     color: #495057;
+    font-size: 18px;
+}
+.report{
+    margin-left: -30px;
+}
+.campaign{
+    margin-left: -20px;
 }
