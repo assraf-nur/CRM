@@ -2,6 +2,9 @@
 body{
     font-family: 'Inter';
 }
+.nav-container{
+    font-family: 'Inter';
+}
 #button-addon2 {
   background-color: #5156be;
   color: white;

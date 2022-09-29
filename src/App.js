@@ -5,7 +5,7 @@ import SubNav from './Components/Navbar/SubNav';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Navbar></Navbar>
       <SubNav></SubNav>
     </div>
