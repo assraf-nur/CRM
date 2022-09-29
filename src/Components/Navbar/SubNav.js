@@ -72,8 +72,10 @@ const SubNav = () => {
           </Dropdown>
         </div>
         <div className="col-md-1 mt-2">
-          <FaCalendarAlt className="me-2 mb-1 sub-nav-icon" />
-          Appointment
+          <div className="d-flex">
+            <FaCalendarAlt className="me-2 mt-1"/>
+            Appointment
+          </div>
         </div>
         <div className="col-md-1 mt-2 ms-2">
           <MdWifiCalling3 className="me-2 mb-1 sub-nav-icon" />

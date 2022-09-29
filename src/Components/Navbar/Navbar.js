@@ -60,7 +60,7 @@ function CollapsibleExample() {
             </Nav.Link>
             <div className="d-flex ms-3">
                 <img id="profile-pic" src={profile} alt=""/>
-              <NavDropdown title="Nur Tesla" id="collasible-nav-dropdown">
+              <NavDropdown className="me-5" title="Nur Tesla" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action

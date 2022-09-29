@@ -21,10 +21,6 @@ body{
   padding: 6px 10px 1px 10px;
   border-radius: 5px;
 }
-.nav-container {
-  padding-left: 70px;
-  padding-right: 70px;
-}
 .navicons {
   margin-left: 10px;
 }
@@ -33,11 +29,12 @@ body{
   height: 40px;
 }
 #sub-nav {
-  background-color: #fbfaff;
+  background-color: #F0F0F8;
 }
 .sub-nav-menu {
   color: #495057;
   font-family: "Inter";
+  width: 100%;
 }
 .sub-nav-icon{
     color: #495057;
@@ -48,4 +45,10 @@ body{
 }
 .campaign{
     margin-left: -20px;
+}
+.sidebar-button{
+    background-color: #5156be;
+}
+.toolBar{
+    background-color: #ffffff;
 }
