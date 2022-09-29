@@ -22,7 +22,7 @@ import SubNav from "./SubNav";
 import Navbar from "./Navbar";
 import "../CSS/Style.css";
 
-const drawerWidth = 260;
+const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
   width: drawerWidth,
