@@ -1,0 +1,27 @@
+#button-addon2 {
+  background-color: #5156be;
+  color: white;
+}
+#search-bar {
+  border: none;
+  background-color: #fbfaff;
+  margin-left: 20px;
+  width: 200px;
+}
+#bs-plus {
+  background-color: #5156be;
+  color: #fbfaff;
+  padding: 6px 10px 1px 10px;
+  border-radius: 5px;
+}
+.nav-container{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.navicons{
+    margin-left: 10px;
+}
+#profile-pic{
+    width: 40px;
+    height: 40px;
+}
