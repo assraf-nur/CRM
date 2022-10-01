@@ -12,17 +12,18 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import SubNav from "./SubNav";
 import Navbar from "./Navbar";
 import "../CSS/Style.css";
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import Home from "../Home/Home";
 import Contact from "../Contact/Contact";
+import HomeIcon from "@mui/icons-material/Home";
+import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
+import { Tooltip } from "@mui/material";
+import Users from "../Users/Users";
+import Department from "../Department/Department";
+import { FaUsersCog, FaCalendarAlt } from "react-icons/fa";
 
 const drawerWidth = 240;
 
@@ -136,31 +137,46 @@ export default function MiniDrawer() {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: "block" }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? "initial" : "center",
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : "auto",
-                    justifyContent: "center",
-                  }}
-                >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
+        <nav aria-label="main mailbox folders">
+          <List>
+            <ListItem disablePadding>
+              <Tooltip title="Home" arrow>
+                <Link className="ms-3 py-3 left-list-link" to="/">
+                  <HomeIcon className="ms-1 me-4 mb-1" />
+                  Home
+                </Link>
+              </Tooltip>
             </ListItem>
-          ))}
-        </List>
-        <Divider />
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="users" arrow>
+                <Link className="ms-3 py-3 left-list-link" to="/users">
+                  <PeopleAltIcon className="ms-1 me-4 mb-1" />
+                  Users
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Department" arrow>
+                <Link className="ms-3 py-3 left-list-link" to="/department">
+                  <FaUsersCog className="ms-1 fs-4 me-4 mb-1" />
+                  Department
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Department" arrow>
+                <Link className="ms-3 py-3 left-list-link" to="/department">
+                  <FaCalendarAlt className="ms-1 fs-5 me-4 mb-1" />
+                  Calendar
+                </Link>
+              </Tooltip>
+            </ListItem>
+          </List>
+        </nav>
+        {/* <Divider />
         <List>
           {["All mail", "Trash", "Spam"].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: "block" }}>
@@ -184,7 +200,7 @@ export default function MiniDrawer() {
               </ListItemButton>
             </ListItem>
           ))}
-        </List>
+        </List> */}
       </Drawer>
       <Box className="right-box" component="main" sx={{ flexGrow: 1 }}>
         <div className="subs-nav">
@@ -194,6 +210,8 @@ export default function MiniDrawer() {
         <Routes>
           <Route path="/" element={<Home></Home>} />
           <Route path="/contact" element={<Contact></Contact>} />
+          <Route path="/users" element={<Users></Users>} />
+          <Route path="/department" element={<Department></Department>} />
         </Routes>
       </Box>
     </Box>
