@@ -29,6 +29,12 @@ import TaskIcon from '@mui/icons-material/Task';
 import EventIcon from '@mui/icons-material/Event';
 import Task from "../Task/Task";
 import Appointment from "../Appointment/Appointment";
+import CampaignIcon from '@mui/icons-material/Campaign';
+import Marketing from "../Marketing/Marketing";
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import Reports from "../Reports/Reports";
+import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+import Setting from "../Setting/Setting";
 
 const drawerWidth = 240;
 
@@ -145,55 +151,82 @@ export default function MiniDrawer() {
         <nav aria-label="main mailbox folders">
           <List>
             <ListItem disablePadding>
-              <Tooltip title="Home" arrow>
-                <Link className="ms-3 py-3 left-list-link" to="/home">
-                  <HomeIcon className="ms-1 me-4 mb-1" />
+              <Tooltip title="Home" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/home">
+                  <HomeIcon className="icons me-4 mb-1" />
                   Home
                 </Link>
               </Tooltip>
             </ListItem>
             <Divider />
             <ListItem disablePadding>
-              <Tooltip title="users" arrow>
-                <Link className="ms-3 py-3 left-list-link" to="/users">
-                  <PeopleAltIcon className="ms-1 me-4 mb-1" />
+              <Tooltip title="users" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/users">
+                  <PeopleAltIcon className="icons me-4 mb-1" />
                   Users
                 </Link>
               </Tooltip>
             </ListItem>
             <Divider />
             <ListItem disablePadding>
-              <Tooltip title="Department" arrow>
-                <Link className="ms-3 py-3 left-list-link" to="/department">
-                  <FaUsersCog className="ms-1 fs-4 me-4 mb-1" />
+              <Tooltip title="Department" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/department">
+                  <FaUsersCog className="icons fs-4 me-4 mb-1" />
                   Department
                 </Link>
               </Tooltip>
             </ListItem>
             <Divider />
             <ListItem disablePadding>
-              <Tooltip title="Department" arrow>
-                <Link className="ms-3 py-3 left-list-link" to="/calendar">
-                  <FaCalendarAlt className="ms-1 fs-5 me-4 mb-1" />
+              <Tooltip title="Calendar" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/calendar">
+                  <FaCalendarAlt className="icons fs-5 me-4 mb-1" />
                   Calendar
                 </Link>
               </Tooltip>
             </ListItem>
             <Divider />
             <ListItem disablePadding>
-              <Tooltip title="Department" arrow>
-                <Link className="ms-3 py-3 left-list-link" to="/task">
-                  <TaskIcon className="ms-1 me-4 mb-1" />
+              <Tooltip title="Task" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/task">
+                  <TaskIcon className="icons me-4 mb-1" />
                   Task
                 </Link>
               </Tooltip>
             </ListItem>
             <Divider />
             <ListItem disablePadding>
-              <Tooltip title="Department" arrow>
-                <Link className="ms-3 py-3 left-list-link" to="/appointment">
-                  <EventIcon className="ms-1 me-4 mb-1" />
+              <Tooltip title="Appointment" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/appointment">
+                  <EventIcon className="icons me-4" />
                   Appointment
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Marketing" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/marketing">
+                  <CampaignIcon className="icons me-4" />
+                  Marketing
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Reports" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/reports">
+                  <AssignmentIcon className="icons me-4" />
+                  Reports
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Setting" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/setting">
+                  <SettingsApplicationsIcon className="icons me-4" />
+                  Setting
                 </Link>
               </Tooltip>
             </ListItem>
@@ -214,6 +247,9 @@ export default function MiniDrawer() {
           <Route path="calendar" element={<Calender></Calender>} />
           <Route path="task" element={<Task></Task>} />
           <Route path="appointment" element={<Appointment></Appointment>} />
+          <Route path="marketing" element={<Marketing></Marketing>} />
+          <Route path="reports" element={<Reports></Reports>} />
+          <Route path="setting" element={<Setting></Setting>} />
         </Routes>
       </Box>
     </Box>

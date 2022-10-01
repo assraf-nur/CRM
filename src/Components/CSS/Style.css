@@ -64,4 +64,13 @@ body{
 .left-list-link{
   text-decoration: none;
   color: #495057;
+  font-family: "Inter";
+  width: 100%;
+}
+.left-list-link:hover{
+  background-color: #5156be;
+  color: white;
+}
+.icons{
+  margin-left: 20px;
 }
