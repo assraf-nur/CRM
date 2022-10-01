@@ -21,6 +21,9 @@ import MailIcon from "@mui/icons-material/Mail";
 import SubNav from "./SubNav";
 import Navbar from "./Navbar";
 import "../CSS/Style.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "../Home/Home";
+import Contact from "../Contact/Contact";
 
 const drawerWidth = 240;
 
@@ -104,9 +107,7 @@ export default function MiniDrawer() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}
-      sx={{ boxShadow: 0 }}
-      >
+      <AppBar position="fixed" open={open} sx={{ boxShadow: 0 }}>
         <Toolbar className="toolBar">
           <IconButton
             color="inherit"
@@ -190,20 +191,11 @@ export default function MiniDrawer() {
         <div className="subs-nav">
           <SubNav />
         </div>
-        <Typography className="p-3 para">
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est
-          ullamcorper eget nulla facilisi etiam dignissim diam. Pulvinar
-          elementum integer enim neque volutpat ac tincidunt. Ornare suspendisse
-          sed nisi lacus sed viverra tellus. Purus sit amet volutpat consequat
-          mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis
-          risus sed vulputate odio. Morbi tincidunt ornare massa eget egestas
-          purus viverra accumsan in. In hendrerit gravida rutrum quisque non
-          tellus orci ac. Pellentesque nec nam aliquam sem et tortor. Habitant
-          morbi tristique senectus et. Adipiscing elit duis tristique
-          sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
-          eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
-          posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+        {/* routes */}
+        <Routes>
+          <Route path="/" element={<Home></Home>} />
+          <Route path="/contact" element={<Contact></Contact>} />
+        </Routes>
       </Box>
     </Box>
   );
