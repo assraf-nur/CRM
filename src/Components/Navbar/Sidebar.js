@@ -24,6 +24,11 @@ import { Tooltip } from "@mui/material";
 import Users from "../Users/Users";
 import Department from "../Department/Department";
 import { FaUsersCog, FaCalendarAlt } from "react-icons/fa";
+import Calender from "../Calender/Calender";
+import TaskIcon from '@mui/icons-material/Task';
+import EventIcon from '@mui/icons-material/Event';
+import Task from "../Task/Task";
+import Appointment from "../Appointment/Appointment";
 
 const drawerWidth = 240;
 
@@ -141,7 +146,7 @@ export default function MiniDrawer() {
           <List>
             <ListItem disablePadding>
               <Tooltip title="Home" arrow>
-                <Link className="ms-3 py-3 left-list-link" to="/">
+                <Link className="ms-3 py-3 left-list-link" to="/home">
                   <HomeIcon className="ms-1 me-4 mb-1" />
                   Home
                 </Link>
@@ -168,39 +173,32 @@ export default function MiniDrawer() {
             <Divider />
             <ListItem disablePadding>
               <Tooltip title="Department" arrow>
-                <Link className="ms-3 py-3 left-list-link" to="/department">
+                <Link className="ms-3 py-3 left-list-link" to="/calendar">
                   <FaCalendarAlt className="ms-1 fs-5 me-4 mb-1" />
                   Calendar
                 </Link>
               </Tooltip>
             </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Department" arrow>
+                <Link className="ms-3 py-3 left-list-link" to="/task">
+                  <TaskIcon className="ms-1 me-4 mb-1" />
+                  Task
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Department" arrow>
+                <Link className="ms-3 py-3 left-list-link" to="/appointment">
+                  <EventIcon className="ms-1 me-4 mb-1" />
+                  Appointment
+                </Link>
+              </Tooltip>
+            </ListItem>
           </List>
         </nav>
-        {/* <Divider />
-        <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: "block" }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? "initial" : "center",
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : "auto",
-                    justifyContent: "center",
-                  }}
-                >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List> */}
       </Drawer>
       <Box className="right-box" component="main" sx={{ flexGrow: 1 }}>
         <div className="subs-nav">
@@ -209,9 +207,13 @@ export default function MiniDrawer() {
         {/* routes */}
         <Routes>
           <Route path="/" element={<Home></Home>} />
-          <Route path="/contact" element={<Contact></Contact>} />
-          <Route path="/users" element={<Users></Users>} />
-          <Route path="/department" element={<Department></Department>} />
+          <Route path="home" element={<Home></Home>} />
+          <Route path="contact" element={<Contact></Contact>} />
+          <Route path="users" element={<Users></Users>} />
+          <Route path="department" element={<Department></Department>} />
+          <Route path="calendar" element={<Calender></Calender>} />
+          <Route path="task" element={<Task></Task>} />
+          <Route path="appointment" element={<Appointment></Appointment>} />
         </Routes>
       </Box>
     </Box>
