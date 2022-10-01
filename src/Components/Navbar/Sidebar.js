@@ -186,7 +186,7 @@ export default function MiniDrawer() {
           ))}
         </List>
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1 }}>
+      <Box className="right-box" component="main" sx={{ flexGrow: 1 }}>
         <div className="subs-nav">
           <SubNav />
         </div>

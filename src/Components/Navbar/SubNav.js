@@ -79,7 +79,7 @@ const SubNav = () => {
           </div>
         </div>
         <div className="col-md-1 mt-2 ms-2">
-          <Link to="/contact">
+          <Link className="router-link" to="/contact">
             <MdWifiCalling3 className="me-2 mb-1 sub-nav-icon" />
             Contact
           </Link>
