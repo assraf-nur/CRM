@@ -6,7 +6,6 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { MdWifiCalling3, MdSettings } from "react-icons/md";
 import "../CSS/Style.css";
 import { Dropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const SubNav = () => {
   return (
@@ -74,15 +73,13 @@ const SubNav = () => {
         </div>
         <div className="col-md-1 mt-2">
           <div className="d-flex">
-            <FaCalendarAlt className="me-2 mt-1" />
+            <FaCalendarAlt className="me-2 mt-1"/>
             Appointment
           </div>
         </div>
         <div className="col-md-1 mt-2 ms-2">
-          <Link className="router-link" to="/contact">
-            <MdWifiCalling3 className="me-2 mb-1 sub-nav-icon" />
-            Contact
-          </Link>
+          <MdWifiCalling3 className="me-2 mb-1 sub-nav-icon" />
+          Contact
         </div>
         <div className="col-md-1 mt-2">
           <MdSettings className="me-2 mb-1 sub-nav-icon" />
