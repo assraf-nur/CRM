@@ -7,6 +7,7 @@ import pendingApplication from "../Images/SVG/pending-application.svg";
 import singleApplication from "../Images/SVG/single-application.svg";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import profilePic from "../Images/Profile/profile-pic.png"
 
 const CustomerData = () => {
   const percentage = 50;
@@ -159,21 +160,19 @@ const CustomerData = () => {
       </div>
 
       <div className="mt-4">
-        <div className="row gap-4 px-3">
-          <div className="col-xl dash-card">
+        <div className="row gap-5 px-3">
+          <div className="col-xl p-3 dash-card">
             <div className="d-flex">
-              <div className="dash-card-icon">
-                <FaUserFriends className="fs-4" />
-              </div>
               <div className="dash-card-text">
-                <p className="mb-2">Total Customers</p>
-                <h5>
-                  6,680 <span>+40</span>
-                </h5>
+                <h6>Next Appointment</h6>
+                <div className="d-flex gap-2 mt-3 appointment-card">
+                  <img src={profilePic} alt=""/>
+                  <p className="mt-1">Meeting with M Khan</p>
+                </div>
               </div>
             </div>
-            <div className="dash-card-image">
-              <img src={totalCustomer} alt="" />
+            <div className="appointment-card-time">
+              <p>5.00PM</p>
             </div>
           </div>
           <div className="col-xl"></div>
