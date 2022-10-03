@@ -6,21 +6,35 @@ import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
 import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import SubNav from "./SubNav";
 import Navbar from "./Navbar";
 import "../CSS/Style.css";
+import { Link, Route, Routes } from "react-router-dom";
+import Home from "../Home/Home";
+import Contact from "../Contact/Contact";
+import HomeIcon from "@mui/icons-material/Home";
+import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
+import { Tooltip } from "@mui/material";
+import Users from "../Users/Users";
+import Department from "../Department/Department";
+import { FaUsersCog, FaCalendarAlt } from "react-icons/fa";
+import Calender from "../Calender/Calender";
+import TaskIcon from '@mui/icons-material/Task';
+import EventIcon from '@mui/icons-material/Event';
+import Task from "../Task/Task";
+import Appointment from "../Appointment/Appointment";
+import CampaignIcon from '@mui/icons-material/Campaign';
+import Marketing from "../Marketing/Marketing";
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import Reports from "../Reports/Reports";
+import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+import Setting from "../Setting/Setting";
 
 const drawerWidth = 240;
 
@@ -104,9 +118,7 @@ export default function MiniDrawer() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}
-      sx={{ boxShadow: 0 }}
-      >
+      <AppBar position="fixed" open={open} sx={{ boxShadow: 0 }}>
         <Toolbar className="toolBar">
           <IconButton
             color="inherit"
@@ -136,93 +148,109 @@ export default function MiniDrawer() {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: "block" }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? "initial" : "center",
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : "auto",
-                    justifyContent: "center",
-                  }}
-                >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
+        <nav aria-label="main mailbox folders">
+          <List>
+            <ListItem disablePadding>
+              <Tooltip title="Home" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/home">
+                  <HomeIcon className="icons me-4 mb-1" />
+                  Home
+                </Link>
+              </Tooltip>
             </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: "block" }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? "initial" : "center",
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : "auto",
-                    justifyContent: "center",
-                  }}
-                >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="users" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/users">
+                  <PeopleAltIcon className="icons me-4 mb-1" />
+                  Users
+                </Link>
+              </Tooltip>
             </ListItem>
-          ))}
-        </List>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Department" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/department">
+                  <FaUsersCog className="icons fs-4 me-4 mb-1" />
+                  Department
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Calendar" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/calendar">
+                  <FaCalendarAlt className="icons fs-5 me-4 mb-1" />
+                  Calendar
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Task" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/task">
+                  <TaskIcon className="icons me-4 mb-1" />
+                  Task
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Appointment" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/appointment">
+                  <EventIcon className="icons me-4" />
+                  Appointment
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Marketing" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/marketing">
+                  <CampaignIcon className="icons me-4" />
+                  Marketing
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Reports" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/reports">
+                  <AssignmentIcon className="icons me-4" />
+                  Reports
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Setting" placement="top" arrow>
+                <Link className="py-3 left-list-link" to="/setting">
+                  <SettingsApplicationsIcon className="icons me-4" />
+                  Setting
+                </Link>
+              </Tooltip>
+            </ListItem>
+          </List>
+        </nav>
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1 }}>
+      <Box className="right-box" component="main" sx={{ flexGrow: 1 }}>
         <div className="subs-nav">
           <SubNav />
         </div>
-        <Typography className="p-3 para">
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est
-          ullamcorper eget nulla facilisi etiam dignissim diam. Pulvinar
-          elementum integer enim neque volutpat ac tincidunt. Ornare suspendisse
-          sed nisi lacus sed viverra tellus. Purus sit amet volutpat consequat
-          mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est
-          ullamcorper eget nulla facilisi etiam dignissim diam. Pulvinar
-          elementum integer enim neque volutpat ac tincidunt. Ornare suspendisse
-          sed nisi lacus sed viverra tellus. Purus sit amet volutpat consequat
-          mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est
-          ullamcorper eget nulla facilisi etiam dignissim diam. Pulvinar
-          elementum integer enim neque volutpat ac tincidunt. Ornare suspendisse
-          sed nisi lacus sed viverra tellus. Purus sit amet volutpat consequat
-          mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est
-          ullamcorper eget nulla facilisi etiam dignissim diam. Pulvinar
-          elementum integer enim neque volutpat ac tincidunt. Ornare suspendisse
-          sed nisi lacus sed viverra tellus. Purus sit amet volutpat consequat
-          mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est
-          ullamcorper eget nulla facilisi etiam dignissim diam. Pulvinar
-          elementum integer enim neque volutpat ac tincidunt. Ornare suspendisse
-          sed nisi lacus sed viverra tellus. Purus sit amet volutpat consequat
-          mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est
-          ullamcorper eget nulla facilisi etiam dignissim diam. Pulvinar
-          elementum integer enim neque volutpat ac tincidunt. Ornare suspendisse
-          sed nisi lacus sed viverra tellus. Purus sit amet volutpat consequat
-          mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis
-         
-        </Typography>
+        {/* routes */}
+        <Routes>
+          <Route path="/" element={<Home></Home>} />
+          <Route path="home" element={<Home></Home>} />
+          <Route path="contact" element={<Contact></Contact>} />
+          <Route path="users" element={<Users></Users>} />
+          <Route path="department" element={<Department></Department>} />
+          <Route path="calendar" element={<Calender></Calender>} />
+          <Route path="task" element={<Task></Task>} />
+          <Route path="appointment" element={<Appointment></Appointment>} />
+          <Route path="marketing" element={<Marketing></Marketing>} />
+          <Route path="reports" element={<Reports></Reports>} />
+          <Route path="setting" element={<Setting></Setting>} />
+        </Routes>
       </Box>
     </Box>
   );
