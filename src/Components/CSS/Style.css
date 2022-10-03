@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+body {
+  font-family: "Inter";
+}
+.nav-container {
+  font-family: "Inter";
+}
 #button-addon2 {
   background-color: #5156be;
   color: white;
@@ -28,7 +35,7 @@
 }
 .sub-nav-menu {
   color: #495057;
-  
+  font-family: "Inter";
   width: 100%;
 }
 .sub-nav-icon {
@@ -57,7 +64,7 @@
 .left-list-link {
   text-decoration: none;
   color: #495057;
-  
+  font-family: "Inter";
   width: 100%;
 }
 .left-list-link:hover {
@@ -83,19 +90,19 @@
 }
 .dash-card-text p {
   margin-top: 20px;
-  
+  font-family: "Inter";
   font-weight: 600;
   font-size: 16px;
   color: #495057;
 }
 .dash-card-text h5 {
-  
+  font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
   color: #0dcd94;
 }
 .dash-card-text span {
-  
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -117,19 +124,19 @@
 }
 .dash-card-text2 p {
   margin-top: 20px;
-  
+  font-family: "Inter";
   font-weight: 600;
   font-size: 16px;
   color: #495057;
 }
 .dash-card-text2 h5 {
-  
+  font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
   color: #bd1ec0;
 }
 .dash-card-text2 span {
-  
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -147,19 +154,19 @@
 }
 .dash-card-text3 p {
   margin-top: 20px;
-  
+  font-family: "Inter";
   font-weight: 600;
   font-size: 16px;
   color: #495057;
 }
 .dash-card-text3 h5 {
-  
+  font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
   color: #fab323;
 }
 .dash-card-text3 span {
-  
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -177,19 +184,19 @@
 }
 .dash-card-text4 p {
   margin-top: 20px;
-  
+  font-family: "Inter";
   font-weight: 600;
   font-size: 16px;
   color: #495057;
 }
 .dash-card-text4 h5 {
-  
+  font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
   color: #634ee8;
 }
 .dash-card-text4 span {
-  
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -207,19 +214,19 @@
 }
 .dash-card-text5 p {
   margin-top: 20px;
-  
+  font-family: "Inter";
   font-weight: 600;
   font-size: 16px;
   color: #495057;
 }
 .dash-card-text5 h5 {
-  
+  font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
   color: #1e2886;
 }
 .dash-card-text5 span {
-  
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -237,19 +244,19 @@
 }
 .dash-card-text6 p {
   margin-top: 20px;
-  
+  font-family: "Inter";
   font-weight: 600;
   font-size: 16px;
   color: #495057;
 }
 .dash-card-text6 h5 {
-  
+  font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
   color: #7bc72f;
 }
 .dash-card-text6 span {
-  
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -266,7 +273,7 @@
   text-align: center;
 }
 .dash-card-text h6 {
-  
+  font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
   color: #495057;
@@ -276,7 +283,7 @@
   height: 30px;
 }
 .appointment-card p {
-  
+  font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;

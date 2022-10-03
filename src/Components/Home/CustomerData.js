@@ -160,7 +160,7 @@ const CustomerData = () => {
       </div>
 
       <div className="mt-4">
-        <div className="row gap-5 px-3">
+        <div className="row gap-4 px-3">
           <div className="col-xl p-3 dash-card">
             <div className="d-flex">
               <div className="dash-card-text">
