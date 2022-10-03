@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-body{
-    font-family: 'Inter';
+body {
+  font-family: "Inter";
 }
-.nav-container{
-    font-family: 'Inter';
+.nav-container {
+  font-family: "Inter";
 }
 #button-addon2 {
   background-color: #5156be;
@@ -30,47 +30,236 @@ body{
 }
 #sub-nav {
   background-color: white;
-  border-bottom: 1px solid #E9E9EF;
-  border-top: 1px solid #E9E9EF;
+  border-bottom: 1px solid #e9e9ef;
+  border-top: 1px solid #e9e9ef;
 }
 .sub-nav-menu {
   color: #495057;
   font-family: "Inter";
   width: 100%;
 }
-.sub-nav-icon{
-    color: #495057;
-    font-size: 18px;
+.sub-nav-icon {
+  color: #495057;
+  font-size: 18px;
 }
-.report{
-    margin-left: -30px;
+.report {
+  margin-left: -30px;
 }
-.campaign{
-    margin-left: -20px;
+.campaign {
+  margin-left: -20px;
 }
-.sidebar-button{
-    background-color: #5156be;
+.sidebar-button {
+  background-color: #5156be;
 }
-.toolBar{
-    background-color: #ffffff;
+.toolBar {
+  background-color: #ffffff;
 }
-.right-box{
-  background-color: #F4F5F7;
+.right-box {
+  background-color: #f4f5f7;
 }
-.router-link{
+.router-link {
   text-decoration: none;
   color: #495057;
 }
-.left-list-link{
+.left-list-link {
   text-decoration: none;
   color: #495057;
   font-family: "Inter";
   width: 100%;
 }
-.left-list-link:hover{
+.left-list-link:hover {
   background-color: #5156be;
   color: white;
 }
-.icons{
+.icons {
   margin-left: 20px;
 }
+.dash-card {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* total customer card start */
+.dash-card-icon {
+  padding: 13px 13px 13px 13px;
+  background-color: #0dcd94;
+  color: #ffffff;
+  margin: 25px 13px 25px 13px;
+  box-shadow: 0px 10px 20px rgba(13, 205, 148, 0.27);
+}
+.dash-card-text p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  color: #495057;
+}
+.dash-card-text h5 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  color: #0dcd94;
+}
+.dash-card-text span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #97a0a8;
+}
+.dash-card-image {
+  align-self: center;
+  margin-right: 20px;
+}
+/* total customer card end */
+
+/* hot lead card start */
+.dash-card-icon2 {
+  padding: 13px 13px 13px 13px;
+  color: #ffffff;
+  margin: 25px 13px 25px 13px;
+  background: #bd1ec0;
+  box-shadow: 0px 10px 20px rgba(189, 30, 192, 0.25);
+}
+.dash-card-text2 p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  color: #495057;
+}
+.dash-card-text2 h5 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  color: #bd1ec0;
+}
+.dash-card-text2 span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #97a0a8;
+}
+/* hot lead card end */
+
+/* prospect start */
+.dash-card-icon3 {
+  padding: 13px 13px 13px 13px;
+  color: #ffffff;
+  margin: 25px 13px 25px 13px;
+  background: #fab323;
+  box-shadow: 0px 10px 20px rgba(250, 179, 35, 0.25);
+}
+.dash-card-text3 p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  color: #495057;
+}
+.dash-card-text3 h5 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  color: #fab323;
+}
+.dash-card-text3 span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #97a0a8;
+}
+/* prospect end */
+
+/* pending application start */
+.dash-card-icon4 {
+  padding: 13px 13px 13px 13px;
+  color: #ffffff;
+  margin: 25px 13px 25px 13px;
+  background: #634ee8;
+  box-shadow: 0px 10px 20px rgba(99, 78, 232, 0.25);
+}
+.dash-card-text4 p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  color: #495057;
+}
+.dash-card-text4 h5 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  color: #634ee8;
+}
+.dash-card-text4 span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #97a0a8;
+}
+/* pending application end */
+
+/* single application start */
+.dash-card-icon5 {
+  padding: 13px 13px 13px 13px;
+  color: #ffffff;
+  margin: 25px 13px 25px 13px;
+  background: #1e2886;
+  box-shadow: 0px 10px 20px rgba(28, 13, 205, 0.27);
+}
+.dash-card-text5 p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  color: #495057;
+}
+.dash-card-text5 h5 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  color: #1e2886;
+}
+.dash-card-text5 span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #97a0a8;
+}
+/* single application end */
+
+/* collaborator start */
+.dash-card-icon6 {
+  padding: 13px 13px 13px 13px;
+  color: #ffffff;
+  margin: 25px 13px 25px 13px;
+  background: #7bc72f;
+  box-shadow: 0px 10px 20px rgba(13, 205, 148, 0.27);
+}
+.dash-card-text6 p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  color: #495057;
+}
+.dash-card-text6 h5 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  color: #7bc72f;
+}
+.dash-card-text6 span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #97a0a8;
+}
+/* collaborator end */
