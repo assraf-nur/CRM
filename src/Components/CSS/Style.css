@@ -29,7 +29,9 @@ body{
   height: 40px;
 }
 #sub-nav {
-  background-color: #F0F0F8;
+  background-color: white;
+  border-bottom: 1px solid #E9E9EF;
+  border-top: 1px solid #E9E9EF;
 }
 .sub-nav-menu {
   color: #495057;
@@ -51,4 +53,24 @@ body{
 }
 .toolBar{
     background-color: #ffffff;
+}
+.right-box{
+  background-color: #F4F5F7;
+}
+.router-link{
+  text-decoration: none;
+  color: #495057;
+}
+.left-list-link{
+  text-decoration: none;
+  color: #495057;
+  font-family: "Inter";
+  width: 100%;
+}
+.left-list-link:hover{
+  background-color: #5156be;
+  color: white;
+}
+.icons{
+  margin-left: 20px;
 }
