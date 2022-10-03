@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-body {
+div {
   font-family: "Inter";
 }
 .nav-container {
@@ -264,9 +264,9 @@ body {
 }
 /* collaborator end */
 .dash-card-circle-progress {
-  width: 54px;
+  width: 74px;
   align-self: center;
-  margin-right: 20px;
+  margin-right: 10px;
   background-color: #fff3f3;
   border-radius: 50%;
   font-weight: 600;
@@ -297,4 +297,17 @@ body {
   color: #495057;
   margin-top: 48px;
   margin-right: 0px;
+}
+.crm-box {
+  background-color: #ffffff;
+}
+.box-title {
+  display: flex;
+  justify-content: space-between;
+}
+.box-title h5 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 21px;
+  color: #213446;
 }
