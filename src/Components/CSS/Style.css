@@ -300,6 +300,8 @@ div {
 }
 .crm-box {
   background-color: #ffffff;
+  overflow: auto;
+  height: 200px;
 }
 .box-title {
   display: flex;
@@ -310,4 +312,21 @@ div {
   font-size: 22px;
   line-height: 21px;
   color: #213446;
+}
+.step {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-right: 10px;
+}
+.step small {
+  font-weight: 400;
+  font-size: 14px;
+  color: #97a0a8;
+}
+.steps-circle{
+  height: 18px;
+  width: 18px;
+  background-color: #5156be;
+  border-radius: 50%;
 }
