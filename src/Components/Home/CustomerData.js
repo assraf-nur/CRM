@@ -190,10 +190,61 @@ const CustomerData = () => {
                 <h5>Activity Timeline</h5>
                 <MoreVertIcon />
               </div>
-              <div className="mt-3 d-flex w-100 step">
-                <div className="steps-circle"></div>
-                <p className="ms-3">Assrafuzzaman Nur</p>
-                <small className="ms-auto me-2">15min ago</small>
+              <div>
+                <div class="step completed">
+                  <div class="v-stepper">
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                  </div>
+
+                  <div class="content">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry.
+                  </div>
+                </div>
+
+                <div class="step active">
+                  <div class="v-stepper">
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                  </div>
+
+                  <div class="content">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="v-stepper">
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                  </div>
+
+                  <div class="content">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum is simply dummy text of
+                    the printing and typesetting Lorem Ipsum is simply dummy
+                    text of the printing and typesetting Lorem Ipsum is simply
+                    dummy text of the printing and typesetting
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="v-stepper">
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                  </div>
+
+                  <div class="content">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry.
+                  </div>
+                </div>
               </div>
             </div>
           </div>

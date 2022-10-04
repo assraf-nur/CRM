@@ -301,7 +301,7 @@ div {
 .crm-box {
   background-color: #ffffff;
   overflow: auto;
-  height: 200px;
+  height: 350px;
 }
 .box-title {
   display: flex;
@@ -320,9 +320,72 @@ div {
   border-radius: 50%;
   justify-self: center;
   margin-top: 4px;
+  display: block;
 }
 .step small {
   font-weight: 400;
   font-size: 14px;
   color: #97a0a8;
+}
+.step {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: cream;
+}
+
+.v-stepper {
+  position: relative;
+}
+
+.step .circle {
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 100%;
+  width: 20px; 
+  height: 20px;
+  display: inline-block;
+}
+
+.step .line {
+  top: 20px;
+  left: 9px;
+  height: 100%;
+  position: absolute;
+  border-left: 3px solid gray;
+}
+
+.step.completed .circle {
+  visibility: visible;
+  background-color: rgb(6, 150, 215);
+  border-color: rgb(6, 150, 215);
+}
+
+.step.completed .line {
+  border-left: 3px solid rgb(6, 150, 215);
+}
+
+.step.active .circle {
+  visibility: visible;
+  border-color: rgb(6, 150, 215);
+}
+
+.step.empty .circle {
+  visibility: hidden;
+}
+
+.step.empty .line {
+  top: 0;
+  height: 150%;
+}
+
+.step:last-child .line {
+  border-left: 3px solid white;
+  z-index: -1; 
+}
+
+.content {
+  margin-left: 20px;
+  display: inline-block;
 }
