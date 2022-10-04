@@ -313,20 +313,16 @@ div {
   line-height: 21px;
   color: #213446;
 }
-.step {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  padding-right: 10px;
+.steps-circle {
+  width: 17px;
+  height: 17px;
+  background-color: #0dcd94;
+  border-radius: 50%;
+  justify-self: center;
+  margin-top: 4px;
 }
 .step small {
   font-weight: 400;
   font-size: 14px;
   color: #97a0a8;
-}
-.steps-circle{
-  height: 18px;
-  width: 18px;
-  background-color: #5156be;
-  border-radius: 50%;
 }

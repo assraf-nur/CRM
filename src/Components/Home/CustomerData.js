@@ -190,28 +190,10 @@ const CustomerData = () => {
                 <h5>Activity Timeline</h5>
                 <MoreVertIcon />
               </div>
-              <div>
-                <div className="steps">
-                  <div className="steps-circle"></div>
-                  <div className="step">
-                    <p>Mrinmoy Krishna join in Jibble</p>
-                    <small>05 min ago</small>
-                  </div>
-                </div>
-                <div>
-                  <div className="steps-circle"></div>
-                  <div className="step">
-                    <p>Client Meeting</p>
-                    <small>45 min ago</small>
-                  </div>
-                </div>
-                <div>
-                  <div className="steps-circle"></div>
-                  <div className="step">
-                    <p>Create a new project for client</p>
-                    <small>1 day ago</small>
-                  </div>
-                </div>
+              <div className="mt-3 d-flex w-100 step">
+                <div className="steps-circle"></div>
+                <p className="ms-3">Assrafuzzaman Nur</p>
+                <small className="ms-auto me-2">15min ago</small>
               </div>
             </div>
           </div>
