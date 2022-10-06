@@ -445,19 +445,40 @@ div {
   font-size: 16px;
   color: #495057;
 }
-.online p{
+.online p {
   color: #4fde97;
 }
-.offline p{
-  color: #F42A39;
+.offline p {
+  color: #f42a39;
 }
-.box-content{
+.box-content {
   padding-top: 10px;
   border-radius: 5px;
 }
-.box-content:hover{
-  background-color: #F0F0F8;
+.box-content:hover {
+  background-color: #f0f0f8;
 }
-.box-content:hover p{
+.box-content:hover p {
   font-weight: 600;
+}
+.top-dash-option {
+  display: flex;
+  justify-content: space-between;
+}
+.top-dash-option h5 {
+  font-size: 20px;
+  color: #42484f;
+}
+.top-dash-option a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #495057;
+  margin-left: 20px;
+  background-color: white;
+  padding: 8px 15px 10px 15px;
+  border-radius: 2px;
+}
+.dash-option-content:hover{
+  background-color: #5156BE;
+  color: white;
 }
