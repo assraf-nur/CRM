@@ -394,7 +394,20 @@ const CustomerData = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl crm-box p-4">Nur</div>
+          <div className="col-xl crm-box p-4">
+            <div>
+              <div className="box-title mb-2">
+                <h5>Team Members</h5>
+              </div>
+              <div className="row">
+                <div className="col-md-6 border">
+                  
+                </div>
+                <div className="col-md-4 border">2</div>
+                <div className="col-md-2 border">3</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
