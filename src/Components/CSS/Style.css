@@ -328,22 +328,22 @@ div {
   color: #97a0a8;
 }
 .step {
+  width: 100%;
   padding: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  background-color: cream;
 }
 
 .v-stepper {
+  margin-top: 2px;
   position: relative;
 }
 
 .step .circle {
-  background-color: white;
-  border: 3px solid gray;
+  background-color: #5a8dee;
+  border: 3px solid #eff2f7;
   border-radius: 100%;
-  width: 20px; 
+  width: 20px;
   height: 20px;
   display: inline-block;
 }
@@ -351,24 +351,29 @@ div {
 .step .line {
   top: 20px;
   left: 9px;
-  height: 100%;
+  height: 110%;
   position: absolute;
-  border-left: 3px solid gray;
+  border-left: 3px solid #eff2f7;
 }
 
 .step.completed .circle {
   visibility: visible;
-  background-color: rgb(6, 150, 215);
-  border-color: rgb(6, 150, 215);
+  background-color: #7bc72f;
+  border-color: #eff2f7;
+}
+.step.pending .circle {
+  visibility: visible;
+  background-color: #fdac41;
+  border-color: #eff2f7;
 }
 
 .step.completed .line {
-  border-left: 3px solid rgb(6, 150, 215);
+  border-left: 3px solid #eff2f7;
 }
 
 .step.active .circle {
   visibility: visible;
-  border-color: rgb(6, 150, 215);
+  border-color: #eff2f7;
 }
 
 .step.empty .circle {
@@ -382,10 +387,33 @@ div {
 
 .step:last-child .line {
   border-left: 3px solid white;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .content {
-  margin-left: 20px;
-  display: inline-block;
+  margin-left: 15px;
+}
+.step-content img {
+  width: 40px;
+  height: 40px;
+  margin-right: -5px;
+}
+.step-content p {
+  margin-top: -2px;
+  margin-bottom: -5px;
+}
+.step-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #495057;
+}
+.step-sub-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #495057;
+}
+.step-sub-content small {
+  font-weight: 400;
+  font-size: 12px;
+  color: #97a0a8;
 }

@@ -184,7 +184,7 @@ const CustomerData = () => {
 
       <div className="px-3 mt-5">
         <div className="row gap-4">
-          <div className="col-xl border crm-box p-4">
+          <div className="col-xl crm-box p-4">
             <div>
               <div className="box-title">
                 <h5>Activity Timeline</h5>
@@ -197,23 +197,38 @@ const CustomerData = () => {
                     <div class="line"></div>
                   </div>
 
-                  <div class="content">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum is simply dummy text of
-                    the printing and typesetting industry. Lorem Ipsum is simply
-                    dummy text of the printing and typesetting industry.
+                  <div class="content w-100">
+                    <div className="row">
+                      <p className="col-sm-9 step-title">Mrinmoy Krishna join in Jibble</p>
+                      <p className="col-sm-3 text-end">
+                        <small>05 min ago</small>
+                      </p>
+                    </div>
+                    <div className="d-flex gap-3 step-content">
+                      <div>
+                        <img src={profilePic} alt=""/>
+                      </div>
+                      <div className="step-sub-content">
+                        <p>Mrinmoy Krishna</p>
+                        <small>UI UX Designer</small>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div class="step active">
+                <div class="step pending">
                   <div class="v-stepper">
                     <div class="circle"></div>
                     <div class="line"></div>
                   </div>
 
-                  <div class="content">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                  <div class="content w-100">
+                    <div className="row">
+                      <p className="col-sm-9 step-title">Client Meeting</p>
+                      <p className="col-sm-3 text-end">
+                        <small>45 min ago</small>
+                      </p>
+                    </div>
                   </div>
                 </div>
 
@@ -223,12 +238,15 @@ const CustomerData = () => {
                     <div class="line"></div>
                   </div>
 
-                  <div class="content">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum is simply dummy text of
-                    the printing and typesetting Lorem Ipsum is simply dummy
-                    text of the printing and typesetting Lorem Ipsum is simply
-                    dummy text of the printing and typesetting
+                  <div class="content w-100">
+                    <div className="row">
+                      <p className="col-sm-9 step-title">
+                        Create a new project for client
+                      </p>
+                      <p className="col-sm-3 text-end">
+                        <small>1 day ago</small>
+                      </p>
+                    </div>
                   </div>
                 </div>
 
@@ -238,18 +256,20 @@ const CustomerData = () => {
                     <div class="line"></div>
                   </div>
 
-                  <div class="content">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum is simply dummy text of
-                    the printing and typesetting industry. Lorem Ipsum is simply
-                    dummy text of the printing and typesetting industry.
+                  <div class="content w-100">
+                    <div className="row">
+                      <p className="col-sm-9 step-title">Running out of juice</p>
+                      <p className="col-sm-3 text-end">
+                        <small>05 min ago</small>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-xl border crm-box">Nur</div>
-          <div className="col-xl border crm-box">Nur</div>
+          <div className="col-xl crm-box">Nur</div>
+          <div className="col-xl crm-box">Nur</div>
         </div>
       </div>
     </div>
