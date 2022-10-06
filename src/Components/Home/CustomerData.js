@@ -192,7 +192,7 @@ const CustomerData = () => {
         </div>
       </div>
 
-      <div className="px-3 mt-4">
+      <div className="px-3 mt-4 mb-4">
         <div className="row gap-4">
           <div className="col-xl crm-box p-4">
             <div>
@@ -395,16 +395,81 @@ const CustomerData = () => {
             </div>
           </div>
           <div className="col-xl crm-box p-4">
-            <div>
+            <div className="team-box">
               <div className="box-title mb-2">
                 <h5>Team Members</h5>
               </div>
-              <div className="row">
-                <div className="col-md-6 border">
-                  
+              <div className="row box-content">
+                <div className="col-md-5 d-flex gap-2">
+                  <img src={callPic6} alt="" />
+                  <p className="mt-1">Mrinmoy Krishna</p>
                 </div>
-                <div className="col-md-4 border">2</div>
-                <div className="col-md-2 border">3</div>
+                <div className="col-md-5">
+                  <p className="mt-1">Team Lead</p>
+                </div>
+                <div className="col-md-2 online">
+                  <p className="mt-1">Online</p>
+                </div>
+              </div>
+              <div className="row mt-2 box-content">
+                <div className="col-md-5 d-flex gap-2">
+                  <img src={callPic5} alt="" />
+                  <p className="mt-1">Jenny Wilson</p>
+                </div>
+                <div className="col-md-5">
+                  <p className="mt-1">Web Designer</p>
+                </div>
+                <div className="col-md-2 offline">
+                  <p className="mt-1">Offline</p>
+                </div>
+              </div>
+              <div className="row mt-2 box-content">
+                <div className="col-md-5 d-flex gap-2">
+                  <img src={callPic4} alt="" />
+                  <p className="mt-1">Guy Hawkins</p>
+                </div>
+                <div className="col-md-5">
+                  <p className="mt-1">Dog Trainer</p>
+                </div>
+                <div className="col-md-2 online">
+                  <p className="mt-1">Online</p>
+                </div>
+              </div>
+              <div className="row mt-2 box-content">
+                <div className="col-md-5 d-flex gap-2">
+                  <img src={callPic3} alt="" />
+                  <p className="mt-1">Arlene McCoy</p>
+                </div>
+                <div className="col-md-5">
+                  <p className="mt-1">President of Sales</p>
+                </div>
+                <div className="col-md-2 offline">
+                  <p className="mt-1">Offline</p>
+                </div>
+              </div>
+              <div className="row mt-2 box-content">
+                <div className="col-md-5 d-flex gap-2">
+                  <img src={callPic2} alt="" />
+                  <p className="mt-1">Cody Fisher</p>
+                </div>
+                <div className="col-md-5">
+                  <p className="mt-1">Nursing Assistant</p>
+                </div>
+                <div className="col-md-2 online">
+                  <p className="mt-1">Online</p>
+                </div>
+              </div>
+              <div className="row mt-2 box-content">
+                <div className="col-md-5 d-flex gap-2">
+                  <img src={callPic} alt="" />
+                  <p className="mt-1">Theresa Webb</p>
+                </div>
+                <div className="col-md-5">
+                  <p className="mt-1">Medical Assistant</p>
+                </div>
+                <div className="col-md-2 offline">
+                  <p className="mt-1">Offline</p>
+                </div>
               </div>
             </div>
           </div>
