@@ -32,10 +32,10 @@ const CustomerData = () => {
           <h5 className="fw-semibold">CRM Dashboard</h5>
         </div>
         <div className="me-1">
-          <a className="dash-option-content" href=""><FiCalendar className="mb-1"/> Calender</a>
-          <a className="dash-option-content" href=""><BiImport className="mb-1"/> Import</a>
-          <a className="dash-option-content" href=""><BiExport className="mb-1"/> Export</a>
-          <a className="dash-option-content" href=""><AiOutlinePlus className="mb-1"/> Add New</a>
+          <a className="dash-option-content" href="#"><FiCalendar className="mb-1"/> Calender</a>
+          <a className="dash-option-content" href="#"><BiImport className="mb-1"/> Import</a>
+          <a className="dash-option-content" href="#"><BiExport className="mb-1"/> Export</a>
+          <a className="dash-option-content" href="#"><AiOutlinePlus className="mb-1"/> Add New</a>
         </div>
       </div>
       <div className="row gap-4 px-3 mt-4">
@@ -410,7 +410,7 @@ const CustomerData = () => {
           </div>
           <div className="col-xl crm-box p-4">
             <div className="team-box">
-              <div className="box-title mb-1">
+              <div className="box-title">
                 <h5>Team Members</h5>
               </div>
               <div className="row box-content">
