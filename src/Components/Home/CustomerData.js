@@ -411,7 +411,7 @@ const CustomerData = () => {
           <div className="col-xl crm-box p-4">
             <div className="team-box">
               <div className="box-title">
-                <h5>Team Members</h5>
+                <h5> Team Members </h5>
               </div>
               <div className="row box-content">
                 <div className="col-md-5 d-flex gap-2">
