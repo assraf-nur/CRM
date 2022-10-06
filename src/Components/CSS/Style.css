@@ -82,7 +82,7 @@ div {
 
 /* total customer card start */
 .dash-card-icon {
-  padding: 13px 13px 13px 13px;
+  padding: 15px 15px 15px 15px;
   background-color: #0dcd94;
   color: #ffffff;
   margin: 25px 13px 25px 13px;
@@ -264,13 +264,15 @@ div {
 }
 /* collaborator end */
 .dash-card-circle-progress {
-  width: 74px;
+  width: 65px;
   align-self: center;
   margin-right: 10px;
   background-color: #fff3f3;
   border-radius: 50%;
   font-weight: 600;
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .dash-card-text h6 {
   font-family: "Inter";
