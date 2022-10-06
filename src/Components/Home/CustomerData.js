@@ -8,7 +8,17 @@ import singleApplication from "../Images/SVG/single-application.svg";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import profilePic from "../Images/Profile/profile-pic.png";
+import profilePic2 from "../Images/Profile/profile-pic2.png";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import { Table } from "react-bootstrap";
+import redCall from "../Images/SVG/red-call.svg";
+import blueCall from "../Images/SVG/blue-call.svg";
+import callPic from "../Images/Profile/call-pic1.png";
+import callPic2 from "../Images/Profile/call-pic2.png";
+import callPic3 from "../Images/Profile/call-pic3.png";
+import callPic4 from "../Images/Profile/call-pic4.png";
+import callPic5 from "../Images/Profile/call-pic5.png";
+import callPic6 from "../Images/Profile/call-pic6.png";
 
 const CustomerData = () => {
   const percentage = 50;
@@ -182,7 +192,7 @@ const CustomerData = () => {
         </div>
       </div>
 
-      <div className="px-3 mt-5">
+      <div className="px-3 mt-4">
         <div className="row gap-4">
           <div className="col-xl crm-box p-4">
             <div>
@@ -199,14 +209,16 @@ const CustomerData = () => {
 
                   <div class="content w-100">
                     <div className="row">
-                      <p className="col-sm-9 step-title">Mrinmoy Krishna join in Jibble</p>
+                      <p className="col-sm-9 step-title">
+                        Mrinmoy Krishna join in Jibble
+                      </p>
                       <p className="col-sm-3 text-end">
                         <small>05 min ago</small>
                       </p>
                     </div>
                     <div className="d-flex gap-3 step-content">
                       <div>
-                        <img src={profilePic} alt=""/>
+                        <img src={profilePic} alt="" />
                       </div>
                       <div className="step-sub-content">
                         <p>Mrinmoy Krishna</p>
@@ -229,6 +241,18 @@ const CustomerData = () => {
                         <small>45 min ago</small>
                       </p>
                     </div>
+                    <p className="sub-paragraph">
+                      Project meeting with Krishna @10:15am
+                    </p>
+                    <div className="d-flex gap-3 step-content">
+                      <div>
+                        <img src={profilePic2} alt="" />
+                      </div>
+                      <div className="step-sub-content">
+                        <p>Krishna (Client)</p>
+                        <small>Manager of XYZ</small>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -247,6 +271,7 @@ const CustomerData = () => {
                         <small>1 day ago</small>
                       </p>
                     </div>
+                    <p className="sub-paragraph">5 team members in a project</p>
                   </div>
                 </div>
 
@@ -258,7 +283,9 @@ const CustomerData = () => {
 
                   <div class="content w-100">
                     <div className="row">
-                      <p className="col-sm-9 step-title">Running out of juice</p>
+                      <p className="col-sm-9 step-title">
+                        Running out of juice
+                      </p>
                       <p className="col-sm-3 text-end">
                         <small>05 min ago</small>
                       </p>
@@ -268,8 +295,106 @@ const CustomerData = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl crm-box">Nur</div>
-          <div className="col-xl crm-box">Nur</div>
+          <div className="col-xl crm-box p-4">
+            <div>
+              <div className="box-title">
+                <h5>Call Logs</h5>
+                {/* <MoreVertIcon /> */}
+              </div>
+              <div className="mt-1">
+                <Table className="table-box" responsive="sm">
+                  <thead></thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src={callPic} alt="" />
+                      </td>
+                      <td>Dianne Russell</td>
+                      <td>
+                        <img src={redCall} alt="" />
+                      </td>
+                      <td>18 April 2022</td>
+                      <td>22.02.20</td>
+                      <td className="table-content-side-option">
+                        <MoreVertIcon />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src={callPic2} alt="" />
+                      </td>
+                      <td>Dianne Russell</td>
+                      <td>
+                        <img src={blueCall} alt="" />
+                      </td>
+                      <td>18 April 2022</td>
+                      <td>22.02.20</td>
+                      <td className="table-content-side-option">
+                        <MoreVertIcon />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src={callPic3} alt="" />
+                      </td>
+                      <td>Dianne Russell</td>
+                      <td>
+                        <img src={blueCall} alt="" />
+                      </td>
+                      <td>18 April 2022</td>
+                      <td>22.02.20</td>
+                      <td className="table-content-side-option">
+                        <MoreVertIcon />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src={callPic4} alt="" />
+                      </td>
+                      <td>Dianne Russell</td>
+                      <td>
+                        <img src={redCall} alt="" />
+                      </td>
+                      <td>18 April 2022</td>
+                      <td>22.02.20</td>
+                      <td className="table-content-side-option">
+                        <MoreVertIcon />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src={callPic5} alt="" />
+                      </td>
+                      <td>Dianne Russell</td>
+                      <td>
+                        <img src={redCall} alt="" />
+                      </td>
+                      <td>18 April 2022</td>
+                      <td>22.02.20</td>
+                      <td className="table-content-side-option">
+                        <MoreVertIcon />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src={callPic6} alt="" />
+                      </td>
+                      <td>Dianne Russell</td>
+                      <td>
+                        <img src={blueCall} alt="" />
+                      </td>
+                      <td>18 April 2022</td>
+                      <td>22.02.20</td>
+                      <td className="table-content-side-option">
+                        <MoreVertIcon />
+                      </td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl crm-box p-4">Nur</div>
         </div>
       </div>
     </div>
