@@ -179,65 +179,6 @@ const CustomerData = () => {
               <img src={totalCustomer} alt="" />
             </div>
           </div>
-
-          {/* <div className="col-xl dash-card">
-            <div className="d-flex">
-              <div className="dash-card-icon6">
-                <FaUserFriends className="fs-4" />
-              </div>
-              <div className="dash-card-text6">
-                <p className="mb-2">Collaborator</p>
-                <h5>
-                  6,680 <span>+40</span>
-                </h5>
-              </div>
-            </div>
-            <div className="dash-card-image"></div>
-          </div>
-          <div className="col-xl dash-card">
-            <div className="d-flex">
-              <div className="dash-card-text3 ms-3">
-                <p className="mb-2">To Do</p>
-                <h5>
-                  6,680 <span>+40</span>
-                </h5>
-              </div>
-            </div>
-            <div className="dash-card-circle-progress">
-              <CircularProgressbar
-                value={percentage}
-                text={`${percentage}%`}
-                strokeWidth={15}
-                styles={buildStyles({
-                  textSize: "22px",
-                  pathColor: "#fab323",
-                  trailColor: "#FEE6B5",
-                })}
-              />
-            </div>
-          </div>
-          <div className="col-xl dash-card">
-            <div className="d-flex">
-              <div className="dash-card-text4 ms-3">
-                <p className="mb-2">Appointment</p>
-                <h5>
-                  6,680 <span>+40</span>
-                </h5>
-              </div>
-            </div>
-            <div className="dash-card-circle-progress">
-              <CircularProgressbar
-                value={75}
-                text={`${75}`}
-                strokeWidth={15}
-                styles={buildStyles({
-                  textSize: "22px",
-                  pathColor: "#4F92FD",
-                  trailColor: "#C0D9FF",
-                })}
-              />
-            </div>
-          </div> */}
         </div>
       </div>
 
@@ -370,29 +311,6 @@ const CustomerData = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="mt-4">
-        <div className="row gap-4 px-3">
-          <div className="col-xl p-3 dash-card">
-            <div className="d-flex">
-              <div className="dash-card-text">
-                <h6>Next Appointment</h6>
-                <div className="d-flex gap-2 mt-3 appointment-card">
-                  <img src={profilePic} alt="" />
-                  <p className="mt-1">Meeting with M Khan</p>
-                </div>
-              </div>
-            </div>
-            <div className="appointment-card-time">
-              <p>5.00PM</p>
-            </div>
-          </div>
-          <div className="col-xl"></div>
-          <div className="col-xl"></div>
-          <div className="col-xl"></div>
-        </div>
-      </div> */}
-
       <div className="px-3 mt-4 mb-4">
         <div className="row gap-4">
           <div className="col-xl crm-box p-4">
