@@ -16,23 +16,23 @@
         "_id": "6340fb867386adbafd4a5a16",
         "index": 1,
         "img": "https://i.ibb.co/S55SNh7/table-profile-2.png",
-        "email": "thomas@commerciallendingusa.com",
+        "email": "felicia.reid@example.com",
         "super_admin": "No",
         "access_contact": "Yes",
-        "team": "Thomas",
-        "role": "Processor",
-        "status": "Active"
+        "team": "Angel",
+        "role": "Web Designer",
+        "status": "Dective"
     },
     {
         "name": "Jacob Jones",
         "_id": "6340fb867386adbafd4a5a16",
         "index": 2,
         "img": "https://i.ibb.co/YRPgQph/table-profile-3.png",
-        "email": "thomas@commerciallendingusa.com",
+        "email": "dolores.chambers@example.com",
         "super_admin": "No",
         "access_contact": "Yes",
         "team": "Thomas",
-        "role": "Processor",
+        "role": "Coordinator",
         "status": "Active"
     },
     {
@@ -40,12 +40,12 @@
         "_id": "6340fb867386adbafd4a5a16",
         "index": 3,
         "img": "https://i.ibb.co/MP8tKzB/table-profile-4.png",
-        "email": "thomas@commerciallendingusa.com",
+        "email": "jackson.graham@example.com",
         "super_admin": "No",
         "access_contact": "Yes",
-        "team": "Thomas",
-        "role": "Processor",
-        "status": "Active"
+        "team": "Max",
+        "role": "Nursing Assistant",
+        "status": "Dective"
     },
     {
         "name": "Arlene McCoy",
@@ -56,7 +56,7 @@
         "super_admin": "No",
         "access_contact": "Yes",
         "team": "Thomas",
-        "role": "Processor",
+        "role": "Coordinator",
         "status": "Active"
     },
     {
@@ -68,7 +68,7 @@
         "super_admin": "No",
         "access_contact": "Yes",
         "team": "Thomas",
-        "role": "Processor",
+        "role": "Coordinator",
         "status": "Active"
     },
     {
@@ -92,7 +92,7 @@
         "super_admin": "No",
         "access_contact": "Yes",
         "team": "Thomas",
-        "role": "Processor",
+        "role": "Coordinator",
         "status": "Active"
     },
     {
@@ -104,7 +104,7 @@
         "super_admin": "No",
         "access_contact": "Yes",
         "team": "Thomas",
-        "role": "Processor",
+        "role": "Coordinator",
         "status": "Active"
     },
     {
@@ -116,7 +116,7 @@
         "super_admin": "No",
         "access_contact": "Yes",
         "team": "Thomas",
-        "role": "Processor",
+        "role": "Coordinator",
         "status": "Active"
     }
 ]

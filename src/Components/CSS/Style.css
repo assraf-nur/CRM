@@ -484,3 +484,32 @@ div {
   background-color: #5156BE;
   color: white;
 }
+.data-table{
+  background-color: #F7F7F7;
+  padding: 10px;
+  overflow: auto;
+}
+.table-box{
+  background-color: white;
+  padding: 25px;
+  overflow: auto;
+}
+.table-data p{
+  margin-top: 4px;
+  margin-bottom: -6px;
+}
+.table-data thead{
+  background-color: #E4F2FF;
+}
+.status-active{
+  font-size: 14px;
+  color: #0D9E84;
+  background-color: #DCF5F2;
+  text-align: center;
+}
+.status-de-active{
+  font-size: 14px;
+  color: #F1438F;
+  background-color: #FCEDF3;
+  text-align: center;
+}
