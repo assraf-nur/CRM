@@ -6,7 +6,7 @@ const Users = () => {
 
   return (
     <div className="p-3">
-      <h1>Users</h1>
+      <h1>Data Table</h1>
       
     </div>
   );
