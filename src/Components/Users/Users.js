@@ -49,10 +49,10 @@ const Users = () => {
                   }  </td>
                 <td> 
                   <div className="text-center">
-                    <a className="px-2 mt-1 text-dark fs-4" href=""><MdOutlineModeEditOutline/></a>
-                    <a title="Delete" className="px-2 mt-1 text-danger fs-4" href=""><RiDeleteBin6Line/></a>
-                    <a className="px-2 mt-1 text-success fs-4" href=""><MdVisibility/></a>
-                    <a className="px-2 mt-1 text-dark fs-4" href=""><MdOutlineMoreVert/></a>
+                    <a className="px-2 mt-1 text-dark fs-4" href="{}"><MdOutlineModeEditOutline/></a>
+                    <a title="Delete" className="px-2 mt-1 text-danger fs-4" href="{}"><RiDeleteBin6Line/></a>
+                    <a className="px-2 mt-1 text-success fs-4" href="{}"><MdVisibility/></a>
+                    <a className="px-2 mt-1 text-dark fs-4" href="{}"><MdOutlineMoreVert/></a>
                   </div> 
                 </td>
               </tr>
