@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 import "../CSS/Style.css";
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { RiDeleteBin6Line } from 'react-icons/ri';
+import { MdOutlineModeEditOutline, MdVisibility, MdOutlineMoreVert } from 'react-icons/md';
+
 
 const Users = () => {
   const [rows, setRows] = useState([]);
@@ -50,10 +49,10 @@ const Users = () => {
                   }  </td>
                 <td> 
                   <div className="text-center">
-                    <a className="px-2 mt-1 text-dark" href=""><EditIcon/></a>
-                    <a className="px-2 mt-1 text-danger" href=""><DeleteIcon/></a>
-                    <a className="px-2 mt-1 text-success" href=""><VisibilityIcon/></a>
-                    <a className="px-2 mt-1 text-dark" href=""><MoreVertIcon/></a>
+                    <a className="px-2 mt-1 text-dark fs-4" href=""><MdOutlineModeEditOutline/></a>
+                    <a title="Delete" className="px-2 mt-1 text-danger fs-4" href=""><RiDeleteBin6Line/></a>
+                    <a className="px-2 mt-1 text-success fs-4" href=""><MdVisibility/></a>
+                    <a className="px-2 mt-1 text-dark fs-4" href=""><MdOutlineMoreVert/></a>
                   </div> 
                 </td>
               </tr>
