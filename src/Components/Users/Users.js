@@ -33,7 +33,6 @@ const Users = () => {
   };
 
   const getData = (current, pageSize) => {
-    // Normally you should get the data from the server
     return rows.slice((current - 1) * pageSize, current * pageSize);
   };
 
@@ -63,21 +62,21 @@ const Users = () => {
   return (
     <div className="p-3 data-table">
       <div className="table-box">
-      <div className="table-filter-info">
-                  <Pagination
-                    className="pagination-data"
-                    showTotal={(total, range) =>
-                      `Showing ${range[0]}-${range[1]} of ${total}`
-                    }
-                    onChange={PaginationChange}
-                    total={rows.length}
-                    current={current}
-                    pageSize={size}
-                    showSizeChanger={false}
-                    itemRender={PrevNextArrow}
-                    onShowSizeChange={PerPageChange}
-                  />
-                </div>
+        <div className="table-filter-info">
+          <Pagination
+            className="pagination-data"
+            showTotal={(total, range) =>
+              `Showing ${range[0]}-${range[1]} of ${total}`
+            }
+            onChange={PaginationChange}
+            total={rows.length}
+            current={current}
+            pageSize={size}
+            showSizeChanger={false}
+            itemRender={PrevNextArrow}
+            onShowSizeChange={PerPageChange}
+          />
+        </div>
         <Table className="table-data" striped hover>
           <thead>
             <tr>
@@ -93,7 +92,7 @@ const Users = () => {
             </tr>
           </thead>
           <tbody>
-          {getData(current, size).map((row, index) => (
+            {getData(current, size).map((row, index) => (
               <tr>
                 <td width={"5%"}>
                   <img className="py-2 ms-2" src={row.img} alt="" />
