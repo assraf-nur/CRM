@@ -3,11 +3,13 @@ import { Table } from "react-bootstrap";
 import "../CSS/Style.css";
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import { MdOutlineModeEditOutline, MdVisibility, MdOutlineMoreVert } from 'react-icons/md';
-import _ from 'lodash';
-const pageSize = 10;
+import _  from 'lodash';
+const pageSize = 8;
 
 const Users = () => {
   const [rows, setRows] = useState([]);
+  const [paginatedPost, setPaginatedPost] = useState();
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     fetch("tableData.json")
@@ -15,6 +17,7 @@ const Users = () => {
       .then((data) => {
         setRows(data);
         console.log(data);
+        setPaginatedPost(_(data).slice(0).take(pageSize).value());
       });
   }, []);
 
@@ -22,6 +25,15 @@ const Users = () => {
   if( pageCount === 1) return null;
   const pages = _.range(1, pageCount + 1)
 
+  const pagination = (pageNo) =>{
+    setCurrentPage(pageNo);
+    const startIndex = (pageNo - 1)* pageSize;
+    const paginatedPost = _(rows).slice(startIndex).take(pageSize).value();
+    setPaginatedPost(paginatedPost);
+  }
+  const handleNext = (pageNo) =>{
+    
+  }
   return (
     <div className="p-3 data-table">
       <div className="table-box">
@@ -40,7 +52,7 @@ const Users = () => {
             </tr>
           </thead>
           <tbody>
-            {rows.map((row) => (
+            {paginatedPost?.map((row) => (
               <tr>
                 <td width={"5%"}>
                   <img className="py-2 ms-2" src={row.img} alt="" />
@@ -67,13 +79,21 @@ const Users = () => {
             ))}
           </tbody>
         </Table>
-        <nav className="mx-auto">
-        <ul className="pagination">
+        <nav className="d-flex justify-content-center">
+        <ul className="pagination gap-2">
+          <li><button className="btn btn-primary" type="">Previous</button></li>
           {
             pages.map((page) =>(
-              <li className="page-link">{page}</li>
+              <li className={
+                page === currentPage ? "page-items active" : "page-items"
+              }>
+                <p className="page-link"
+                onClick={()=>pagination(page)}
+                >{page}</p>
+              </li>
             ))
           }
+          <li><button onClick={handleNext} className="btn btn-primary" type="">Next</button></li>
         </ul>
       </nav>
       </div>
