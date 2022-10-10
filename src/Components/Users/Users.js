@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 import "../CSS/Style.css";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { HiPlus } from "react-icons/hi";
 import {
   MdOutlineModeEditOutline,
   MdVisibility,
@@ -11,7 +12,7 @@ import Pagination from "rc-pagination";
 
 const Users = () => {
   const [rows, setRows] = useState([]);
-  const [perPage] = useState(8);
+  const [perPage] = useState(12);
   const [size, setSize] = useState(perPage);
   const [current, setCurrent] = useState(1);
 
@@ -44,15 +45,15 @@ const Users = () => {
   const PrevNextArrow = (current, type, originalElement) => {
     if (type === "prev") {
       return (
-        <button>
-          <i className="fa fa-angle-double-left"></i>
+        <button className="border fs-6 control-button">
+          Previous
         </button>
       );
     }
     if (type === "next") {
       return (
-        <button>
-          <i className="fa fa-angle-double-right"></i>
+        <button className="border me-3 fs-6 control-button">
+          Next
         </button>
       );
     }
@@ -63,18 +64,23 @@ const Users = () => {
     <div className="p-3 data-table">
       <div className="table-box">
         <div className="table-filter-info">
+          <button className="add-button px-2 py-1" type=""><HiPlus className="text-white"/> Add</button>
           <Pagination
             className="pagination-data"
             showTotal={(total, range) =>
               `Showing ${range[0]}-${range[1]} of ${total}`
             }
+            defaultCurrent={5}
             onChange={PaginationChange}
             total={rows.length}
             current={current}
             pageSize={size}
-            showSizeChanger={false}
             itemRender={PrevNextArrow}
             onShowSizeChange={PerPageChange}
+            showQuickJumper={{
+              
+            }}
+            locale={{ jump_to: "Jump To" , page: 'Page' }}
           />
         </div>
         <Table className="table-data" striped hover>
@@ -97,11 +103,11 @@ const Users = () => {
                 <td width={"5%"}>
                   <img className="py-2 ms-2" src={row.img} alt="" />
                 </td>
-                <td width={"13%"}>
+                <td width={"16%"}>
                   {" "}
                   <p>{row.name}</p>{" "}
                 </td>
-                <td width={"20%"}>
+                <td width={"22%"}>
                   {" "}
                   <p>{row.email}</p>{" "}
                 </td>
@@ -113,7 +119,7 @@ const Users = () => {
                   {" "}
                   <p>{row.access_contact}</p>{" "}
                 </td>
-                <td width={"7%"}>
+                <td width={"10%"}>
                   {" "}
                   <p>{row.team}</p>{" "}
                 </td>
