@@ -3,16 +3,34 @@ import { Table } from "react-bootstrap";
 import "../CSS/Style.css";
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import { MdOutlineModeEditOutline, MdVisibility, MdOutlineMoreVert } from 'react-icons/md';
-
+import _  from 'lodash';
+const pageSize = 8;
 
 const Users = () => {
   const [rows, setRows] = useState([]);
+  const [paginatedPost, setPaginatedPost] = useState();
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     fetch("tableData.json")
       .then((res) => res.json())
-      .then((data) => setRows(data));
+      .then((data) => {
+        setRows(data);
+        console.log(data);
+        setPaginatedPost(_(data).slice(0).take(pageSize).value());
+      });
   }, []);
+
+  const pageCount = rows? Math.ceil(rows.length/pageSize) : 0;
+  if( pageCount === 1) return null;
+  const pages = _.range(1, pageCount + 1)
+
+  const pagination = (pageNo) =>{
+    setCurrentPage(pageNo);
+    const startIndex = (pageNo - 1)* pageSize;
+    const paginatedPost = _(rows).slice(startIndex).take(pageSize).value();
+    setPaginatedPost(paginatedPost);
+  }
 
   return (
     <div className="p-3 data-table">
@@ -32,7 +50,7 @@ const Users = () => {
             </tr>
           </thead>
           <tbody>
-            {rows.map((row) => (
+            {paginatedPost?.map((row) => (
               <tr>
                 <td width={"5%"}>
                   <img className="py-2 ms-2" src={row.img} alt="" />
@@ -59,6 +77,21 @@ const Users = () => {
             ))}
           </tbody>
         </Table>
+        <nav className="d-flex justify-content-center">
+        <ul className="pagination">
+          {
+            pages.map((page) =>(
+              <li className={
+                page === currentPage ? "page-items active" : "page-items"
+              }>
+                <p className="page-link"
+                onClick={()=>pagination(page)}
+                >{page}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
       </div>
     </div>
   );
