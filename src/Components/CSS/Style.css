@@ -486,12 +486,11 @@ div {
 }
 .data-table {
   background-color: #f7f7f7;
-  padding: 10px;
   overflow: auto;
 }
 .table-box {
   background-color: white;
-  padding: 25px;
+  padding: 10px 15px 10px 15px;
   overflow: auto;
 }
 .table-data p {

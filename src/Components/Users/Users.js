@@ -61,14 +61,14 @@ const Users = () => {
   };
 
   return (
-    <div className="p-3 data-table">
+    <div className="p-4 data-table">
       <div className="table-box">
         <div className="table-filter-info">
           <button className="add-button px-2 py-1" type=""><HiPlus className="text-white"/> Add</button>
           <Pagination
             className="pagination-data"
             showTotal={(total, range) =>
-              `Showing ${range[0]}-${range[1]} of ${total}`
+              `Showing ${range[0]}-${range[1]} of ${total} entries`
             }
             defaultCurrent={5}
             onChange={PaginationChange}
