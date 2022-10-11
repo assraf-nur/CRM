@@ -21,7 +21,6 @@ const Users = () => {
       .then((res) => res.json())
       .then((data) => {
         setRows(data);
-        console.log(data);
       });
   }, []);
 
