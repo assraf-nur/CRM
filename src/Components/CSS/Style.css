@@ -734,7 +734,7 @@ div {
 .submit-button {
   display: flex;
   border: none;
-  background-color: #5E78F3;
+  background-color: #5e78f3;
   color: white;
   justify-content: end;
   border-radius: 3px;
@@ -747,11 +747,11 @@ div {
   text-decoration: none;
   color: white;
 }
-.form-header{
+.form-header {
   display: flex;
   justify-content: space-between;
 }
-.contact-list-button{
+.contact-list-button {
   background-color: #0ab39c;
   color: white;
   height: 35px;
@@ -762,14 +762,42 @@ div {
   padding-right: 15px;
   font-size: 14px;
 }
-.contact-list-button:hover{
+.contact-list-button:hover {
   background-color: #0ab39c;
   color: white;
   text-decoration: none;
 }
-.router-link.router-link:hover{
+.router-link.router-link:hover {
   text-decoration: none;
 }
-option{
-
+.react-bootstrap-table-pagination-list {
+  display: flex;
+  justify-content: end;
+}
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #5156BE;
+  border-color: #5156BE;
+}
+.page-item .page-link {
+  z-index: 1;
+  color: #5156BE;
+}
+#pageDropdown{
+  background-color: #0ab39c !important;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #5156BE;
+  border-color: #5156BE;
+}
+.btn-secondary.dropdown-toggle, .btn-secondary.dropdown-toggle:hover {
+  color: #fff;
+  background-color: #5156BE;
+  border-color: #5156BE;
+}
+.dropdown-item a{
+  text-decoration: none;
+  color: #495057;
 }

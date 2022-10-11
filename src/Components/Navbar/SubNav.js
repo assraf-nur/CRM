@@ -52,13 +52,13 @@ const SubNav = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">
+              <Dropdown.Item>
                 <Link className="router-link" to='/reports'>Add Report</Link>
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-2">
+              <Dropdown.Item>
                 <Link className="router-link" to='/reports-list'>Report List</Link>
               </Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+              <Dropdown.Item>Something else</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>
