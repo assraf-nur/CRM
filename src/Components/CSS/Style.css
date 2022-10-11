@@ -679,11 +679,47 @@ div {
   border-radius: 4px;
   padding: 3px;
 }
-.add-button{
+.add-button {
   border: none;
-  background-color: #0AB39C;
+  background-color: #0ab39c;
   color: white;
   font-size: 14px;
   margin-left: -15px;
   border-radius: 3px;
+}
+.upper-option {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+.add-new-button {
+  border: none;
+  background-color: #0ab39c;
+  font-size: 14px;
+  color: white;
+  border-radius: 3px;
+}
+.upper-toggle {
+  border: 1px solid #97a0a8;
+  font-size: 14px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #f4f5f7;
+}
+.contact-form h4 {
+  font-weight: 550;
+  font-size: 20px;
+}
+.form-control {
+  border-radius: 2px !important;
+  border: 1px solid #eaedf1;
+}
+.form-control::placeholder {
+  color: #d3d5d6;
+  font-size: 13px;
+}
+.form-label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #495057;
 }

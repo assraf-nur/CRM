@@ -82,7 +82,7 @@ const Users = () => {
             locale={{ jump_to: "Jump To" , page: 'Page' }}
           />
         </div>
-        <Table className="table-data" striped hover>
+        <Table className="table-data">
           <thead>
             <tr>
               <th>Photo</th>
