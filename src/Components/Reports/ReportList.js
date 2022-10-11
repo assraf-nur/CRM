@@ -32,7 +32,7 @@ const ReportList = () => {
       text: "Email",
     },
     {
-      dataField: "city",
+      dataField: "address",
       text: "City",
     },
     {
