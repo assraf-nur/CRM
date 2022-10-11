@@ -9,6 +9,7 @@ import {
   MdOutlineMoreVert,
 } from "react-icons/md";
 import Pagination from "rc-pagination";
+import { Link } from "react-router-dom";
 
 const Users = () => {
   const [rows, setRows] = useState([]);
@@ -63,7 +64,7 @@ const Users = () => {
     <div className="p-4 data-table">
       <div className="table-box">
         <div className="table-filter-info">
-          <button className="add-button px-2 py-1" type=""><HiPlus className="text-white"/> Add</button>
+          <button className="add-button px-2 py-1" type=""><Link className="add-contact-link" to='/contact'><HiPlus className="text-white"/> Add </Link></button>
           <Pagination
             className="pagination-data"
             showTotal={(total, range) =>

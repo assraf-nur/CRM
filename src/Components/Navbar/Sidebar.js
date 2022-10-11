@@ -35,6 +35,7 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import Reports from "../Reports/Reports";
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import Setting from "../Setting/Setting";
+import ReportList from "../Reports/ReportList";
 
 const drawerWidth = 240;
 
@@ -249,6 +250,7 @@ export default function MiniDrawer() {
           <Route path="appointment" element={<Appointment></Appointment>} />
           <Route path="marketing" element={<Marketing></Marketing>} />
           <Route path="reports" element={<Reports></Reports>} />
+          <Route path="reports-list" element={<ReportList></ReportList>} />
           <Route path="setting" element={<Setting></Setting>} />
         </Routes>
       </Box>

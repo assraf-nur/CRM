@@ -714,6 +714,14 @@ div {
   border-radius: 2px !important;
   border: 1px solid #eaedf1;
 }
+.drop-option {
+  color: #d3d5d6;
+  font-size: 10px;
+}
+.form-select {
+  border-radius: 2px !important;
+  border: 1px solid #eaedf1;
+}
 .form-control::placeholder {
   color: #d3d5d6;
   font-size: 13px;
@@ -722,4 +730,46 @@ div {
   font-weight: 500;
   font-size: 14px;
   color: #495057;
+}
+.submit-button {
+  display: flex;
+  border: none;
+  background-color: #5E78F3;
+  color: white;
+  justify-content: end;
+  border-radius: 3px;
+}
+.add-contact-link {
+  text-decoration: none;
+  color: white;
+}
+.add-contact-link:hover {
+  text-decoration: none;
+  color: white;
+}
+.form-header{
+  display: flex;
+  justify-content: space-between;
+}
+.contact-list-button{
+  background-color: #0ab39c;
+  color: white;
+  height: 35px;
+  text-decoration: none;
+  padding-top: 7px;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+}
+.contact-list-button:hover{
+  background-color: #0ab39c;
+  color: white;
+  text-decoration: none;
+}
+.router-link.router-link:hover{
+  text-decoration: none;
+}
+option{
+
 }
