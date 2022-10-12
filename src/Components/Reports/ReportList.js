@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BootstrapTable from "react-bootstrap-table-next";
 import paginationFactory from "react-bootstrap-table2-paginator";
+import { RiArrowUpDownFill } from "react-icons/ri";
 
 const ReportList = () => {
   const [datas, setDatas] = useState([]);
@@ -16,7 +17,12 @@ const ReportList = () => {
   const columns = [
     {
       dataField: "first_name",
-      text: "First Name",
+      text: (
+        <div>
+          First Name
+          <RiArrowUpDownFill className="ms-2" />
+        </div>
+      ),
       sort: true,
     },
     {
@@ -29,7 +35,13 @@ const ReportList = () => {
     },
     {
       dataField: "email",
-      text: "Email",
+      text: (
+        <div>
+          Email
+          <RiArrowUpDownFill className="ms-2" />
+        </div>
+      ),
+      sort: true,
     },
     {
       dataField: "address",
@@ -41,13 +53,24 @@ const ReportList = () => {
     },
     {
       dataField: "date",
-      text: "Date",
+      text: (
+        <div>
+          Date
+          <RiArrowUpDownFill className="ms-2" />
+        </div>
+      ),
+      sort: true,
     },
     {
       dataField: "remarks",
       text: "Remarks",
     },
   ];
+
+  const selectRow = {
+    mode: "checkbox",
+    clickToSelect: true,
+  };
 
   const options = {
     paginationSize: 5,
@@ -88,8 +111,10 @@ const ReportList = () => {
       <div className="p-3 bg-white">
         <h5>Reports List</h5>
         <BootstrapTable
+          hover
+          condensed
           classes="bg-white"
-          keyField="datas._id"
+          keyField="id"
           data={datas}
           columns={columns}
           pagination={paginationFactory(options)}

@@ -133,6 +133,7 @@ const Contact = () => {
         <div className="form-header">
           <h4 className="mt-2">Add Contact</h4>
           <Link className="contact-list-button" to='/users'> <FaRegListAlt className="fs-6 me-1 mb-1"/> Contact List</Link>
+          <Link className="contact-list-button justify-end" to='/contact-details'> <FaRegListAlt className="fs-6 me-1 mb-1"/> Contact Details</Link>
         </div>
 
         <form className="mt-2 p-1">
