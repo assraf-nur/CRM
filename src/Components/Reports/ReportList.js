@@ -89,7 +89,7 @@ const ReportList = () => {
         <h5>Reports List</h5>
         <BootstrapTable
           classes="bg-white"
-          keyField="_id"
+          keyField="datas._id"
           data={datas}
           columns={columns}
           pagination={paginationFactory(options)}

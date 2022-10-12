@@ -13,9 +13,9 @@ const Contact = () => {
           <HiPlus />
           Add New Contact
         </button>
-        <div class="dropdown">
+        <div className="dropdown">
           <button
-            class="upper-toggle dropdown-toggle px-3"
+            className="upper-toggle dropdown-toggle px-3"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"
@@ -24,21 +24,21 @@ const Contact = () => {
           >
             Select a Team
           </button>
-          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="{}">
+          <div className="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+            <a className="dropdown-item" href="{}">
               Action
             </a>
-            <a class="dropdown-item" href="{}">
+            <a className="dropdown-item" href="{}">
               Another action
             </a>
-            <a class="dropdown-item" href="{}">
+            <a className="dropdown-item" href="{}">
               Something else here
             </a>
           </div>
         </div>
-        <div class="dropdown">
+        <div className="dropdown">
           <button
-            class="upper-toggle dropdown-toggle px-3"
+            className="upper-toggle dropdown-toggle px-3"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"
@@ -47,21 +47,21 @@ const Contact = () => {
           >
             Select a Collaborator
           </button>
-          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="{}">
+          <div className="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+            <a className="dropdown-item" href="{}">
               Action
             </a>
-            <a class="dropdown-item" href="{}">
+            <a className="dropdown-item" href="{}">
               Another action
             </a>
-            <a class="dropdown-item" href="{}">
+            <a className="dropdown-item" href="{}">
               Something else here
             </a>
           </div>
         </div>
-        <div class="dropdown">
+        <div className="dropdown">
           <button
-            class="upper-toggle dropdown-toggle px-3"
+            className="upper-toggle dropdown-toggle px-3"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"
@@ -70,21 +70,21 @@ const Contact = () => {
           >
             Loan Status
           </button>
-          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="{}">
+          <div className="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+            <a className="dropdown-item" href="{}">
               Action
             </a>
-            <a class="dropdown-item" href="{}">
+            <a className="dropdown-item" href="{}">
               Another action
             </a>
-            <a class="dropdown-item" href="{}">
+            <a className="dropdown-item" href="{}">
               Something else here
             </a>
           </div>
         </div>
         <div class="dropdown">
           <button
-            class="upper-toggle dropdown-toggle px-3"
+            className="upper-toggle dropdown-toggle px-3"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"
@@ -93,21 +93,21 @@ const Contact = () => {
           >
             Application Status
           </button>
-          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="{}">
+          <div className="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+            <a className="dropdown-item" href="{}">
               Action
             </a>
-            <a class="dropdown-item" href="{}">
+            <a className="dropdown-item" href="{}">
               Another action
             </a>
-            <a class="dropdown-item" href="{}">
+            <a className="dropdown-item" href="{}">
               Something else here
             </a>
           </div>
         </div>
         <div class="dropdown">
           <button
-            class="upper-toggle dropdown-toggle px-3"
+            className="upper-toggle dropdown-toggle px-3"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"
@@ -116,14 +116,14 @@ const Contact = () => {
           >
             Types of Loan
           </button>
-          <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="{}">
+          <div className="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+            <a className="dropdown-item" href="{}">
               Action
             </a>
-            <a class="dropdown-item" href="{}">
+            <a className="dropdown-item" href="{}">
               Another action
             </a>
-            <a class="dropdown-item" href="{}">
+            <a className="dropdown-item" href="{}">
               Something else here
             </a>
           </div>
