@@ -777,27 +777,88 @@ div {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #5156BE;
-  border-color: #5156BE;
+  background-color: #5156be;
+  border-color: #5156be;
 }
 .page-item .page-link {
   z-index: 1;
-  color: #5156BE;
+  color: #5156be;
 }
-#pageDropdown{
+#pageDropdown {
   background-color: #0ab39c !important;
 }
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #5156BE;
-  border-color: #5156BE;
+  background-color: #5156be;
+  border-color: #5156be;
 }
-.btn-secondary.dropdown-toggle, .btn-secondary.dropdown-toggle:hover {
+.btn-secondary.dropdown-toggle,
+.btn-secondary.dropdown-toggle:hover {
   color: #fff;
-  background-color: #5156BE;
-  border-color: #5156BE;
+  background-color: #5156be;
+  border-color: #5156be;
 }
-.dropdown-item a{
+.dropdown-item a {
   text-decoration: none;
   color: #495057;
+}
+.contact-details-page {
+  color: #213446;
+}
+.contact-details-page p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: -2px;
+}
+.contact-details-page h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.contact-details-page img {
+  width: 120px;
+  height: 120px;
+}
+.profile-p1 {
+  margin-top: 20px;
+}
+.profile-p2 {
+  margin-top: -10px;
+}
+.profile-card-start {
+  align-items: center;
+  justify-content: center;
+}
+.profile-card-information p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+.profile-card-information span {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.timer-section{
+  background-color: #F0EDFF;
+  text-align: center;
+}
+.contact-details-progress {
+  width: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 100px;
+}
+.timer-section p{
+  margin-top: -5px;
+}
+.contact-details-page-links a{
+  text-decoration: none;
+  color: white;
+  background-color: #0dcd94;
+  padding: 10px;
+  border-radius: 2px;
 }
