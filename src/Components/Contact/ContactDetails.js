@@ -1,8 +1,9 @@
 import React from "react";
 import contactProfile from "../Images/Profile/contact-profile.jpg";
 import { FcCellPhone } from "react-icons/fc";
+import { CgProfile } from "react-icons/cg";
+import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-import { color } from "@mui/system";
 
 const ContactDetails = () => {
   return (
@@ -76,26 +77,49 @@ const ContactDetails = () => {
       </div>
 
       <div className="m-1 mt-4 contact-details-page-links">
-        <a style={{backgroundColor: "#00B25B"}} className="" href="{#}">
+        <a style={{ backgroundColor: "#00B25B" }} className="" href="{#}">
           Quick Synopsis
         </a>
-        <a style={{backgroundColor: "#348BED"}} className="ms-3" href="{#}">
+        <a style={{ backgroundColor: "#348BED" }} className="ms-3" href="{#}">
           Processor Check List
         </a>
-        <a style={{backgroundColor: "#772AB1"}} className="ms-3" href="{#}">
+        <a style={{ backgroundColor: "#772AB1" }} className="ms-3" href="{#}">
           Closing Audit
         </a>
-        <a style={{backgroundColor: "#00A7B5"}} className="ms-3" href="{#}">
+        <a style={{ backgroundColor: "#00A7B5" }} className="ms-3" href="{#}">
           Closing Sheet
         </a>
-        <a style={{backgroundColor: "#76C65A"}} className="ms-3" href="{#}">
+        <a style={{ backgroundColor: "#76C65A" }} className="ms-3" href="{#}">
           Closing Request
         </a>
-        <a style={{backgroundColor: "#009789"}} className="ms-3" href="{#}">
+        <a style={{ backgroundColor: "#009789" }} className="ms-3" href="{#}">
           QC Check list
         </a>
-        <a style={{backgroundColor: "#FF9830"}} className="ms-3" href="{#}">
+        <a style={{ backgroundColor: "#FF9830" }} className="ms-3" href="{#}">
           Note
+        </a>
+      </div>
+      <div className="m-1 mt-4 contact-details-page-links2">
+        <a className="page-links2" href="{}">
+          <CgProfile className="mb-1"/> Profile
+        </a>
+        <a className="page-links2" href="{}">
+          <FiCheckSquare className="mb-1"/> Appointment
+        </a>
+        <a className="page-links2" href="{}">
+          <FiFilePlus className="mb-1"/> Papers
+        </a>
+        <a className="page-links2" href="{}">
+          <FiFilePlus className="mb-1"/> Email
+        </a>
+        <a className="page-links2" href="{}">
+          <FiFilePlus className="mb-1"/> Text
+        </a>
+        <a className="page-links2" href="{}">
+          <FiFilePlus className="mb-1"/> Millstone
+        </a>
+        <a className="" href="{}">
+          <FiFilePlus className="mb-1"/> Lender
         </a>
       </div>
     </div>

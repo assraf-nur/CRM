@@ -855,10 +855,31 @@ div {
 .timer-section p{
   margin-top: -5px;
 }
+.contact-details-page-links{
+  display: flex;
+  justify-content: center;
+}
 .contact-details-page-links a{
   text-decoration: none;
   color: white;
   background-color: #0dcd94;
   padding: 10px;
   border-radius: 2px;
+}
+.contact-details-page-links2{
+  background-color: #F0EDFF;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.contact-details-page-links2 a{
+  text-decoration: none;
+  color: #495057;
+  height: 100%;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+.page-links2{
+  border-right: 1px solid darkblue;
 }
