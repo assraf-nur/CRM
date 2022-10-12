@@ -101,26 +101,30 @@ const ContactDetails = () => {
       </div>
       <div className="m-1 mt-4 contact-details-page-links2">
         <a className="page-links2" href="{}">
-          <CgProfile className="mb-1"/> Profile
+          <CgProfile className="mb-1" /> Profile
         </a>
         <a className="page-links2" href="{}">
-          <FiCheckSquare className="mb-1"/> Appointment
+          <FiCheckSquare className="mb-1" /> Appointment
         </a>
         <a className="page-links2" href="{}">
-          <FiFilePlus className="mb-1"/> Papers
+          <FiFilePlus className="mb-1" /> Papers
         </a>
         <a className="page-links2" href="{}">
-          <FiFilePlus className="mb-1"/> Email
+          <FiFilePlus className="mb-1" /> Email
         </a>
         <a className="page-links2" href="{}">
-          <FiFilePlus className="mb-1"/> Text
+          <FiFilePlus className="mb-1" /> Text
         </a>
         <a className="page-links2" href="{}">
-          <FiFilePlus className="mb-1"/> Millstone
+          <FiFilePlus className="mb-1" /> Millstone
         </a>
         <a className="" href="{}">
-          <FiFilePlus className="mb-1"/> Lender
+          <FiFilePlus className="mb-1" /> Lender
         </a>
+      </div>
+      <div className="m-1 mt-4 row gap-3">
+        <div className="col-xl bg-white p-3 border">Nur</div>
+        <div className="col-xl bg-white p-3 border">Tesla</div>
       </div>
     </div>
   );

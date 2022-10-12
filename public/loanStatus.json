@@ -1,0 +1,242 @@
+[
+    {
+        "step": "Hot Leads",
+        "date": "2 Feb 2022",
+        "status": "Done"
+    },
+    {
+        "step": "Prospect",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Pending Application",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Signed Application",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Processing",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Loan Submitted For Approval",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Signed Lender Doc",
+        "date": "2 Feb 2022",
+        "status": "Done"
+    },
+    {
+        "step": "Loan Approved",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Funded",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Declined Offer by Merchant",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Withdrawal",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Declined",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Hot Leads",
+        "date": "2 Feb 2022",
+        "status": "Done"
+    },
+    {
+        "step": "Prospect",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Pending Application",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Signed Application",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Processing",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Loan Submitted For Approval",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Signed Lender Doc",
+        "date": "2 Feb 2022",
+        "status": "Done"
+    },
+    {
+        "step": "Loan Approved",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Funded",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Declined Offer by Merchant",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Withdrawal",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Declined",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Hot Leads",
+        "date": "2 Feb 2022",
+        "status": "Done"
+    },
+    {
+        "step": "Prospect",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Pending Application",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Signed Application",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Processing",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Loan Submitted For Approval",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Signed Lender Doc",
+        "date": "2 Feb 2022",
+        "status": "Done"
+    },
+    {
+        "step": "Loan Approved",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Funded",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Declined Offer by Merchant",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Withdrawal",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Declined",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Hot Leads",
+        "date": "2 Feb 2022",
+        "status": "Done"
+    },
+    {
+        "step": "Prospect",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Pending Application",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Signed Application",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Processing",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Loan Submitted For Approval",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Signed Lender Doc",
+        "date": "2 Feb 2022",
+        "status": "Done"
+    },
+    {
+        "step": "Loan Approved",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Funded",
+        "date": "2 Feb 2022",
+        "status": "Process"
+    },
+    {
+        "step": "Declined Offer by Merchant",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Withdrawal",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    },
+    {
+        "step": "Declined",
+        "date": "2 Feb 2022",
+        "status": "Left"
+    }
+]
