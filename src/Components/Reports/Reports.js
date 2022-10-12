@@ -7,7 +7,6 @@ const Reports = () => {
     <div className="p-3">
       <div className="p-3 bg-white">
         <h5>Add Report</h5>
-
         <form>
           <div className="row gap-2 mt-3">
             <div className="col-xl">

@@ -52,32 +52,40 @@ const ReportList = () => {
   const options = {
     paginationSize: 5,
     pageStartIndex: 1,
-    firstPageText: 'First',
-    prePageText: 'Back',
-    nextPageText: 'Next',
-    lastPageText: 'Last',
-    nextPageTitle: 'First page',
-    prePageTitle: 'Pre page',
-    firstPageTitle: 'Next page',
-    lastPageTitle: 'Last page',
+    firstPageText: "First",
+    prePageText: "Back",
+    nextPageText: "Next",
+    lastPageText: "Last",
+    nextPageTitle: "First page",
+    prePageTitle: "Pre page",
+    firstPageTitle: "Next page",
+    lastPageTitle: "Last page",
     showTotal: true,
-    
+
     disablePageTitle: true,
-    sizePerPageList: [{
-      text: '15', value: 15
-    }, {
-      text: '25', value: 25
-    }, {
-        text: '35', value: 35
+    sizePerPageList: [
+      {
+        text: "15",
+        value: 15,
       },
-    {
-      text: 'All', value: datas.length
-    }] 
+      {
+        text: "25",
+        value: 25,
+      },
+      {
+        text: "35",
+        value: 35,
+      },
+      {
+        text: "All",
+        value: datas.length,
+      },
+    ],
   };
 
   return (
     <div className="p-3">
-      <div className="p-3 bg-white"> 
+      <div className="p-3 bg-white">
         <h5>Reports List</h5>
         <BootstrapTable
           classes="bg-white"
