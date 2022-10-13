@@ -906,35 +906,54 @@ div {
 .progress-bar {
   --bs-progress-bar-bg: #5156be;
 }
-.loan-status-edit-button{
+.loan-status-edit-button {
   border: none;
-  background-color: #5156BE;
+  background-color: #5156be;
   color: white;
   padding: 5px 15px 5px 15px;
   border-radius: 2px;
   font-size: 14px;
 }
-.status-sign-active{
+.status-sign-active {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: #0dcd94;
   margin-top: 5px;
 }
-.status-sign-pending{
+.status-sign-pending {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: orange;
   margin-top: 5px;
 }
-.status-sign-progress{
+.status-sign-progress {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: #5e78f3;
   margin-top: 5px;
 }
-.call-history-radio-button{
+.call-history-radio-button {
   margin-top: 20px;
+}
+.note-upper-part {
+  display: flex;
+  justify-content: space-between;
+}
+.note-upper-part img {
+  width: 40px;
+  height: 40px;
+}
+.note-lower-part h6 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #343a40;
+  margin-top: 20px;
+}
+.note-lower-part p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #626161;
 }

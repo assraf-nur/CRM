@@ -3,6 +3,7 @@ import contactProfile from "../Images/Profile/contact-profile.jpg";
 import { FcCellPhone } from "react-icons/fc";
 import { CgProfile } from "react-icons/cg";
 import { HiDotsVertical } from "react-icons/hi";
+import { GoPrimitiveDot } from "react-icons/go";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import { ProgressBar } from "react-bootstrap";
@@ -551,14 +552,105 @@ const ContactDetails = () => {
           </div>
         </div>
         <div className="row gap-3">
-          <div className="col-xl bg-white p-3">
+          <div className="col-xl bg-white p-3 overflow-auto h-75">
             <div className="loan-status-box-title border-bottom">
               <h6 className="pb-1">Notes</h6>
             </div>
             <div>
-              <div className="border p-3 rounded mt-4">Hola</div>
-              <div className="border p-3 rounded mt-4">Hola</div>
-              <div className="border p-3 rounded mt-4">Hola</div>
+              <div className="border p-4 rounded mt-4">
+                <div className="note-upper-part">
+                  <div className="d-flex gap-3 step-content">
+                    <div>
+                      <img
+                        className=""
+                        style={{ width: "40px", height: "40px" }}
+                        src={profilePic}
+                        alt=""
+                      />
+                    </div>
+                    <div className="step-sub-content">
+                      <p className="fw-semibold">Mrinmoy Krishna</p>
+                      <small>
+                        08/08/2022 <GoPrimitiveDot /> 8.05pm
+                      </small>
+                    </div>
+                  </div>
+                  <HiDotsVertical className="fs-5" />
+                </div>
+                <div className="note-lower-part">
+                  <h6>Working form 🏠 home</h6>
+                  <p>
+                    By combining state of the art artificial intelligence &
+                    ClipDrop provides a unique, continuous workflow that....
+                    ClipDrop provides a unique, continuous workflow that....
+                    ClipDrop provides a unique, continuous workflow that....
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="border p-4 rounded mt-4">
+                <div className="note-upper-part">
+                  <div className="d-flex gap-3 step-content">
+                    <div>
+                      <img
+                        className=""
+                        style={{ width: "40px", height: "40px" }}
+                        src={profilePic2}
+                        alt=""
+                      />
+                    </div>
+                    <div className="step-sub-content">
+                      <p className="fw-semibold">Yen Ku Kr</p>
+                      <small>
+                        08/08/2022 <GoPrimitiveDot /> 8.05pm
+                      </small>
+                    </div>
+                  </div>
+                  <HiDotsVertical className="fs-5" />
+                </div>
+                <div className="note-lower-part">
+                  <h6>Working form office 🧑‍💼 alltime</h6>
+                  <p>
+                    By combining state of the art artificial intelligence &
+                    ClipDrop provides a unique, continuous workflow that....
+                    ClipDrop provides a unique, continuous workflow that....
+                    ClipDrop provides a unique, continuous workflow that....
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="border p-4 rounded mt-4">
+                <div className="note-upper-part">
+                  <div className="d-flex gap-3 step-content">
+                    <div>
+                      <img
+                        className=""
+                        style={{ width: "40px", height: "40px" }}
+                        src={profilePic}
+                        alt=""
+                      />
+                    </div>
+                    <div className="step-sub-content">
+                      <p className="fw-semibold">Mrinmoy Krishna</p>
+                      <small>
+                        08/08/2022 <GoPrimitiveDot /> 8.05pm
+                      </small>
+                    </div>
+                  </div>
+                  <HiDotsVertical className="fs-5" />
+                </div>
+                <div className="note-lower-part">
+                  <h6>Working form 🏠 home</h6>
+                  <p>
+                    By combining state of the art artificial intelligence &
+                    ClipDrop provides a unique, continuous workflow that....
+                    ClipDrop provides a unique, continuous workflow that....
+                    ClipDrop provides a unique, continuous workflow that....
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-xl bg-white p-3">
