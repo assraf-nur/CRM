@@ -423,24 +423,6 @@ const ContactDetails = () => {
                         </p>
                       </div>
                     </div>
-
-                    <div class="step">
-                      <div class="v-stepper">
-                        <div class="circle"></div>
-                        <div class="line"></div>
-                      </div>
-
-                      <div class="content w-100">
-                        <div className="row">
-                          <p className="col-sm-9 step-title">
-                            Running out of juice
-                          </p>
-                          <p className="col-sm-3 text-end">
-                            <small>05 min ago</small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -461,7 +443,7 @@ const ContactDetails = () => {
                       Appointment
                     </label>
                   </div>
-                  <div class="form-check mt-4">
+                  <div class="form-check call-history-radio-button">
                     <input
                       class="form-check-input"
                       type="radio"
@@ -472,7 +454,7 @@ const ContactDetails = () => {
                       Left Message
                     </label>
                   </div>
-                  <div class="form-check mt-4">
+                  <div class="form-check call-history-radio-button">
                     <input
                       class="form-check-input"
                       type="radio"
@@ -483,7 +465,7 @@ const ContactDetails = () => {
                       Busy Telephone Line
                     </label>
                   </div>
-                  <div class="form-check mt-4">
+                  <div class="form-check call-history-radio-button">
                     <input
                       class="form-check-input"
                       type="radio"
@@ -494,7 +476,7 @@ const ContactDetails = () => {
                       Reminder
                     </label>
                   </div>
-                  <div class="form-check mt-4">
+                  <div class="form-check call-history-radio-button">
                     <input
                       class="form-check-input"
                       type="radio"
@@ -505,7 +487,7 @@ const ContactDetails = () => {
                       Will Call Back
                     </label>
                   </div>
-                  <div class="form-check mt-4">
+                  <div class="form-check call-history-radio-button">
                     <input
                       class="form-check-input"
                       type="radio"
@@ -516,7 +498,7 @@ const ContactDetails = () => {
                       Not Interested
                     </label>
                   </div>
-                  <div class="form-check mt-4">
+                  <div class="form-check call-history-radio-button">
                     <input
                       class="form-check-input"
                       type="radio"
@@ -527,7 +509,7 @@ const ContactDetails = () => {
                       No Answer/Voicemail
                     </label>
                   </div>
-                  <div class="form-check mt-4">
+                  <div class="form-check call-history-radio-button">
                     <input
                       class="form-check-input"
                       type="radio"
@@ -538,7 +520,7 @@ const ContactDetails = () => {
                       Do Not Call
                     </label>
                   </div>
-                  <div class="form-check mt-4">
+                  <div class="form-check call-history-radio-button">
                     <input
                       class="form-check-input"
                       type="radio"
@@ -549,7 +531,7 @@ const ContactDetails = () => {
                       Wrong Number
                     </label>
                   </div>
-                  <div class="form-check mt-4">
+                  <div class="form-check call-history-radio-button">
                     <input
                       class="form-check-input"
                       type="radio"
@@ -567,6 +549,10 @@ const ContactDetails = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="row gap-3">
+          <div className="col-xl bg-white p-3">hello</div>
+          <div className="col-xl bg-white p-3">hello</div>
         </div>
       </div>
     </div>
