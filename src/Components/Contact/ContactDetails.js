@@ -2,10 +2,13 @@ import React from "react";
 import contactProfile from "../Images/Profile/contact-profile.jpg";
 import { FcCellPhone } from "react-icons/fc";
 import { CgProfile } from "react-icons/cg";
+import { HiDotsVertical } from "react-icons/hi";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import { ProgressBar } from "react-bootstrap";
 
 const ContactDetails = () => {
+  const now = 67;
   return (
     <div className="p-3 contact-details-page">
       <div className="row m-1 bg-white">
@@ -123,7 +126,17 @@ const ContactDetails = () => {
         </a>
       </div>
       <div className="m-1 mt-4 row gap-3">
-        <div className="col-xl bg-white p-3 border">Nur</div>
+        <div className="col-xl-5 bg-white p-3 border">
+          <div className="loan-status-box">
+            <div className="loan-status-box-title">
+              <h6 className="ms-2">Loan Status</h6>
+              <HiDotsVertical className="fs-5 mt-1" />
+            </div>
+            <div className="loan-status-progress">
+              <ProgressBar colors="#5156BE" style={{height: "8px",backgroundColor: "#FFFFFF"}} now={now} label={`${now}%`} visuallyHidden/>
+            </div>
+          </div>
+        </div>
         <div className="col-xl bg-white p-3 border">Tesla</div>
       </div>
     </div>

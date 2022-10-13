@@ -840,8 +840,8 @@ div {
   font-weight: 400;
   margin-left: 10px;
 }
-.timer-section{
-  background-color: #F0EDFF;
+.timer-section {
+  background-color: #f0edff;
   text-align: center;
 }
 .contact-details-progress {
@@ -852,34 +852,53 @@ div {
   text-align: center;
   margin-left: 100px;
 }
-.timer-section p{
+.timer-section p {
   margin-top: -5px;
 }
-.contact-details-page-links{
+.contact-details-page-links {
   display: flex;
   justify-content: center;
 }
-.contact-details-page-links a{
+.contact-details-page-links a {
   text-decoration: none;
   color: white;
   background-color: #0dcd94;
   padding: 10px;
   border-radius: 2px;
 }
-.contact-details-page-links2{
-  background-color: #F0EDFF;
+.contact-details-page-links2 {
+  background-color: #f0edff;
   text-decoration: none;
   padding: 10px;
   display: flex;
   justify-content: center;
 }
-.contact-details-page-links2 a{
+.contact-details-page-links2 a {
   text-decoration: none;
   color: #495057;
   height: 100%;
   margin-left: 10px;
   padding-right: 10px;
 }
-.page-links2{
+.page-links2 {
   border-right: 1px solid darkblue;
+}
+.loan-status-box-title {
+  display: flex;
+  justify-content: space-between;
+}
+.loan-status-box-title h6 {
+  font-weight: 400;
+  font-size: 22px;
+  color: #213446;
+}
+.loan-status-progress {
+  background-color: #f0f0f8;
+  padding: 25px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+.progress-bar {
+  --bs-progress-bar-bg: #5156be;
 }
