@@ -6,6 +6,9 @@ import { HiDotsVertical } from "react-icons/hi";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import { ProgressBar } from "react-bootstrap";
+import profilePic from "../Images/Profile/profile-pic.png";
+import profilePic2 from "../Images/Profile/profile-pic2.png";
+import "../CSS/Style.css";
 
 const ContactDetails = () => {
   const [datas, setDatas] = useState([]);
@@ -89,7 +92,7 @@ const ContactDetails = () => {
         </div>
       </div>
 
-      <div className="m-1 mt-4 contact-details-page-links">
+      <div className="m-1 mt-3 contact-details-page-links">
         <a style={{ backgroundColor: "#00B25B" }} className="" href="{#}">
           Quick Synopsis
         </a>
@@ -112,7 +115,7 @@ const ContactDetails = () => {
           Note
         </a>
       </div>
-      <div className="m-1 mt-4 contact-details-page-links2">
+      <div className="m-1 mt-2 contact-details-page-links2">
         <a className="page-links2" href="{}">
           <CgProfile className="mb-1" /> Profile
         </a>
@@ -135,7 +138,7 @@ const ContactDetails = () => {
           <FiFilePlus className="mb-1" /> Lender
         </a>
       </div>
-      <div className="m-1 row gap-3">
+      <div className="mx-1 mt-3 row gap-3">
         <div className="col-xl-5 bg-white p-3 loan-status">
           <div className="loan-status-box">
             <div className="loan-status-box-title">
@@ -204,7 +207,7 @@ const ContactDetails = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl border">
+        <div className="col-xl">
           <div className="row gap-4">
             <div className="col-md-5 bg-white p-3">
               <div className="loan-status-box-title">
@@ -212,19 +215,237 @@ const ContactDetails = () => {
                 <HiDotsVertical className="fs-5 mt-1" />
               </div>
               <div>
-                <table>
+                <table className="table">
                   <thead></thead>
                   <tbody>
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                      <td>debra.holt@example.com</td>
+                      <td>18/05/2022</td>
+                      <td>
+                        <HiDotsVertical
+                          style={{ marginRight: "-12px" }}
+                          className="fs-5 mb-1"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>bill.sanders@example.com</td>
+                      <td>18/05/2022</td>
+                      <td>
+                        <HiDotsVertical
+                          style={{ marginRight: "-12px" }}
+                          className="fs-5 mb-1"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>tanya.hill@example.com</td>
+                      <td>18/05/2022</td>
+                      <td>
+                        <HiDotsVertical
+                          style={{ marginRight: "-12px" }}
+                          className="fs-5 mb-1"
+                        />
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-            <div className="col-md bg-white p-3">hello</div>
+            <div className="col-md bg-white p-3">
+              <div className="loan-status-box-title">
+                <h6 className="ms-2">Call</h6>
+                <h6 style={{ marginLeft: "-28px" }} className="me-5">
+                  Time
+                </h6>
+                <HiDotsVertical className="fs-5 mt-1" />
+              </div>
+              <div>
+                <table className="table">
+                  <thead></thead>
+                  <tbody>
+                    <tr>
+                      <td>(319) 555-0115</td>
+                      <td>10.12 PM</td>
+                      <td>18/05/2022</td>
+                      <td>
+                        <HiDotsVertical
+                          style={{ marginRight: "-18px" }}
+                          className="fs-5 mb-1"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>(319) 555-0115</td>
+                      <td>10.12 PM</td>
+                      <td>18/05/2022</td>
+                      <td>
+                        <HiDotsVertical
+                          style={{ marginRight: "-18px" }}
+                          className="fs-5 mb-1"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>(319) 555-0115</td>
+                      <td>10.12 PM</td>
+                      <td>18/05/2022</td>
+                      <td>
+                        <HiDotsVertical
+                          style={{ marginRight: "-18px" }}
+                          className="fs-5 mb-1"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div className="row gap-4">
+              <div className="col-md-7 p-3 bg-white">
+                <div>
+                  <div className="loan-status-box-title">
+                    <h6>Activity Timeline</h6>
+                    <HiDotsVertical className="fs-5" />
+                  </div>
+                  <div>
+                    <div class="step completed">
+                      <div class="v-stepper">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                      </div>
+
+                      <div class="content w-100">
+                        <div className="row">
+                          <p className="col-sm-9 step-title">
+                            Mrinmoy Krishna join in Jibble
+                          </p>
+                          <p className="col-sm-3 text-end">
+                            <small>05 min ago</small>
+                          </p>
+                        </div>
+                        <div className="d-flex gap-3 step-content">
+                          <div>
+                            <img
+                              style={{ width: "40px", height: "40px" }}
+                              src={profilePic}
+                              alt=""
+                            />
+                          </div>
+                          <div className="step-sub-content">
+                            <p>Mrinmoy Krishna</p>
+                            <small>UI UX Designer</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="step pending">
+                      <div class="v-stepper">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                      </div>
+
+                      <div class="content w-100">
+                        <div className="row">
+                          <p className="col-sm-9 step-title">Client Meeting</p>
+                          <p className="col-sm-3 text-end">
+                            <small>45 min ago</small>
+                          </p>
+                        </div>
+                        <p className="sub-paragraph">
+                          Project meeting with Krishna @10:15am
+                        </p>
+                        <div className="d-flex gap-3 step-content">
+                          <div>
+                            <img
+                              style={{ width: "40px", height: "40px" }}
+                              src={profilePic2}
+                              alt=""
+                            />
+                          </div>
+                          <div className="step-sub-content">
+                            <p>Krishna (Client)</p>
+                            <small>Manager of XYZ</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="step completed">
+                      <div class="v-stepper">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                      </div>
+
+                      <div class="content w-100">
+                        <div className="row">
+                          <p className="col-sm-9 step-title">
+                            Mrinmoy Krishna join in Jibble
+                          </p>
+                          <p className="col-sm-3 text-end">
+                            <small>05 min ago</small>
+                          </p>
+                        </div>
+                        <div className="d-flex gap-3 step-content">
+                          <div>
+                            <img
+                              style={{ width: "40px", height: "40px" }}
+                              src={profilePic}
+                              alt=""
+                            />
+                          </div>
+                          <div className="step-sub-content">
+                            <p>Mrinmoy Krishna</p>
+                            <small>UI UX Designer</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="step">
+                      <div class="v-stepper">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                      </div>
+
+                      <div class="content w-100">
+                        <div className="row">
+                          <p className="col-sm-9 step-title">
+                            Create a new project for client
+                          </p>
+                          <p className="col-sm-3 text-end">
+                            <small>1 day ago</small>
+                          </p>
+                        </div>
+                        <p className="sub-paragraph">
+                          5 team members in a project
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="step">
+                      <div class="v-stepper">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                      </div>
+
+                      <div class="content w-100">
+                        <div className="row">
+                          <p className="col-sm-9 step-title">
+                            Running out of juice
+                          </p>
+                          <p className="col-sm-3 text-end">
+                            <small>05 min ago</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md p-3 bg-white">hello</div>
+            </div>
           </div>
         </div>
       </div>
