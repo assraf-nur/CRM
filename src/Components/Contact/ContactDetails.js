@@ -165,26 +165,37 @@ const ContactDetails = () => {
                   {datas.map((data) => (
                     <tr>
                       <td className="py-2 d-flex">
-                        {
-                          data.status === "Done" ? <div className="me-2 status-sign-active"></div> : 
+                        {data.status === "Done" ? (
+                          <div className="me-3 status-sign-active"></div>
+                        ) : (
                           <></>
-                        }
-                        {
-                          data.status === "Process" ? <div className="me-2 status-sign-progress"></div> : 
+                        )}
+                        {data.status === "Process" ? (
+                          <div className="me-3 status-sign-progress"></div>
+                        ) : (
                           <></>
-                        }
-                        {
-                          data.status === "Left" ? <div className="me-2 status-sign-pending"></div> : 
+                        )}
+                        {data.status === "Left" ? (
+                          <div className="me-3 status-sign-pending"></div>
+                        ) : (
                           <></>
-                        }
+                        )}
                         {data.step}
                       </td>
                       <td className="py-2">{data.date}</td>
                       <td className="py-2">{data.status}</td>
                       <td className="py-2">
-                        <button className="loan-status-edit-button" type="">
+                        {/* <button className="loan-status-edit-button" type="">
                           Edit
-                        </button>
+                        </button> */}
+                        <div className="form-check mt-1 ms-3">
+                          <input
+                            className="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault1"
+                          />
+                        </div>
                       </td>
                     </tr>
                   ))}
@@ -193,7 +204,29 @@ const ContactDetails = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl bg-white p-3">Tesla</div>
+        <div className="col-xl border">
+          <div className="row gap-4">
+            <div className="col-md-5 bg-white p-3">
+              <div className="loan-status-box-title">
+                <h6 className="ms-2">Email</h6>
+                <HiDotsVertical className="fs-5 mt-1" />
+              </div>
+              <div>
+                <table>
+                  <thead></thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div className="col-md bg-white p-3">hello</div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -883,10 +883,10 @@ div {
 .page-links2 {
   border-right: 1px solid darkblue;
 }
-.loan-status{
+/* .loan-status{
   height: 450px;
   overflow: auto;
-}
+} */
 .loan-status-box-title {
   display: flex;
   justify-content: space-between;
