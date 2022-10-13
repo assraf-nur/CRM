@@ -551,8 +551,21 @@ const ContactDetails = () => {
           </div>
         </div>
         <div className="row gap-3">
-          <div className="col-xl bg-white p-3">hello</div>
-          <div className="col-xl bg-white p-3">hello</div>
+          <div className="col-xl bg-white p-3">
+            <div className="loan-status-box-title border-bottom">
+              <h6 className="pb-1">Notes</h6>
+            </div>
+            <div>
+              <div className="border p-3 rounded mt-4">Hola</div>
+              <div className="border p-3 rounded mt-4">Hola</div>
+              <div className="border p-3 rounded mt-4">Hola</div>
+            </div>
+          </div>
+          <div className="col-xl bg-white p-3">
+            <div className="loan-status-box-title border-bottom">
+              <h6 className="pb-1">Lender list</h6>
+            </div>
+          </div>
         </div>
       </div>
     </div>
