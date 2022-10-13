@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import contactProfile from "../Images/Profile/contact-profile.jpg";
 import { FcCellPhone } from "react-icons/fc";
 import { CgProfile } from "react-icons/cg";
@@ -8,6 +8,16 @@ import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import { ProgressBar } from "react-bootstrap";
 
 const ContactDetails = () => {
+  const [datas, setDatas] = useState([]);
+
+  useEffect(() => {
+    fetch("loanStatus.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setDatas(data);
+      });
+  }, []);
+
   const now = 67;
   return (
     <div className="p-3 contact-details-page">
@@ -125,19 +135,65 @@ const ContactDetails = () => {
           <FiFilePlus className="mb-1" /> Lender
         </a>
       </div>
-      <div className="m-1 mt-4 row gap-3">
-        <div className="col-xl-5 bg-white p-3 border">
+      <div className="m-1 row gap-3">
+        <div className="col-xl-5 bg-white p-3 loan-status">
           <div className="loan-status-box">
             <div className="loan-status-box-title">
               <h6 className="ms-2">Loan Status</h6>
               <HiDotsVertical className="fs-5 mt-1" />
             </div>
             <div className="loan-status-progress">
-              <ProgressBar colors="#5156BE" style={{height: "8px",backgroundColor: "#FFFFFF"}} now={now} label={`${now}%`} visuallyHidden/>
+              <ProgressBar
+                colors="#5156BE"
+                style={{ height: "8px", backgroundColor: "#FFFFFF" }}
+                now={now}
+                label={`${now}%`}
+                visuallyHidden
+              />
+            </div>
+            <div className="mt-3 ms-2">
+              <table className="loan-status-table">
+                <thead>
+                  <tr>
+                    <th width="300px">Step</th>
+                    <th width="160px">Date</th>
+                    <th width="150px">Status</th>
+                    <th width="50px">Action</th>
+                  </tr>
+                </thead>
+                <tbody className="mt-3">
+                  {datas.map((data) => (
+                    <tr>
+                      <td className="py-2 d-flex">
+                        {
+                          data.status === "Done" ? <div className="me-2 status-sign-active"></div> : 
+                          <></>
+                        }
+                        {
+                          data.status === "Process" ? <div className="me-2 status-sign-progress"></div> : 
+                          <></>
+                        }
+                        {
+                          data.status === "Left" ? <div className="me-2 status-sign-pending"></div> : 
+                          <></>
+                        }
+                        {data.step}
+                      </td>
+                      <td className="py-2">{data.date}</td>
+                      <td className="py-2">{data.status}</td>
+                      <td className="py-2">
+                        <button className="loan-status-edit-button" type="">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
-        <div className="col-xl bg-white p-3 border">Tesla</div>
+        <div className="col-xl bg-white p-3">Tesla</div>
       </div>
     </div>
   );

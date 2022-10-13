@@ -883,6 +883,10 @@ div {
 .page-links2 {
   border-right: 1px solid darkblue;
 }
+.loan-status{
+  height: 450px;
+  overflow: auto;
+}
 .loan-status-box-title {
   display: flex;
   justify-content: space-between;
@@ -901,4 +905,33 @@ div {
 }
 .progress-bar {
   --bs-progress-bar-bg: #5156be;
+}
+.loan-status-edit-button{
+  border: none;
+  background-color: #5156BE;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  border-radius: 2px;
+  font-size: 14px;
+}
+.status-sign-active{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #0dcd94;
+  margin-top: 5px;
+}
+.status-sign-pending{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: orange;
+  margin-top: 5px;
+}
+.status-sign-progress{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #5e78f3;
+  margin-top: 5px;
 }

@@ -67,10 +67,6 @@ const ReportList = () => {
     },
   ];
 
-  const selectRow = {
-    mode: "checkbox",
-    clickToSelect: true,
-  };
 
   const options = {
     paginationSize: 5,
