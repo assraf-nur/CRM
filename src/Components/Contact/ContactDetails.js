@@ -444,7 +444,74 @@ const ContactDetails = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md p-3 bg-white">hello</div>
+              <div className="col-md p-3 bg-white">
+                <div className="loan-status-box-title">
+                  <h6>Call History</h6>
+                  <HiDotsVertical className="fs-5" />
+                </div>
+                <div className="mt-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultList" id="flexRadioDefaultList1"/>
+                    <label class="form-check-label" for="flexRadioDefaultList1">
+                      Appointment
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultList" id="flexRadioDefaultList2"/>
+                    <label class="form-check-label" for="flexRadioDefaultList2">
+                      Left Message
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultList" id="flexRadioDefaultList3"/>
+                    <label class="form-check-label" for="flexRadioDefaultList3">
+                      Busy Telephone Line
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultList" id="flexRadioDefaultList4"/>
+                    <label class="form-check-label" for="flexRadioDefaultList4">
+                      Reminder
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultList" id="flexRadioDefaultList5"/>
+                    <label class="form-check-label" for="flexRadioDefaultList5">
+                      Will Call Back
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultList" id="flexRadioDefaultList6"/>
+                    <label class="form-check-label" for="flexRadioDefaultList6">
+                      Not Interested
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultList" id="flexRadioDefaultList7"/>
+                    <label class="form-check-label" for="flexRadioDefaultList7">
+                      No Answer/Voicemail
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultList" id="flexRadioDefaultList8"/>
+                    <label class="form-check-label" for="flexRadioDefaultList8">
+                      Do Not Call
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultList" id="flexRadioDefaultList9"/>
+                    <label class="form-check-label" for="flexRadioDefaultList9">
+                      Wrong Number
+                    </label>
+                  </div>
+                  <div class="form-check mt-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefaultList" id="flexRadioDefaultList10"/>
+                    <label class="form-check-label" for="flexRadioDefaultList10">
+                      Discussed in details
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
