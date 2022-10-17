@@ -972,7 +972,13 @@ div {
   line-height: 21px;
   color: #213446;
 }
-.table-box thead{
-  background-color: #F2F3FD;
+.table-box thead {
+  background-color: #f2f3fd;
   padding-top: 10px;
+}
+.campaign-status-active {
+  color: #0dcd94;
+}
+.campaign-status-closed {
+  color: #ff5b5c;
 }
