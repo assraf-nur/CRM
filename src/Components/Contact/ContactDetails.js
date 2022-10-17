@@ -654,7 +654,7 @@ const ContactDetails = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl bg-white p-3">
+          <div className="col-xl bg-white p-3 h-75 overflow-auto">
             <div className="loan-status-box-title border-bottom">
               <h6 className="pb-1">Lender list</h6>
             </div>
@@ -714,6 +714,170 @@ const ContactDetails = () => {
                     <label
                       class="form-check-label"
                       for="flexRadioDefault1_Funded"
+                    >
+                      Funded
+                    </label>
+                  </div>
+                </div>
+                <div className="col-md p-3">
+                  <div className="mt-1">
+                    <p className="mb-4">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Submitted in 17 October 2022 at 11.28 PM
+                    </p>
+                    <p className="mb-4">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Pending in 17 October 2022 at 11.28 PM
+                    </p>
+                    <p className="mb-4">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Approved in 17 October 2022 at 11.28 PM
+                    </p>
+                    <p className="">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Funded in 17 October 2022 at 11.28 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h6 className="mt-4">Velocity Mortgage Capital Email:</h6>
+              <div className="row border-bottom border-top">
+                <div className="col-md p-3 border-end">
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio23"
+                      id="flexRadio_Submitted"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadio_Submitted"
+                    >
+                      Submitted
+                    </label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio23"
+                      id="flexRadio_Pending"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadio_Pending"
+                    >
+                      Pending
+                    </label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio23"
+                      id="flexRadio_Approved"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadio_Approved"
+                    >
+                      Approved
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio23"
+                      id="flexRadio_Funded"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadio_Funded"
+                    >
+                      Funded
+                    </label>
+                  </div>
+                </div>
+                <div className="col-md p-3">
+                  <div className="mt-1">
+                    <p className="mb-4">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Submitted in 17 October 2022 at 11.28 PM
+                    </p>
+                    <p className="mb-4">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Pending in 17 October 2022 at 11.28 PM
+                    </p>
+                    <p className="mb-4">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Approved in 17 October 2022 at 11.28 PM
+                    </p>
+                    <p className="">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Funded in 17 October 2022 at 11.28 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <h6 className="mt-4">Email : Submission Email :</h6>
+              <div className="row border-bottom border-top">
+                <div className="col-md p-3 border-end">
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio3"
+                      id="flexRadioDefault_Submitted"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadioDefault_Submitted"
+                    >
+                      Submitted
+                    </label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio3"
+                      id="flexRadioDefault_Pending"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadioDefault_Pending"
+                    >
+                      Pending
+                    </label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio3"
+                      id="flexRadioDefault_Approved"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadioDefault_Approved"
+                    >
+                      Approved
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio3"
+                      id="flexRadioDefault_Funded"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadioDefault_Funded"
                     >
                       Funded
                     </label>
