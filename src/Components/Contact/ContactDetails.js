@@ -3,6 +3,7 @@ import contactProfile from "../Images/Profile/contact-profile.jpg";
 import { FcCellPhone } from "react-icons/fc";
 import { CgProfile } from "react-icons/cg";
 import { HiDotsVertical } from "react-icons/hi";
+import { BsArrowRightSquareFill } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
@@ -610,7 +611,7 @@ const ContactDetails = () => {
                   <HiDotsVertical className="fs-5" />
                 </div>
                 <div className="note-lower-part">
-                  <h6>Working form office 🧑‍💼 alltime</h6>
+                  <h6>Working form office 🧑‍💼 all time</h6>
                   <p>
                     By combining state of the art artificial intelligence &
                     ClipDrop provides a unique, continuous workflow that....
@@ -656,6 +657,89 @@ const ContactDetails = () => {
           <div className="col-xl bg-white p-3">
             <div className="loan-status-box-title border-bottom">
               <h6 className="pb-1">Lender list</h6>
+            </div>
+            <div className="mt-3 lender-list-box">
+              <h6>Email : Submission Email :</h6>
+              <div className="row border-bottom border-top">
+                <div className="col-md p-3 border-end">
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio"
+                      id="flexRadioDefault1_Submitted"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadioDefault1_Submitted"
+                    >
+                      Submitted
+                    </label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio"
+                      id="flexRadioDefault1_Pending"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadioDefault1_Pending"
+                    >
+                      Pending
+                    </label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio"
+                      id="flexRadioDefault1_Approved"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadioDefault1_Approved"
+                    >
+                      Approved
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadio"
+                      id="flexRadioDefault1_Funded"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexRadioDefault1_Funded"
+                    >
+                      Funded
+                    </label>
+                  </div>
+                </div>
+                <div className="col-md p-3">
+                  <div className="mt-1">
+                    <p className="mb-4">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Submitted in 17 October 2022 at 11.28 PM
+                    </p>
+                    <p className="mb-4">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Pending in 17 October 2022 at 11.28 PM
+                    </p>
+                    <p className="mb-4">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Approved in 17 October 2022 at 11.28 PM
+                    </p>
+                    <p className="">
+                      <BsArrowRightSquareFill className="me-1 mb-1 fs-5 text-success" />{" "}
+                      Funded in 17 October 2022 at 11.28 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
