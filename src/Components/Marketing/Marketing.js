@@ -203,22 +203,22 @@ const Marketing = () => {
             <div className="d-flex">
               <GoPrimitiveDot style={{color: "#5156BE"}} className="fs-4 mt-3 me-1"/>
               <div>
-                <p className="mb-0">9000</p>
-                <small className="mt-0">Total SMS</small>
+                <p className="">9000</p>
+                <small className="">Total SMS</small>
               </div>
             </div>
             <div className="d-flex">
               <GoPrimitiveDot style={{color: "#00C49F"}} className="fs-4 mt-3 me-1"/>
               <div>
-                <p className="mb-0">3050</p>
-                <small className="mt-0">Success SMS</small>
+                <p className="">3050</p>
+                <small className="">Success SMS</small>
               </div>
             </div>
             <div className="d-flex">
               <GoPrimitiveDot style={{color: "#FFBB28"}} className="fs-4 mt-3 me-1"/>
               <div>
-                <p className="mb-0">6300</p>
-                <small className="mt-0">Failed SMS</small>
+                <p className="">6300</p>
+                <small className="">Failed SMS</small>
               </div>
             </div>
           </div>

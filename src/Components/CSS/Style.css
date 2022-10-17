@@ -991,7 +991,8 @@ div {
   font-weight: 500;
   font-size: 20px;
   color: #495057;
-  margin-bottom: -20px;
+  margin-bottom: -7px;
+  margin-top: 7px;
 }
 .sms-pie-chart small {
   font-weight: 400;
