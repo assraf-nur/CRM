@@ -962,3 +962,17 @@ div {
   font-size: 16px;
   color: #252525;
 }
+.box-head {
+  display: flex;
+  justify-content: space-between;
+}
+.box-head h5 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 21px;
+  color: #213446;
+}
+.table-box thead{
+  background-color: #F2F3FD;
+  padding-top: 10px;
+}
