@@ -201,26 +201,145 @@ const Marketing = () => {
           </div>
           <div className="sms-pie-chart mx-1">
             <div className="d-flex">
-              <GoPrimitiveDot style={{color: "#5156BE"}} className="fs-4 mt-3 me-1"/>
+              <GoPrimitiveDot
+                style={{ color: "#5156BE" }}
+                className="fs-4 mt-3 me-1"
+              />
               <div>
                 <p className="">9000</p>
                 <small className="">Total SMS</small>
               </div>
             </div>
             <div className="d-flex">
-              <GoPrimitiveDot style={{color: "#00C49F"}} className="fs-4 mt-3 me-1"/>
+              <GoPrimitiveDot
+                style={{ color: "#00C49F" }}
+                className="fs-4 mt-3 me-1"
+              />
               <div>
                 <p className="">3050</p>
                 <small className="">Success SMS</small>
               </div>
             </div>
             <div className="d-flex">
-              <GoPrimitiveDot style={{color: "#FFBB28"}} className="fs-4 mt-3 me-1"/>
+              <GoPrimitiveDot
+                style={{ color: "#FFBB28" }}
+                className="fs-4 mt-3 me-1"
+              />
               <div>
                 <p className="">6300</p>
                 <small className="">Failed SMS</small>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="row gap-3 mx-1 mt-4">
+        <div className="col-md p-3 bg-white">
+          <div className="box-head">
+            <h5>Processing List</h5>
+          </div>
+          <div>
+            <table className="mt-3 ms-2 table-box">
+              <thead>
+                <tr>
+                  <th className="p-2" width={"5%"}>
+                    Number
+                  </th>
+                  <th className="p-2" width={"20%"}>
+                    Name
+                  </th>
+                  <th className="p-2" width={"10%"}>
+                    Status
+                  </th>
+                  <th className="p-2 text-center" width={"5%"}>
+                    Action
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="p-2 py-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input ms-0"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label ms-4" for="exampleCheck1">
+                      1
+                    </label>
+                  </td>
+                  <td className="p-2 py-3">
+                    How to improve a bad credit score quickly
+                  </td>
+
+                  <td className="p-2 py-3">
+                    <small className="campaign-status-closed">Closed</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="p-2 py-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input ms-0"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label ms-4" for="exampleCheck1">
+                      2
+                    </label>
+                  </td>
+                  <td className="p-2 py-3">
+                    How to improve a bad credit score quickly
+                  </td>
+
+                  <td className="p-2 py-3">
+                    <small className="campaign-status-closed">Closed</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="p-2 py-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input ms-0"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label ms-4" for="exampleCheck1">
+                      3
+                    </label>
+                  </td>
+                  <td className="p-2 py-3">
+                    How to improve a bad credit score quickly
+                  </td>
+
+                  <td className="p-2 py-3">
+                    <small className="campaign-status-closed">Closed</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="p-2 py-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input ms-0"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label ms-4" for="exampleCheck1">
+                      4
+                    </label>
+                  </td>
+                  <td className="p-2 py-3">
+                    How to improve a bad credit score quickly
+                  </td>
+
+                  <td className="p-2 py-3">
+                    <small className="campaign-status-closed">Closed</small>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="col-md p-3 bg-white">
+          <div className="box-head">
+            <h5>Delivered status</h5>
           </div>
         </div>
       </div>
