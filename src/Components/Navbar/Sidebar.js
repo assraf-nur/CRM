@@ -40,6 +40,7 @@ import ContactDetails from "../Contact/ContactDetails";
 import { Card, Collapse } from "react-bootstrap";
 import AddLender from "../Setting/AddLender";
 import { AiOutlineUserAdd } from 'react-icons/ai';
+import LenderList from "../Setting/LenderList";
 
 const drawerWidth = 240;
 
@@ -285,6 +286,7 @@ export default function MiniDrawer() {
           <Route path="reports-list" element={<ReportList></ReportList>} />
           <Route path="setting" element={<Setting></Setting>} />
           <Route path="addLender" element={<AddLender></AddLender>} />
+          <Route path="lenderList" element={<LenderList></LenderList>} />
         </Routes>
       </Box>
     </Box>

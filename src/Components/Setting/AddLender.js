@@ -7,11 +7,16 @@ import {
 } from "@mui/material";
 import React from "react";
 import { AiOutlineSave } from "react-icons/ai";
+import { FaRegListAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const AddLender = () => {
   return (
     <div className="p-3">
-      <h4 className="ms-1">Add Lenders</h4>
+      <div className="lenderPage-header">
+        <h4 className="ms-1">Add Lenders</h4>
+        <Link className="contact-list-button justify-end" to='/lenderList'> <FaRegListAlt className="fs-6 me-1 mb-1"/> Lender List</Link>
+      </div>
       <div className="row mx-1 bg-white">
         <div className="col-xl p-2">
           <Box

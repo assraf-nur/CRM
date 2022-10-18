@@ -1002,3 +1002,9 @@ div {
 #outlined-basic{
   padding-bottom: 12px;
 }
+.lenderPage-header{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 8px;
+  margin-bottom: 15px;
+}

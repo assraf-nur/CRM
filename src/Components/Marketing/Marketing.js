@@ -307,7 +307,7 @@ const Marketing = () => {
                   <td>
                     <button
                       style={{ backgroundColor: "#5156BE" }}
-                      className="add-new-button py-1 px-2 ms-4 mb-5"
+                      className="add-new-button py-1 px-2 ms-4"
                     >
                       <GiRapidshareArrow className="me-1 mb-1" />
                       Retry
