@@ -60,9 +60,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck112"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck112">
                       1
                     </label>
                   </td>
@@ -88,9 +88,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck123"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck123">
                       2
                     </label>
                   </td>
@@ -116,9 +116,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck134"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck134">
                       3
                     </label>
                   </td>
@@ -144,9 +144,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck145"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck145">
                       4
                     </label>
                   </td>
@@ -263,9 +263,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck199"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck199">
                       1
                     </label>
                   </td>
@@ -291,9 +291,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck188"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck188">
                       2
                     </label>
                   </td>
@@ -319,9 +319,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck177"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck177">
                       3
                     </label>
                   </td>
@@ -347,9 +347,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck166"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck166">
                       4
                     </label>
                   </td>
@@ -402,9 +402,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck144"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck144">
                       1
                     </label>
                   </td>
@@ -430,9 +430,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck133"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck133">
                       2
                     </label>
                   </td>
@@ -458,9 +458,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck122"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck122">
                       3
                     </label>
                   </td>
@@ -469,7 +469,7 @@ const Marketing = () => {
                   </td>
 
                   <td className="p-2 py-3">
-                    <small className="campaign-status-active">Success</small>
+                    <small className="campaign-status-closed">Failed</small>
                   </td>
                   <td>
                     <button
@@ -486,9 +486,9 @@ const Marketing = () => {
                     <input
                       type="checkbox"
                       class="form-check-input ms-3"
-                      id="exampleCheck1"
+                      id="exampleCheck111"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck111">
                       4
                     </label>
                   </td>
@@ -497,7 +497,7 @@ const Marketing = () => {
                   </td>
 
                   <td className="p-2 py-3">
-                    <small className="campaign-status-closed">Failed</small>
+                    <small className="campaign-status-active">Success</small>
                   </td>
                   <td>
                     <button
