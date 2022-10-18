@@ -245,7 +245,7 @@ export default function MiniDrawer() {
               <div>
                 <Collapse in={open}>
                   <div id="example-collapse-text">
-                    <Card className="mt-1 mx-1" body>
+                    <Card className="mt-1 mx-1">
                       <List>
                         <ListItem className="px-0 py-0">
                           <Link className="py-3 left-list-link" to="/addLender">
