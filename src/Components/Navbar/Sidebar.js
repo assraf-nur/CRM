@@ -25,18 +25,21 @@ import Users from "../Users/Users";
 import Department from "../Department/Department";
 import { FaUsersCog, FaCalendarAlt } from "react-icons/fa";
 import Calender from "../Calender/Calender";
-import TaskIcon from '@mui/icons-material/Task';
-import EventIcon from '@mui/icons-material/Event';
+import TaskIcon from "@mui/icons-material/Task";
+import EventIcon from "@mui/icons-material/Event";
 import Task from "../Task/Task";
 import Appointment from "../Appointment/Appointment";
-import CampaignIcon from '@mui/icons-material/Campaign';
+import CampaignIcon from "@mui/icons-material/Campaign";
 import Marketing from "../Marketing/Marketing";
-import AssignmentIcon from '@mui/icons-material/Assignment';
+import AssignmentIcon from "@mui/icons-material/Assignment";
 import Reports from "../Reports/Reports";
-import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import Setting from "../Setting/Setting";
 import ReportList from "../Reports/ReportList";
 import ContactDetails from "../Contact/ContactDetails";
+import { Card, Collapse } from "react-bootstrap";
+import AddLender from "../Setting/AddLender";
+import { AiOutlineUserAdd } from 'react-icons/ai';
 
 const drawerWidth = 240;
 
@@ -226,12 +229,36 @@ export default function MiniDrawer() {
             <Divider />
             <ListItem disablePadding>
               <Tooltip title="Setting" placement="top" arrow>
-                <Link className="py-3 left-list-link" to="/setting">
+                <Link
+                  onClick={() => setOpen(!open)}
+                  aria-controls="example-collapse-text"
+                  aria-expanded={open}
+                  className="py-3 left-list-link"
+                  to="/setting"
+                >
                   <SettingsApplicationsIcon className="icons me-4" />
                   Setting
                 </Link>
               </Tooltip>
             </ListItem>
+            <>
+              <div>
+                <Collapse in={open}>
+                  <div id="example-collapse-text">
+                    <Card className="mt-1 mx-1" body>
+                      <List>
+                        <ListItem className="px-0 py-0">
+                          <Link className="py-3 left-list-link" to="/addLender">
+                            <AiOutlineUserAdd className="icons me-3 mb-1 fs-5" />
+                            Add Lenders
+                          </Link>
+                        </ListItem>
+                      </List>
+                    </Card>
+                  </div>
+                </Collapse>
+              </div>
+            </>
           </List>
         </nav>
       </Drawer>
@@ -244,7 +271,10 @@ export default function MiniDrawer() {
           <Route path="/" element={<Home></Home>} />
           <Route path="home" element={<Home></Home>} />
           <Route path="contact" element={<Contact></Contact>} />
-          <Route path="contact-details" element={<ContactDetails></ContactDetails>} />
+          <Route
+            path="contact-details"
+            element={<ContactDetails></ContactDetails>}
+          />
           <Route path="users" element={<Users></Users>} />
           <Route path="department" element={<Department></Department>} />
           <Route path="calendar" element={<Calender></Calender>} />
@@ -254,6 +284,7 @@ export default function MiniDrawer() {
           <Route path="reports" element={<Reports></Reports>} />
           <Route path="reports-list" element={<ReportList></ReportList>} />
           <Route path="setting" element={<Setting></Setting>} />
+          <Route path="addLender" element={<AddLender></AddLender>} />
         </Routes>
       </Box>
     </Box>
