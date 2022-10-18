@@ -39,8 +39,13 @@ import ReportList from "../Reports/ReportList";
 import ContactDetails from "../Contact/ContactDetails";
 import { Card, Collapse } from "react-bootstrap";
 import AddLender from "../Setting/AddLender";
-import { AiOutlineUserAdd } from 'react-icons/ai';
+import { AiOutlineUserAdd } from "react-icons/ai";
 import LenderList from "../Setting/LenderList";
+import SmtpSetting from "../Setting/SmtpSetting";
+import SmsConfiguration from "../Setting/SmsConfiguration";
+import CompanySetting from "../Setting/CompanySetting";
+import { MdSettingsSuggest } from "react-icons/md";
+import { RiListSettingsLine, RiMailSettingsLine } from "react-icons/ri";
 
 const drawerWidth = 240;
 
@@ -254,6 +259,27 @@ export default function MiniDrawer() {
                             Add Lenders
                           </Link>
                         </ListItem>
+                        <Divider />
+                        <ListItem className="px-0 py-0">
+                          <Link className="py-3 left-list-link" to="/smtpSetting">
+                            <MdSettingsSuggest className="icons me-3 mb-1 fs-5" />
+                            SMTP Setting
+                          </Link>
+                        </ListItem>
+                        <Divider />
+                        <ListItem className="px-0 py-0">
+                          <Link className="py-3 left-list-link" to="/smsConfig">
+                            <RiMailSettingsLine className="icons me-3 mb-1 fs-5" />
+                            SMS Configuration
+                          </Link>
+                        </ListItem>
+                        <Divider />
+                        <ListItem className="px-0 py-0">
+                          <Link className="py-3 left-list-link" to="/companySetting">
+                            <RiListSettingsLine className="icons me-3 mb-1 fs-5" />
+                            Company Setting
+                          </Link>
+                        </ListItem>
                       </List>
                     </Card>
                   </div>
@@ -287,6 +313,16 @@ export default function MiniDrawer() {
           <Route path="setting" element={<Setting></Setting>} />
           <Route path="addLender" element={<AddLender></AddLender>} />
           <Route path="lenderList" element={<LenderList></LenderList>} />
+
+          <Route path="smtpSetting" element={<SmtpSetting></SmtpSetting>} />
+          <Route
+            path="smsConfig"
+            element={<SmsConfiguration></SmsConfiguration>}
+          />
+          <Route
+            path="companySetting"
+            element={<CompanySetting></CompanySetting>}
+          />
         </Routes>
       </Box>
     </Box>
