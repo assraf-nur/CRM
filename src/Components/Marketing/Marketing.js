@@ -5,6 +5,7 @@ import { HiPlus } from "react-icons/hi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { GoPrimitiveDot } from "react-icons/go";
 import { BiEditAlt } from "react-icons/bi";
+import { GiRapidshareArrow } from "react-icons/gi";
 
 const Marketing = () => {
   const data = [
@@ -58,10 +59,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-0"
+                      class="form-check-input ms-3"
                       id="exampleCheck1"
                     />
-                    <label class="form-check-label ms-4" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck1">
                       1
                     </label>
                   </td>
@@ -86,10 +87,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-0"
+                      class="form-check-input ms-3"
                       id="exampleCheck1"
                     />
-                    <label class="form-check-label ms-4" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck1">
                       2
                     </label>
                   </td>
@@ -114,10 +115,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-0"
+                      class="form-check-input ms-3"
                       id="exampleCheck1"
                     />
-                    <label class="form-check-label ms-4" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck1">
                       3
                     </label>
                   </td>
@@ -142,10 +143,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-0"
+                      class="form-check-input ms-3"
                       id="exampleCheck1"
                     />
-                    <label class="form-check-label ms-4" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck1">
                       4
                     </label>
                   </td>
@@ -239,7 +240,7 @@ const Marketing = () => {
             <h5>Processing List</h5>
           </div>
           <div>
-            <table className="mt-3 ms-2 table-box">
+            <table className="mt-3 table-box">
               <thead>
                 <tr>
                   <th className="p-2" width={"5%"}>
@@ -251,20 +252,20 @@ const Marketing = () => {
                   <th className="p-2" width={"10%"}>
                     Status
                   </th>
-                  <th className="p-2 text-center" width={"5%"}>
+                  <th className="p-2 text-center" width={"2%"}>
                     Action
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr className="border-bottom">
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-0"
+                      class="form-check-input ms-3"
                       id="exampleCheck1"
                     />
-                    <label class="form-check-label ms-4" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck1">
                       1
                     </label>
                   </td>
@@ -273,17 +274,26 @@ const Marketing = () => {
                   </td>
 
                   <td className="p-2 py-3">
-                    <small className="campaign-status-closed">Closed</small>
+                    <small className="campaign-status-active">Success</small>
+                  </td>
+                  <td>
+                    <button
+                      style={{ backgroundColor: "#5156BE" }}
+                      className="add-new-button py-1 px-2 ms-4"
+                    >
+                      <GiRapidshareArrow className="me-1 mb-1" />
+                      Retry
+                    </button>
                   </td>
                 </tr>
-                <tr>
+                <tr className="border-bottom">
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-0"
+                      class="form-check-input ms-3"
                       id="exampleCheck1"
                     />
-                    <label class="form-check-label ms-4" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck1">
                       2
                     </label>
                   </td>
@@ -292,17 +302,26 @@ const Marketing = () => {
                   </td>
 
                   <td className="p-2 py-3">
-                    <small className="campaign-status-closed">Closed</small>
+                    <small className="campaign-status-closed">Failed</small>
+                  </td>
+                  <td>
+                    <button
+                      style={{ backgroundColor: "#5156BE" }}
+                      className="add-new-button py-1 px-2 ms-4"
+                    >
+                      <GiRapidshareArrow className="me-1 mb-1" />
+                      Retry
+                    </button>
                   </td>
                 </tr>
-                <tr>
+                <tr className="border-bottom">
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-0"
+                      class="form-check-input ms-3"
                       id="exampleCheck1"
                     />
-                    <label class="form-check-label ms-4" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck1">
                       3
                     </label>
                   </td>
@@ -311,17 +330,26 @@ const Marketing = () => {
                   </td>
 
                   <td className="p-2 py-3">
-                    <small className="campaign-status-closed">Closed</small>
+                    <small className="campaign-status-active">Success</small>
+                  </td>
+                  <td>
+                    <button
+                      style={{ backgroundColor: "#5156BE" }}
+                      className="add-new-button py-1 px-2 ms-4"
+                    >
+                      <GiRapidshareArrow className="me-1 mb-1" />
+                      Retry
+                    </button>
                   </td>
                 </tr>
                 <tr>
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-0"
+                      class="form-check-input ms-3"
                       id="exampleCheck1"
                     />
-                    <label class="form-check-label ms-4" for="exampleCheck1">
+                    <label class="form-check-label ms-5" for="exampleCheck1">
                       4
                     </label>
                   </td>
@@ -330,7 +358,16 @@ const Marketing = () => {
                   </td>
 
                   <td className="p-2 py-3">
-                    <small className="campaign-status-closed">Closed</small>
+                    <small className="campaign-status-closed">Failed</small>
+                  </td>
+                  <td>
+                    <button
+                      style={{ backgroundColor: "#5156BE" }}
+                      className="add-new-button py-1 px-2 ms-4"
+                    >
+                      <GiRapidshareArrow className="me-1 mb-1" />
+                      Retry
+                    </button>
                   </td>
                 </tr>
               </tbody>
@@ -340,6 +377,140 @@ const Marketing = () => {
         <div className="col-md p-3 bg-white">
           <div className="box-head">
             <h5>Delivered status</h5>
+          </div>
+          <div>
+            <table className="mt-3 table-box">
+              <thead>
+                <tr>
+                  <th className="p-2" width={"5%"}>
+                    Number
+                  </th>
+                  <th className="p-2" width={"20%"}>
+                    Name
+                  </th>
+                  <th className="p-2" width={"10%"}>
+                    Status
+                  </th>
+                  <th className="p-2 text-center" width={"2%"}>
+                    Action
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-bottom">
+                  <td className="p-2 py-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input ms-3"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label ms-5" for="exampleCheck1">
+                      1
+                    </label>
+                  </td>
+                  <td className="p-2 py-3">
+                    How to improve a bad credit score quickly
+                  </td>
+
+                  <td className="p-2 py-3">
+                    <small className="campaign-status-active">Success</small>
+                  </td>
+                  <td>
+                    <button
+                      style={{ backgroundColor: "#5156BE" }}
+                      className="add-new-button py-1 px-2 ms-4"
+                    >
+                      <GiRapidshareArrow className="me-1 mb-1" />
+                      Retry
+                    </button>
+                  </td>
+                </tr>
+                <tr className="border-bottom">
+                  <td className="p-2 py-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input ms-3"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label ms-5" for="exampleCheck1">
+                      2
+                    </label>
+                  </td>
+                  <td className="p-2 py-3">
+                    How to improve a bad credit score quickly
+                  </td>
+
+                  <td className="p-2 py-3">
+                    <small className="campaign-status-closed">Failed</small>
+                  </td>
+                  <td>
+                    <button
+                      style={{ backgroundColor: "#5156BE" }}
+                      className="add-new-button py-1 px-2 ms-4"
+                    >
+                      <GiRapidshareArrow className="me-1 mb-1" />
+                      Retry
+                    </button>
+                  </td>
+                </tr>
+                <tr className="border-bottom">
+                  <td className="p-2 py-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input ms-3"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label ms-5" for="exampleCheck1">
+                      3
+                    </label>
+                  </td>
+                  <td className="p-2 py-3">
+                    How to improve a bad credit score quickly
+                  </td>
+
+                  <td className="p-2 py-3">
+                    <small className="campaign-status-active">Success</small>
+                  </td>
+                  <td>
+                    <button
+                      style={{ backgroundColor: "#5156BE" }}
+                      className="add-new-button py-1 px-2 ms-4"
+                    >
+                      <GiRapidshareArrow className="me-1 mb-1" />
+                      Retry
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="p-2 py-3">
+                    <input
+                      type="checkbox"
+                      class="form-check-input ms-3"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label ms-5" for="exampleCheck1">
+                      4
+                    </label>
+                  </td>
+                  <td className="p-2 py-3">
+                    How to improve a bad credit score quickly
+                  </td>
+
+                  <td className="p-2 py-3">
+                    <small className="campaign-status-closed">Failed</small>
+                  </td>
+                  <td>
+                    <button
+                      style={{ backgroundColor: "#5156BE" }}
+                      className="add-new-button py-1 px-2 ms-4"
+                    >
+                      <GiRapidshareArrow className="me-1 mb-1" />
+                      Retry
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
