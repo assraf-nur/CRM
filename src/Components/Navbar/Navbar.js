@@ -68,8 +68,8 @@ function CollapsibleExample() {
                 title="Nur Tesla"
                 id="collasible-nav-dropdown"
               >
-                <NavDropdown.Item href="#action/3.1">
-                  <Link to="/login">Login</Link>
+                <NavDropdown.Item className="w-100" href="#action/3.1">
+                  <Link className="w-100" to="/login">Login</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action

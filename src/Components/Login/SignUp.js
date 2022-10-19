@@ -7,7 +7,7 @@ import logo from "../Images/Logo/crmLogo.png";
 
 const SignUp = () => {
   return (
-    <div className="w-75 mx-auto">
+    <div className="w-75 mx-auto login">
       <div className="w-50 mx-auto">
         <div className="login-box mx-auto">
           <div className="login-box-upper-part">
