@@ -46,6 +46,8 @@ import SmsConfiguration from "../Setting/SmsConfiguration";
 import CompanySetting from "../Setting/CompanySetting";
 import { MdSettingsSuggest } from "react-icons/md";
 import { RiListSettingsLine, RiMailSettingsLine } from "react-icons/ri";
+import Login from "../Login/Login";
+import SignUp from "../Login/SignUp";
 
 const drawerWidth = 240;
 
@@ -261,7 +263,10 @@ export default function MiniDrawer() {
                         </ListItem>
                         <Divider />
                         <ListItem className="px-0 py-0">
-                          <Link className="py-3 left-list-link" to="/smtpSetting">
+                          <Link
+                            className="py-3 left-list-link"
+                            to="/smtpSetting"
+                          >
                             <MdSettingsSuggest className="icons me-3 mb-1 fs-5" />
                             SMTP Setting
                           </Link>
@@ -275,7 +280,10 @@ export default function MiniDrawer() {
                         </ListItem>
                         <Divider />
                         <ListItem className="px-0 py-0">
-                          <Link className="py-3 left-list-link" to="/companySetting">
+                          <Link
+                            className="py-3 left-list-link"
+                            to="/companySetting"
+                          >
                             <RiListSettingsLine className="icons me-3 mb-1 fs-5" />
                             Company Setting
                           </Link>
@@ -289,7 +297,7 @@ export default function MiniDrawer() {
           </List>
         </nav>
       </Drawer>
-      <Box className="right-box" component="main" sx={{ flexGrow: 1 }}>
+      <Box className="right-box pb-5" component="main" sx={{ flexGrow: 1 }}>
         <div className="subs-nav">
           <SubNav />
         </div>
@@ -313,6 +321,8 @@ export default function MiniDrawer() {
           <Route path="setting" element={<Setting></Setting>} />
           <Route path="addLender" element={<AddLender></AddLender>} />
           <Route path="lenderList" element={<LenderList></LenderList>} />
+          <Route path="login" element={<Login></Login>} />
+          <Route path="signUp" element={<SignUp></SignUp>} />
 
           <Route path="smtpSetting" element={<SmtpSetting></SmtpSetting>} />
           <Route

@@ -13,7 +13,7 @@ import {
 import { AiFillMessage } from "react-icons/ai";
 import { HiOutlineAtSymbol } from "react-icons/hi";
 import "../CSS/Style.css";
-import profile from '../Images/Profile/profile-pic.png'
+import profile from "../Images/Profile/profile-pic.png";
 import { Link } from "react-router-dom";
 
 function CollapsibleExample() {
@@ -21,8 +21,8 @@ function CollapsibleExample() {
     <div className="nav-container">
       <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
         <Navbar.Brand href="#home">
-          <Link to='/'>
-          <img src={Logo} alt="" />
+          <Link to="/">
+            <img src={Logo} alt="" />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -62,9 +62,15 @@ function CollapsibleExample() {
               <BsCalendarCheck />
             </Nav.Link>
             <div className="d-flex ms-3">
-                <img id="profile-pic" src={profile} alt=""/>
-              <NavDropdown className="me-5" title="Nur Tesla" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>
+              <img id="profile-pic" src={profile} alt="" />
+              <NavDropdown
+                className="me-5"
+                title="Nur Tesla"
+                id="collasible-nav-dropdown"
+              >
+                <NavDropdown.Item href="#action/3.1">
+                  <Link to="/login">Login</Link>
+                </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
                 </NavDropdown.Item>
