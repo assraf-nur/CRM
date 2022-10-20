@@ -7,7 +7,7 @@ import { BsArrowRightSquareFill } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-import { ProgressBar } from "react-bootstrap";
+import { Offcanvas, ProgressBar } from "react-bootstrap";
 import profilePic from "../Images/Profile/profile-pic.png";
 import profilePic2 from "../Images/Profile/profile-pic2.png";
 import "../CSS/Style.css";
@@ -24,6 +24,14 @@ const ContactDetails = () => {
   }, []);
 
   const now = 67;
+
+  const [showMileStone, setShowMileStone] = useState(false);
+  const [showAddMileStone, setShowAddMileStone] = useState(false);
+
+  const handleClose1 = () => setShowMileStone(false);
+  const handleShow1 = () => setShowMileStone(true);
+  const handleClose2 = () => setShowAddMileStone(false);
+  const handleShow2 = () => setShowAddMileStone(true);
   return (
     <div className="p-3 contact-details-page">
       <div className="row m-1 bg-white">
@@ -133,13 +141,386 @@ const ContactDetails = () => {
         <a className="page-links2" href="{}">
           <FiFilePlus className="mb-1" /> Text
         </a>
-        <a className="page-links2" href="{}">
-          <FiFilePlus className="mb-1" /> Millstone
+        <a className="page-links2" onClick={handleShow2}>
+          <FiFilePlus className="mb-1 me-1" />
+          Add Millstone
+        </a>
+        <a className="page-links2" onClick={handleShow1}>
+          <FiFilePlus className="mb-1 me-1" />
+          Millstone
         </a>
         <a className="" href="{}">
           <FiFilePlus className="mb-1" /> Lender
         </a>
       </div>
+
+      {/* off canvas start */}
+      <Offcanvas
+        className="off-canvas"
+        placement="end"
+        show={showMileStone}
+        onHide={handleClose1}
+      >
+        <Offcanvas.Header className="canvas-banner" closeButton>
+          <Offcanvas.Title className="ms-3 py-1">Milestone</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <div>
+            <div class="step">
+              <div class="v-stepper">
+                <div class="circle"></div>
+                <div class="line"></div>
+              </div>
+
+              <div class="content w-100">
+                <div className="row">
+                  <p className="col-sm-5 step-title">21 Jan 2055</p>
+                  <p className="col-sm-7">
+                    <small>At 5.50 AM</small>
+                  </p>
+                </div>
+                <div className="d-flex gap-3 step-content">
+                  <div>
+                    <img
+                      className="mb-2"
+                      style={{ width: "25px", height: "25px" }}
+                      src={profilePic}
+                      alt=""
+                    />
+                  </div>
+                  <div className="step-sub-content">
+                    <p className="mb-1 fs-6">Sam Haq</p>
+                    <small className="fs-6 comment-milestone text-white px-2 py-1">
+                      Appointment
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="v-stepper">
+                <div class="circle"></div>
+                <div class="line"></div>
+              </div>
+
+              <div class="content w-100">
+                <div className="row">
+                  <p className="col-sm-5 step-title">31 Feb 2050</p>
+                  <p className="col-sm-7">
+                    <small>At 11.11 PM</small>
+                  </p>
+                </div>
+                <div className="d-flex gap-3 step-content">
+                  <div>
+                    <img
+                      className="mb-2"
+                      style={{ width: "25px", height: "25px" }}
+                      src={profilePic}
+                      alt=""
+                    />
+                  </div>
+                  <div className="step-sub-content">
+                    <p className="mb-1 fs-6">Sam Haq</p>
+                    <small className="fs-6 comment-milestone text-white px-2 py-1">
+                      Transfer Call
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="v-stepper">
+                <div class="circle"></div>
+                <div class="line"></div>
+              </div>
+
+              <div class="content w-100">
+                <div className="row">
+                  <p className="col-sm-5 step-title">31 Dec 2050</p>
+                  <p className="col-sm-7">
+                    <small>At 10.50 AM</small>
+                  </p>
+                </div>
+                <div className="d-flex gap-3 step-content">
+                  <div>
+                    <img
+                      className="mb-2"
+                      style={{ width: "25px", height: "25px" }}
+                      src={profilePic}
+                      alt=""
+                    />
+                  </div>
+                  <div className="step-sub-content">
+                    <p className="mb-1 fs-6">Sam Haq</p>
+                    <small className="fs-6 comment-milestone text-white px-2 py-1">
+                      Pending Application
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="v-stepper">
+                <div class="circle"></div>
+                <div class="line"></div>
+              </div>
+
+              <div class="content w-100">
+                <div className="row">
+                  <p className="col-sm-5 step-title">3 Sep 2060</p>
+                  <p className="col-sm-7">
+                    <small>At 1.05 AM</small>
+                  </p>
+                </div>
+                <div className="d-flex gap-3 step-content">
+                  <div>
+                    <img
+                      className="mb-2"
+                      style={{ width: "25px", height: "25px" }}
+                      src={profilePic2}
+                      alt=""
+                    />
+                  </div>
+                  <div className="step-sub-content">
+                    <p className="mb-1 fs-6">Arafin Haq</p>
+                    <small className="fs-6 comment-milestone text-white px-2 py-1">
+                      Processing
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="step">
+              <div class="v-stepper">
+                <div class="circle"></div>
+                <div class="line"></div>
+              </div>
+
+              <div class="content w-100">
+                <div className="row">
+                  <p className="col-sm-5 step-title">1 Oct 2090</p>
+                  <p className="col-sm-7">
+                    <small>At 21.55 PM</small>
+                  </p>
+                </div>
+                <div className="d-flex gap-3 step-content">
+                  <div>
+                    <img
+                      className="mb-2"
+                      style={{ width: "25px", height: "25px" }}
+                      src={profilePic}
+                      alt=""
+                    />
+                  </div>
+                  <div className="step-sub-content">
+                    <p className="mb-1 fs-6">Sam Haq</p>
+                    <small className="fs-6 comment-milestone text-white px-2 py-1">
+                      Loan Closed and Funded
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+
+      <Offcanvas
+        className="off-canvas"
+        placement="end"
+        show={showAddMileStone}
+        onHide={handleClose2}
+      >
+        <Offcanvas.Header className="canvas-banner" closeButton>
+          <Offcanvas.Title className="ms-3 py-1">Add Milestone</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <div className="ms-3">
+            <form>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultProspect"
+                />
+                <label class="form-check-label" for="flexCheckDefaultProspect">
+                  Prospect
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultTransfer"
+                />
+                <label class="form-check-label" for="flexCheckDefaultTransfer">
+                  Transfer call
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultAppointment"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexCheckDefaultAppointment"
+                >
+                  Appointment
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultPending"
+                />
+                <label class="form-check-label" for="flexCheckDefaultPending">
+                  Pending Application
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultReady"
+                />
+                <label class="form-check-label" for="flexCheckDefaultReady">
+                  Application Ready
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultProcessing"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexCheckDefaultProcessing"
+                >
+                  Processing
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultDocuments"
+                />
+                <label class="form-check-label" for="flexCheckDefaultDocuments">
+                  Pending Documents
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultSuspended"
+                />
+                <label class="form-check-label" for="flexCheckDefaultSuspended">
+                  Application Suspended
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultApproval"
+                />
+                <label class="form-check-label" for="flexCheckDefaultApproval">
+                  Submitted For Approval
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultSignature"
+                />
+                <label class="form-check-label" for="flexCheckDefaultSignature">
+                  Approved-Signature Required
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultLoan"
+                />
+                <label class="form-check-label" for="flexCheckDefaultLoan">
+                  Signed Loan Documents
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultFunded"
+                />
+                <label class="form-check-label" for="flexCheckDefaultFunded">
+                  Loan closed and Funded
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultCommission"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexCheckDefaultCommission"
+                >
+                  Commission Paid
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultQC"
+                />
+                <label class="form-check-label" for="flexCheckDefaultQC">
+                  QC and Closed File
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefaultWithdrawal"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexCheckDefaultWithdrawal"
+                >
+                  Loan Withdrawal
+                </label>
+              </div>
+            </form>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+      {/* off canvas end */}
+
       <div className="mx-1 mt-3 row gap-3">
         <div className="col-xl-5 bg-white p-3 loan-status">
           <div className="loan-status-box">
@@ -751,10 +1132,7 @@ const ContactDetails = () => {
                       name="flexRadio23"
                       id="flexRadio_Submitted"
                     />
-                    <label
-                      class="form-check-label"
-                      for="flexRadio_Submitted"
-                    >
+                    <label class="form-check-label" for="flexRadio_Submitted">
                       Submitted
                     </label>
                   </div>
@@ -765,10 +1143,7 @@ const ContactDetails = () => {
                       name="flexRadio23"
                       id="flexRadio_Pending"
                     />
-                    <label
-                      class="form-check-label"
-                      for="flexRadio_Pending"
-                    >
+                    <label class="form-check-label" for="flexRadio_Pending">
                       Pending
                     </label>
                   </div>
@@ -779,10 +1154,7 @@ const ContactDetails = () => {
                       name="flexRadio23"
                       id="flexRadio_Approved"
                     />
-                    <label
-                      class="form-check-label"
-                      for="flexRadio_Approved"
-                    >
+                    <label class="form-check-label" for="flexRadio_Approved">
                       Approved
                     </label>
                   </div>
@@ -793,10 +1165,7 @@ const ContactDetails = () => {
                       name="flexRadio23"
                       id="flexRadio_Funded"
                     />
-                    <label
-                      class="form-check-label"
-                      for="flexRadio_Funded"
-                    >
+                    <label class="form-check-label" for="flexRadio_Funded">
                       Funded
                     </label>
                   </div>

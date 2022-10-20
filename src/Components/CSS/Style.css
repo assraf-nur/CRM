@@ -879,6 +879,7 @@ div {
   height: 100%;
   margin-left: 10px;
   padding-right: 10px;
+  cursor: pointer;
 }
 .page-links2 {
   border-right: 1px solid darkblue;
@@ -1058,3 +1059,18 @@ div {
   margin-top: 25px;
 }
 /* login page end */
+.off-canvas{
+  margin-top: 75px;
+}
+.comment-milestone{
+  background-color: #0d9e84;
+  border-radius: 5px;
+}
+.canvas-banner{
+  background-color: #5156BE;
+  color: white;
+  width: 100%;
+}
+.canvas-banner button{
+  background-color: white;
+}
