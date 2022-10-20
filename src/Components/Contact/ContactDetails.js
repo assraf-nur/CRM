@@ -31,6 +31,7 @@ const ContactDetails = () => {
   const [showMileStone, setShowMileStone] = useState(false);
   const [showAddMileStone, setShowAddMileStone] = useState(false);
   const [showNote, setShowAddNote] = useState(false);
+  const [showToDo, setShowToDo] = useState(false);
 
   const handleClose1 = () => setShowMileStone(false);
   const handleShow1 = () => setShowMileStone(true);
@@ -40,6 +41,9 @@ const ContactDetails = () => {
 
   const handleClose3 = () => setShowAddNote(false);
   const handleShow3 = () => setShowAddNote(true);
+
+  const handleClose4 = () => setShowToDo(false);
+  const handleShow4 = () => setShowToDo(true);
 
   return (
     <div className="p-3 contact-details-page">
@@ -144,8 +148,8 @@ const ContactDetails = () => {
         <a className="page-links2" href="{}">
           <FiFilePlus className="mb-1" /> Papers
         </a>
-        <a className="page-links2" href="{}">
-          <FiFilePlus className="mb-1" /> Email
+        <a className="page-links2" onClick={handleShow4}>
+          <FiFilePlus className="mb-1" /> To-Do List
         </a>
         <a className="page-links2" onClick={handleShow3}>
           <FiFilePlus className="mb-1" /> Note
@@ -334,7 +338,20 @@ const ContactDetails = () => {
           </div>
         </Offcanvas.Body>
       </Offcanvas>
-
+      <Offcanvas
+        className="off-canvas"
+        placement="end"
+        show={showToDo}
+        onHide={handleClose4}
+      >
+        <Offcanvas.Header className="canvas-banner" closeButton>
+          <Offcanvas.Title className="ms-3 py-1">To-Do List</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <div>{/* updated by-nur */}</div>
+        </Offcanvas.Body>
+      </Offcanvas>
+F
       {/* Note start */}
       <Offcanvas
         className="off-canvas"
@@ -361,13 +378,13 @@ const ContactDetails = () => {
                     style={{ height: "100px" }}
                   ></textarea>
 
-                  <div className="mt-2">
+                  <div className="mt-3">
                     <button className="add-new-button px-2 py-1 bg-success">
                       <HiPlus />
                       Add
                     </button>
 
-                    <button className="add-new-button px-2 py-1 ms-3 bg-danger">
+                    <button className="add-new-button px-2 py-1 ms-2 bg-danger">
                       <MdCancel className="me-1 mb-1" />
                       Cancel
                     </button>
@@ -381,7 +398,11 @@ const ContactDetails = () => {
                       <div>
                         <img
                           className=""
-                          style={{ width: "40px", height: "42px", borderRadius: "50%" }}
+                          style={{
+                            width: "40px",
+                            height: "42px",
+                            borderRadius: "50%",
+                          }}
                           src={profilePic3}
                           alt=""
                         />
@@ -393,14 +414,28 @@ const ContactDetails = () => {
                         </small>
                       </div>
                     </div>
-                    
+
                     <div class="dropdown">
-                      <button class="note-option-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <HiDotsVertical className="fs-5" />
+                      <button
+                        class="note-option-button"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <HiDotsVertical className="fs-5" />
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{#}"><FaEdit className="mb-1 me-1"/> Edit</a></li>
-                        <li><a class="dropdown-item" href="{#}"> <MdDelete className="mb-1 me-1"/> Delete</a></li>
+                        <li>
+                          <a class="dropdown-item" href="{#}">
+                            <FaEdit className="mb-1 me-1" /> Edit
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="{#}">
+                            {" "}
+                            <MdDelete className="mb-1 me-1" /> Delete
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -421,7 +456,11 @@ const ContactDetails = () => {
                       <div>
                         <img
                           className=""
-                          style={{ width: "40px", height: "42px", borderRadius: "50%" }}
+                          style={{
+                            width: "40px",
+                            height: "42px",
+                            borderRadius: "50%",
+                          }}
                           src={profilePic3}
                           alt=""
                         />
@@ -433,14 +472,28 @@ const ContactDetails = () => {
                         </small>
                       </div>
                     </div>
-                    
+
                     <div class="dropdown">
-                      <button class="note-option-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <HiDotsVertical className="fs-5" />
+                      <button
+                        class="note-option-button"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <HiDotsVertical className="fs-5" />
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{#}"><FaEdit className="mb-1 me-1"/> Edit</a></li>
-                        <li><a class="dropdown-item" href="{#}"> <MdDelete className="mb-1 me-1"/> Delete</a></li>
+                        <li>
+                          <a class="dropdown-item" href="{#}">
+                            <FaEdit className="mb-1 me-1" /> Edit
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="{#}">
+                            {" "}
+                            <MdDelete className="mb-1 me-1" /> Delete
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -461,7 +514,11 @@ const ContactDetails = () => {
                       <div>
                         <img
                           className=""
-                          style={{ width: "40px", height: "42px", borderRadius: "50%" }}
+                          style={{
+                            width: "40px",
+                            height: "42px",
+                            borderRadius: "50%",
+                          }}
                           src={profilePic3}
                           alt=""
                         />
@@ -473,14 +530,28 @@ const ContactDetails = () => {
                         </small>
                       </div>
                     </div>
-                    
+
                     <div class="dropdown">
-                      <button class="note-option-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       <HiDotsVertical className="fs-5" />
+                      <button
+                        class="note-option-button"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <HiDotsVertical className="fs-5" />
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{#}"><FaEdit className="mb-1 me-1"/> Edit</a></li>
-                        <li><a class="dropdown-item" href="{#}"> <MdDelete className="mb-1 me-1"/> Delete</a></li>
+                        <li>
+                          <a class="dropdown-item" href="{#}">
+                            <FaEdit className="mb-1 me-1" /> Edit
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="{#}">
+                            {" "}
+                            <MdDelete className="mb-1 me-1" /> Delete
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
