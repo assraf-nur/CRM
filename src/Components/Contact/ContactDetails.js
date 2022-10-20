@@ -336,7 +336,7 @@ const ContactDetails = () => {
           <Offcanvas.Title className="ms-3 py-1">Add Milestone</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div className="ms-3">
+          <div className="ms-3 mt-3">
             <form>
               <div class="form-check">
                 <input
