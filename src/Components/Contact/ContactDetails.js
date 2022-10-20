@@ -429,7 +429,7 @@ const ContactDetails = () => {
           </div>
         </Offcanvas.Body>
       </Offcanvas>
-      F{/* Note start */}
+      {/* Note start */}
       <Offcanvas
         className="off-canvas"
         placement="end"
