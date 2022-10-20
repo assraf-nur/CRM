@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import contactProfile from "../Images/Profile/contact-profile.jpg";
 import { FcCellPhone } from "react-icons/fc";
+import { FaEdit } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { HiDotsVertical, HiPlus } from "react-icons/hi";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
-import { MdCancel } from "react-icons/md";
+import { MdCancel, MdDelete } from "react-icons/md";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import { Offcanvas, ProgressBar } from "react-bootstrap";
@@ -394,13 +395,92 @@ const ContactDetails = () => {
                     </div>
                     
                     <div class="dropdown">
-                      <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button class="note-option-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                        <HiDotsVertical className="fs-5" />
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{#}">Action</a></li>
-                        <li><a class="dropdown-item" href="{#}">Another action</a></li>
-                        <li><a class="dropdown-item" href="{#}">Something else here</a></li>
+                        <li><a class="dropdown-item" href="{#}"><FaEdit className="mb-1 me-1"/> Edit</a></li>
+                        <li><a class="dropdown-item" href="{#}"> <MdDelete className="mb-1 me-1"/> Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="note-lower-part">
+                    <p className="mt-4">
+                      By combining state of the art artificial intelligence &
+                      ClipDrop provides a unique, continuous workflow that....
+                      ClipDrop provides a unique, continuous workflow that....
+                      ClipDrop provides a unique, continuous workflow that....
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="border p-4 rounded mt-4">
+                  <div className="note-upper-part">
+                    <div className="d-flex gap-3 step-content">
+                      <div>
+                        <img
+                          className=""
+                          style={{ width: "40px", height: "42px", borderRadius: "50%" }}
+                          src={profilePic3}
+                          alt=""
+                        />
+                      </div>
+                      <div className="step-sub-content">
+                        <p className="fw-semibold">admin@admin.com</p>
+                        <small>
+                          08/08/2022 <GoPrimitiveDot /> 8.05pm
+                        </small>
+                      </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                      <button class="note-option-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <HiDotsVertical className="fs-5" />
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{#}"><FaEdit className="mb-1 me-1"/> Edit</a></li>
+                        <li><a class="dropdown-item" href="{#}"> <MdDelete className="mb-1 me-1"/> Delete</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="note-lower-part">
+                    <p className="mt-4">
+                      By combining state of the art artificial intelligence &
+                      ClipDrop provides a unique, continuous workflow that....
+                      ClipDrop provides a unique, continuous workflow that....
+                      ClipDrop provides a unique, continuous workflow that....
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="border p-4 rounded mt-4">
+                  <div className="note-upper-part">
+                    <div className="d-flex gap-3 step-content">
+                      <div>
+                        <img
+                          className=""
+                          style={{ width: "40px", height: "42px", borderRadius: "50%" }}
+                          src={profilePic3}
+                          alt=""
+                        />
+                      </div>
+                      <div className="step-sub-content">
+                        <p className="fw-semibold">admin@admin.com</p>
+                        <small>
+                          08/08/2022 <GoPrimitiveDot /> 8.05pm
+                        </small>
+                      </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                      <button class="note-option-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <HiDotsVertical className="fs-5" />
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{#}"><FaEdit className="mb-1 me-1"/> Edit</a></li>
+                        <li><a class="dropdown-item" href="{#}"> <MdDelete className="mb-1 me-1"/> Delete</a></li>
                       </ul>
                     </div>
                   </div>
