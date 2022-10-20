@@ -2,14 +2,16 @@ import React, { useEffect, useState } from "react";
 import contactProfile from "../Images/Profile/contact-profile.jpg";
 import { FcCellPhone } from "react-icons/fc";
 import { CgProfile } from "react-icons/cg";
-import { HiDotsVertical } from "react-icons/hi";
+import { HiDotsVertical, HiPlus } from "react-icons/hi";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
+import { MdCancel } from "react-icons/md";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import { Offcanvas, ProgressBar } from "react-bootstrap";
 import profilePic from "../Images/Profile/profile-pic.png";
 import profilePic2 from "../Images/Profile/profile-pic2.png";
+import profilePic3 from "../Images/Profile/pro-icon.png";
 import "../CSS/Style.css";
 
 const ContactDetails = () => {
@@ -27,11 +29,17 @@ const ContactDetails = () => {
 
   const [showMileStone, setShowMileStone] = useState(false);
   const [showAddMileStone, setShowAddMileStone] = useState(false);
+  const [showNote, setShowAddNote] = useState(false);
 
   const handleClose1 = () => setShowMileStone(false);
   const handleShow1 = () => setShowMileStone(true);
+
   const handleClose2 = () => setShowAddMileStone(false);
   const handleShow2 = () => setShowAddMileStone(true);
+
+  const handleClose3 = () => setShowAddNote(false);
+  const handleShow3 = () => setShowAddNote(true);
+
   return (
     <div className="p-3 contact-details-page">
       <div className="row m-1 bg-white">
@@ -138,8 +146,8 @@ const ContactDetails = () => {
         <a className="page-links2" href="{}">
           <FiFilePlus className="mb-1" /> Email
         </a>
-        <a className="page-links2" href="{}">
-          <FiFilePlus className="mb-1" /> Text
+        <a className="page-links2" onClick={handleShow3}>
+          <FiFilePlus className="mb-1" /> Note
         </a>
         <a className="page-links2" onClick={handleShow2}>
           <FiFilePlus className="mb-1 me-1" />
@@ -325,6 +333,92 @@ const ContactDetails = () => {
           </div>
         </Offcanvas.Body>
       </Offcanvas>
+
+      {/* Note start */}
+      <Offcanvas
+        className="off-canvas"
+        placement="end"
+        show={showNote}
+        onHide={handleClose3}
+      >
+        <Offcanvas.Header className="canvas-banner" closeButton>
+          <Offcanvas.Title className="ms-3 py-1">Note</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <div className="ms-3 mt-3">
+            <div>
+              <button className="add-new-button px-2 py-1">
+                <HiPlus />
+                Add New Note
+              </button>
+              <div class="form-floating mt-2">
+                <form>
+                  <textarea
+                    class="form-control rounded"
+                    placeholder="Leave your Note here"
+                    id="floatingTextarea2"
+                    style={{ height: "100px" }}
+                  ></textarea>
+
+                  <div className="mt-2">
+                    <button className="add-new-button px-2 py-1 bg-success">
+                      <HiPlus />
+                      Add
+                    </button>
+
+                    <button className="add-new-button px-2 py-1 ms-3 bg-danger">
+                      <MdCancel className="me-1 mb-1" />
+                      Cancel
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div>
+                <div className="border p-4 rounded mt-4">
+                  <div className="note-upper-part">
+                    <div className="d-flex gap-3 step-content">
+                      <div>
+                        <img
+                          className=""
+                          style={{ width: "40px", height: "42px", borderRadius: "50%" }}
+                          src={profilePic3}
+                          alt=""
+                        />
+                      </div>
+                      <div className="step-sub-content">
+                        <p className="fw-semibold">admin@admin.com</p>
+                        <small>
+                          08/08/2022 <GoPrimitiveDot /> 8.05pm
+                        </small>
+                      </div>
+                    </div>
+                    
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <HiDotsVertical className="fs-5" />
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{#}">Action</a></li>
+                        <li><a class="dropdown-item" href="{#}">Another action</a></li>
+                        <li><a class="dropdown-item" href="{#}">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="note-lower-part">
+                    <p className="mt-4">
+                      By combining state of the art artificial intelligence &
+                      ClipDrop provides a unique, continuous workflow that....
+                      ClipDrop provides a unique, continuous workflow that....
+                      ClipDrop provides a unique, continuous workflow that....
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+      {/* Note end */}
 
       <Offcanvas
         className="off-canvas"
