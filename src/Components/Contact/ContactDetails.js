@@ -9,7 +9,7 @@ import { GoPrimitiveDot } from "react-icons/go";
 import { MdCancel, MdDelete } from "react-icons/md";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-import { Offcanvas, ProgressBar } from "react-bootstrap";
+import { Form, Offcanvas, ProgressBar } from "react-bootstrap";
 import profilePic from "../Images/Profile/profile-pic.png";
 import profilePic2 from "../Images/Profile/profile-pic2.png";
 import profilePic3 from "../Images/Profile/pro-icon.png";
@@ -114,7 +114,6 @@ const ContactDetails = () => {
           <p>07:08 hour leter start the call</p>
         </div>
       </div>
-
       <div className="m-1 mt-3 contact-details-page-links">
         <a style={{ backgroundColor: "#00B25B" }} className="" href="{#}">
           Quick Synopsis
@@ -166,7 +165,6 @@ const ContactDetails = () => {
           <FiFilePlus className="mb-1" /> Lender
         </a>
       </div>
-
       {/* off canvas start */}
       <Offcanvas
         className="off-canvas"
@@ -348,11 +346,90 @@ const ContactDetails = () => {
           <Offcanvas.Title className="ms-3 py-1">To-Do List</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div>{/* updated by-nur */}</div>
+          <div className="ms-3 mt-3">
+            <div>
+              <button className="add-new-button px-2 py-2">
+                <HiPlus />
+                Add To-Do
+              </button>
+              <form className="mt-4">
+                <div class="mb-2">
+                  <label for="exampleInputSummery" class="form-label mb-0">
+                    Summery
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control mt-0 rounded"
+                    id="exampleInputSummery"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-2">
+                  <label for="exampleInputPriority" class="form-label mb-0">
+                    Priority
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control mt-0 rounded"
+                    id="exampleInputPriority"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div>
+                  <Form.Label className="mb-1">Assigned To</Form.Label>
+                  <Form.Select
+                    className="py-2 fs-6 text-grey mb-2 rounded"
+                    aria-label="Floating label select example"
+                  >
+                    <option>--Select--</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </Form.Select>
+                </div>
+                <div class="mb-2">
+                  <label for="exampleInputDate" class="form-label mb-0">
+                    Due Date
+                  </label>
+                  <input
+                    type="date"
+                    class="form-control mt-0 rounded"
+                    id="exampleInputDate"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+
+                <div>
+                  <label for="exampleInputSummery" class="form-label mb-0">
+                    Details
+                  </label>
+                  <textarea
+                    class="form-control rounded"
+                    placeholder="Details"
+                    id="floatingTextarea2"
+                    style={{ height: "100px" }}
+                  ></textarea>
+                </div>
+                <div className="mt-3">
+                  <button className="add-new-button px-2 py-1 bg-info">
+                    <HiPlus />
+                    Add
+                  </button>
+
+                  <button className="add-new-button px-2 py-1 ms-2 bg-danger">
+                    <MdCancel className="me-1 mb-1" />
+                    Cancel
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div className="toDo-list">
+              {/* will do saturday */}
+            </div>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
-F
-      {/* Note start */}
+      F{/* Note start */}
       <Offcanvas
         className="off-canvas"
         placement="end"
@@ -570,7 +647,6 @@ F
         </Offcanvas.Body>
       </Offcanvas>
       {/* Note end */}
-
       <Offcanvas
         className="off-canvas"
         placement="end"
@@ -765,7 +841,6 @@ F
         </Offcanvas.Body>
       </Offcanvas>
       {/* off canvas end */}
-
       <div className="mx-1 mt-3 row gap-3">
         <div className="col-xl-5 bg-white p-3 loan-status">
           <div className="loan-status-box">
