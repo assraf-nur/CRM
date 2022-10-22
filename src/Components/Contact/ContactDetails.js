@@ -18,6 +18,7 @@ import Note from "./OffCanvas/Note";
 import AddMilestone from "./OffCanvas/AddMilestone";
 import Appointments from "./OffCanvas/Appointments";
 import EmailModal from "./Modals/EmailModal";
+import AddPapers from "./OffCanvas/AddPapers";
 
 const ContactDetails = () => {
   const [datas, setDatas] = useState([]);
@@ -38,6 +39,7 @@ const ContactDetails = () => {
   const [showToDo, setShowToDo] = useState(false);
   const [showAppointment, setShowAppointment] = useState(false);
   const [showEmailModal, setShowEmailModal] = useState(false);
+  const [showAddPapers, setShowAddPapers] = useState(false);
 
   const handleClose1 = () => setShowMileStone(false);
   const handleShow1 = () => setShowMileStone(true);
@@ -56,6 +58,9 @@ const ContactDetails = () => {
 
   const handleCloseEmailModal = () => setShowEmailModal(false);
   const handleShowEmailModal = () => setShowEmailModal(true);
+
+  const handleCloseAddPapers = () => setShowAddPapers(false);
+  const handleShowAddPapers = () => setShowAddPapers(true);
 
   return (
     <div className="p-3 contact-details-page">
@@ -159,8 +164,9 @@ const ContactDetails = () => {
         <a className="page-links2" onClick={handleShowAppointment}>
           <FiCheckSquare className="mb-1" /> Appointment
         </a>
-        <a className="page-links2" href="{}">
-          <FiFilePlus className="mb-1" /> Papers
+        <a className="page-links2" onClick={handleShowAddPapers}>
+          <FiFilePlus className="mb-1" />
+          Add Papers
         </a>
         <a className="page-links2" onClick={handleShow4}>
           <FiFilePlus className="mb-1" /> To-Do List
@@ -245,7 +251,11 @@ const ContactDetails = () => {
         </div>
       </div>
       {/* email modal start */}
-      <Modal className="email-modal" show={showEmailModal} onHide={handleCloseEmailModal}>
+      <Modal
+        className="email-modal"
+        show={showEmailModal}
+        onHide={handleCloseEmailModal}
+      >
         <EmailModal></EmailModal>
       </Modal>
       {/* email modal ens */}
@@ -265,6 +275,7 @@ const ContactDetails = () => {
           <MilestoneCanvas></MilestoneCanvas>
         </Offcanvas.Body>
       </Offcanvas>
+
       <Offcanvas
         className="off-canvas"
         placement="end"
@@ -279,6 +290,24 @@ const ContactDetails = () => {
           <Appointments></Appointments>
         </Offcanvas.Body>
       </Offcanvas>
+
+      {/* Add papers start */}
+      <Offcanvas
+        className="off-canvas"
+        placement="end"
+        show={showAddPapers}
+        onHide={handleCloseAddPapers}
+      >
+        <Offcanvas.Header className="canvas-banner" closeButton>
+          <Offcanvas.Title className="ms-3 py-1">Add Papers</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          {/* Milestone inner part */}
+          <AddPapers></AddPapers>
+        </Offcanvas.Body>
+      </Offcanvas>
+      {/* Add papers end */}
+
       <Offcanvas
         className="off-canvas"
         placement="end"
