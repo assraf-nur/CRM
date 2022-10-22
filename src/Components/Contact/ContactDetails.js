@@ -14,6 +14,10 @@ import profilePic from "../Images/Profile/profile-pic.png";
 import profilePic2 from "../Images/Profile/profile-pic2.png";
 import profilePic3 from "../Images/Profile/pro-icon.png";
 import "../CSS/Style.css";
+import MilestoneCanvas from "./OffCanvas/MilestoneCanvas";
+import ToDoList from "./OffCanvas/ToDoList";
+import Note from "./OffCanvas/Note";
+import AddMilestone from "./OffCanvas/AddMilestone";
 
 const ContactDetails = () => {
   const [datas, setDatas] = useState([]);
@@ -164,6 +168,70 @@ const ContactDetails = () => {
         <a className="" href="{}">
           <FiFilePlus className="mb-1" /> Lender
         </a>
+        <div className="ms-auto d-flex">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioExcellent"
+            />
+            <label
+              class="form-check-label text-success"
+              for="flexRadioExcellent"
+            >
+              Excellent
+            </label>
+          </div>
+          <div class="form-check ms-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioGood"
+              checked
+            />
+            <label class="form-check-label text-info" for="flexRadioGood">
+              Good
+            </label>
+          </div>
+          <div class="form-check ms-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioAverage"
+              checked
+            />
+            <label class="form-check-label text-primary" for="flexRadioAverage">
+              Average
+            </label>
+          </div>
+          <div class="form-check ms-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioPoor"
+              checked
+            />
+            <label class="form-check-label text-warning" for="flexRadioPoor">
+              Poor
+            </label>
+          </div>
+          <div class="form-check ms-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDeclined"
+              checked
+            />
+            <label class="form-check-label text-danger" for="flexRadioDeclined">
+              Declined
+            </label>
+          </div>
+        </div>
       </div>
       {/* off canvas start */}
       <Offcanvas
@@ -176,164 +244,8 @@ const ContactDetails = () => {
           <Offcanvas.Title className="ms-3 py-1">Milestone</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div>
-            <div class="step">
-              <div class="v-stepper">
-                <div class="circle"></div>
-                <div class="line"></div>
-              </div>
-
-              <div class="content w-100">
-                <div className="row">
-                  <p className="col-sm-5 step-title">21 Jan 2055</p>
-                  <p className="col-sm-7">
-                    <small>At 5.50 AM</small>
-                  </p>
-                </div>
-                <div className="d-flex gap-3 step-content">
-                  <div>
-                    <img
-                      className="mb-2"
-                      style={{ width: "25px", height: "25px" }}
-                      src={profilePic}
-                      alt=""
-                    />
-                  </div>
-                  <div className="step-sub-content">
-                    <p className="mb-1 fs-6">Sam Haq</p>
-                    <small className="fs-6 comment-milestone text-white px-2 py-1">
-                      Appointment
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="step">
-              <div class="v-stepper">
-                <div class="circle"></div>
-                <div class="line"></div>
-              </div>
-
-              <div class="content w-100">
-                <div className="row">
-                  <p className="col-sm-5 step-title">31 Feb 2050</p>
-                  <p className="col-sm-7">
-                    <small>At 11.11 PM</small>
-                  </p>
-                </div>
-                <div className="d-flex gap-3 step-content">
-                  <div>
-                    <img
-                      className="mb-2"
-                      style={{ width: "25px", height: "25px" }}
-                      src={profilePic}
-                      alt=""
-                    />
-                  </div>
-                  <div className="step-sub-content">
-                    <p className="mb-1 fs-6">Sam Haq</p>
-                    <small className="fs-6 comment-milestone text-white px-2 py-1">
-                      Transfer Call
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="step">
-              <div class="v-stepper">
-                <div class="circle"></div>
-                <div class="line"></div>
-              </div>
-
-              <div class="content w-100">
-                <div className="row">
-                  <p className="col-sm-5 step-title">31 Dec 2050</p>
-                  <p className="col-sm-7">
-                    <small>At 10.50 AM</small>
-                  </p>
-                </div>
-                <div className="d-flex gap-3 step-content">
-                  <div>
-                    <img
-                      className="mb-2"
-                      style={{ width: "25px", height: "25px" }}
-                      src={profilePic}
-                      alt=""
-                    />
-                  </div>
-                  <div className="step-sub-content">
-                    <p className="mb-1 fs-6">Sam Haq</p>
-                    <small className="fs-6 comment-milestone text-white px-2 py-1">
-                      Pending Application
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="step">
-              <div class="v-stepper">
-                <div class="circle"></div>
-                <div class="line"></div>
-              </div>
-
-              <div class="content w-100">
-                <div className="row">
-                  <p className="col-sm-5 step-title">3 Sep 2060</p>
-                  <p className="col-sm-7">
-                    <small>At 1.05 AM</small>
-                  </p>
-                </div>
-                <div className="d-flex gap-3 step-content">
-                  <div>
-                    <img
-                      className="mb-2"
-                      style={{ width: "25px", height: "25px" }}
-                      src={profilePic2}
-                      alt=""
-                    />
-                  </div>
-                  <div className="step-sub-content">
-                    <p className="mb-1 fs-6">Arafin Haq</p>
-                    <small className="fs-6 comment-milestone text-white px-2 py-1">
-                      Processing
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="step">
-              <div class="v-stepper">
-                <div class="circle"></div>
-                <div class="line"></div>
-              </div>
-
-              <div class="content w-100">
-                <div className="row">
-                  <p className="col-sm-5 step-title">1 Oct 2090</p>
-                  <p className="col-sm-7">
-                    <small>At 21.55 PM</small>
-                  </p>
-                </div>
-                <div className="d-flex gap-3 step-content">
-                  <div>
-                    <img
-                      className="mb-2"
-                      style={{ width: "25px", height: "25px" }}
-                      src={profilePic}
-                      alt=""
-                    />
-                  </div>
-                  <div className="step-sub-content">
-                    <p className="mb-1 fs-6">Sam Haq</p>
-                    <small className="fs-6 comment-milestone text-white px-2 py-1">
-                      Loan Closed and Funded
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Milestone inner part */}
+          <MilestoneCanvas></MilestoneCanvas>
         </Offcanvas.Body>
       </Offcanvas>
       <Offcanvas
@@ -346,362 +258,8 @@ const ContactDetails = () => {
           <Offcanvas.Title className="ms-3 py-1">To-Do List</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div className="ms-3 mt-3">
-            <div>
-              <button className="add-new-button px-2 py-2">
-                <HiPlus />
-                Add To-Do
-              </button>
-              <form className="mt-4">
-                <div class="mb-2">
-                  <label for="exampleInputSummery" class="form-label mb-0">
-                    Summery
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control mt-0 rounded"
-                    id="exampleInputSummery"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div class="mb-2">
-                  <label for="exampleInputPriority" class="form-label mb-0">
-                    Priority
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control mt-0 rounded"
-                    id="exampleInputPriority"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div>
-                  <Form.Label className="mb-1">Assigned To</Form.Label>
-                  <Form.Select
-                    className="py-2 fs-6 text-grey mb-2 rounded"
-                    aria-label="Floating label select example"
-                  >
-                    <option>--Select--</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </Form.Select>
-                </div>
-                <div class="mb-2">
-                  <label for="exampleInputDate" class="form-label mb-0">
-                    Due Date
-                  </label>
-                  <input
-                    type="date"
-                    class="form-control mt-0 rounded"
-                    id="exampleInputDate"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-
-                <div>
-                  <label for="exampleInputSummery" class="form-label mb-0">
-                    Details
-                  </label>
-                  <textarea
-                    class="form-control rounded"
-                    placeholder="Details"
-                    id="floatingTextarea2"
-                    style={{ height: "100px" }}
-                  ></textarea>
-                </div>
-                <div className="mt-3">
-                  <button className="add-new-button px-2 py-1 bg-info">
-                    <HiPlus />
-                    Add
-                  </button>
-
-                  <button className="add-new-button px-2 py-1 ms-2 bg-danger">
-                    <MdCancel className="me-1 mb-1" />
-                    Cancel
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div className="toDo-list mt-3">
-              <div className="mt-4">
-                <Card style={{ width: "100%" }}>
-                  <Card.Body>
-                    <div className="note-upper-part">
-                      <div className="">
-                        <h6>
-                          {" "}
-                          <strong>Assigned To:</strong> Anne495{" "}
-                        </h6>
-                      </div>
-
-                      <div class="dropdown">
-                        <button
-                          class="note-option-button"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <HiDotsVertical className="fs-5" />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="{#}">
-                              <FaEdit className="mb-1 me-1" /> Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="{#}">
-                              {" "}
-                              <MdDelete className="mb-1 me-1" /> Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h6>
-                      {" "}
-                      <strong>Priority:</strong> Low{" "}
-                    </h6>
-                    <h6>
-                      {" "}
-                      <strong>Due Date:</strong> 27-10-2022{" "}
-                    </h6>
-                    <h6>
-                      {" "}
-                      <strong>Status:</strong>{" "}
-                      <span className="status-active px-1 py-1 rounded">
-                        completed
-                      </span>{" "}
-                    </h6>
-                    <h6 className="mt-3">
-                      {" "}
-                      <strong>Summery:</strong>
-                    </h6>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <h6 className="mt-3">
-                      {" "}
-                      <strong>Details:</strong>
-                    </h6>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </div>
-              <div className="mt-4">
-                <Card style={{ width: "100%" }}>
-                  <Card.Body>
-                    <div className="note-upper-part">
-                      <div className="">
-                        <h6>
-                          {" "}
-                          <strong>Assigned To:</strong> Anne495{" "}
-                        </h6>
-                      </div>
-
-                      <div class="dropdown">
-                        <button
-                          class="note-option-button"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <HiDotsVertical className="fs-5" />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="{#}">
-                              <FaEdit className="mb-1 me-1" /> Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="{#}">
-                              {" "}
-                              <MdDelete className="mb-1 me-1" /> Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h6>
-                      {" "}
-                      <strong>Priority:</strong> Low{" "}
-                    </h6>
-                    <h6>
-                      {" "}
-                      <strong>Due Date:</strong> 27-10-2022{" "}
-                    </h6>
-                    <h6>
-                      {" "}
-                      <strong>Status:</strong>{" "}
-                      <span className="status-active px-1 py-1 rounded">
-                        completed
-                      </span>{" "}
-                    </h6>
-                    <h6 className="mt-3">
-                      {" "}
-                      <strong>Summery:</strong>
-                    </h6>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <h6 className="mt-3">
-                      {" "}
-                      <strong>Details:</strong>
-                    </h6>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </div>
-              <div className="mt-4">
-                <Card style={{ width: "100%" }}>
-                  <Card.Body>
-                    <div className="note-upper-part">
-                      <div className="">
-                        <h6>
-                          {" "}
-                          <strong>Assigned To:</strong> Anne495{" "}
-                        </h6>
-                      </div>
-
-                      <div class="dropdown">
-                        <button
-                          class="note-option-button"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <HiDotsVertical className="fs-5" />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="{#}">
-                              <FaEdit className="mb-1 me-1" /> Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="{#}">
-                              {" "}
-                              <MdDelete className="mb-1 me-1" /> Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h6>
-                      {" "}
-                      <strong>Priority:</strong> Low{" "}
-                    </h6>
-                    <h6>
-                      {" "}
-                      <strong>Due Date:</strong> 27-10-2022{" "}
-                    </h6>
-                    <h6>
-                      {" "}
-                      <strong>Status:</strong>{" "}
-                      <span className="status-active px-1 py-1 rounded">
-                        completed
-                      </span>{" "}
-                    </h6>
-                    <h6 className="mt-3">
-                      {" "}
-                      <strong>Summery:</strong>
-                    </h6>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <h6 className="mt-3">
-                      {" "}
-                      <strong>Details:</strong>
-                    </h6>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </div>
-              <div className="mt-4">
-                <Card style={{ width: "100%" }}>
-                  <Card.Body>
-                    <div className="note-upper-part">
-                      <div className="">
-                        <h6>
-                          {" "}
-                          <strong>Assigned To:</strong> Anne495{" "}
-                        </h6>
-                      </div>
-
-                      <div class="dropdown">
-                        <button
-                          class="note-option-button"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <HiDotsVertical className="fs-5" />
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="{#}">
-                              <FaEdit className="mb-1 me-1" /> Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="{#}">
-                              {" "}
-                              <MdDelete className="mb-1 me-1" /> Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <h6>
-                      {" "}
-                      <strong>Priority:</strong> Low{" "}
-                    </h6>
-                    <h6>
-                      {" "}
-                      <strong>Due Date:</strong> 27-10-2022{" "}
-                    </h6>
-                    <h6>
-                      {" "}
-                      <strong>Status:</strong>{" "}
-                      <span className="status-active px-1 py-1 rounded">
-                        completed
-                      </span>{" "}
-                    </h6>
-                    <h6 className="mt-3">
-                      {" "}
-                      <strong>Summery:</strong>
-                    </h6>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <h6 className="mt-3">
-                      {" "}
-                      <strong>Details:</strong>
-                    </h6>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </div>
-            </div>
-          </div>
+          {/* todo list inner part */}
+          <ToDoList></ToDoList>
         </Offcanvas.Body>
       </Offcanvas>
       {/* Note start */}
@@ -715,210 +273,8 @@ const ContactDetails = () => {
           <Offcanvas.Title className="ms-3 py-1">Note</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div className="ms-3 mt-3">
-            <div>
-              <button className="add-new-button px-2 py-1">
-                <HiPlus />
-                Add New Note
-              </button>
-              <div class="form-floating mt-2">
-                <form>
-                  <textarea
-                    class="form-control rounded"
-                    placeholder="Leave your Note here"
-                    id="floatingTextarea2"
-                    style={{ height: "100px" }}
-                  ></textarea>
-
-                  <div className="mt-3">
-                    <button className="add-new-button px-2 py-1 bg-success">
-                      <HiPlus />
-                      Add
-                    </button>
-
-                    <button className="add-new-button px-2 py-1 ms-2 bg-danger">
-                      <MdCancel className="me-1 mb-1" />
-                      Cancel
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div>
-                <div className="border p-4 rounded mt-4">
-                  <div className="note-upper-part">
-                    <div className="d-flex gap-3 step-content">
-                      <div>
-                        <img
-                          className=""
-                          style={{
-                            width: "40px",
-                            height: "42px",
-                            borderRadius: "50%",
-                          }}
-                          src={profilePic3}
-                          alt=""
-                        />
-                      </div>
-                      <div className="step-sub-content">
-                        <p className="fw-semibold">admin@admin.com</p>
-                        <small>
-                          08/08/2022 <GoPrimitiveDot /> 8.05pm
-                        </small>
-                      </div>
-                    </div>
-
-                    <div class="dropdown">
-                      <button
-                        class="note-option-button"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <HiDotsVertical className="fs-5" />
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="{#}">
-                            <FaEdit className="mb-1 me-1" /> Edit
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="{#}">
-                            {" "}
-                            <MdDelete className="mb-1 me-1" /> Delete
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="note-lower-part">
-                    <p className="mt-4">
-                      By combining state of the art artificial intelligence &
-                      ClipDrop provides a unique, continuous workflow that....
-                      ClipDrop provides a unique, continuous workflow that....
-                      ClipDrop provides a unique, continuous workflow that....
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="border p-4 rounded mt-4">
-                  <div className="note-upper-part">
-                    <div className="d-flex gap-3 step-content">
-                      <div>
-                        <img
-                          className=""
-                          style={{
-                            width: "40px",
-                            height: "42px",
-                            borderRadius: "50%",
-                          }}
-                          src={profilePic3}
-                          alt=""
-                        />
-                      </div>
-                      <div className="step-sub-content">
-                        <p className="fw-semibold">admin@admin.com</p>
-                        <small>
-                          08/08/2022 <GoPrimitiveDot /> 8.05pm
-                        </small>
-                      </div>
-                    </div>
-
-                    <div class="dropdown">
-                      <button
-                        class="note-option-button"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <HiDotsVertical className="fs-5" />
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="{#}">
-                            <FaEdit className="mb-1 me-1" /> Edit
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="{#}">
-                            {" "}
-                            <MdDelete className="mb-1 me-1" /> Delete
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="note-lower-part">
-                    <p className="mt-4">
-                      By combining state of the art artificial intelligence &
-                      ClipDrop provides a unique, continuous workflow that....
-                      ClipDrop provides a unique, continuous workflow that....
-                      ClipDrop provides a unique, continuous workflow that....
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="border p-4 rounded mt-4">
-                  <div className="note-upper-part">
-                    <div className="d-flex gap-3 step-content">
-                      <div>
-                        <img
-                          className=""
-                          style={{
-                            width: "40px",
-                            height: "42px",
-                            borderRadius: "50%",
-                          }}
-                          src={profilePic3}
-                          alt=""
-                        />
-                      </div>
-                      <div className="step-sub-content">
-                        <p className="fw-semibold">admin@admin.com</p>
-                        <small>
-                          08/08/2022 <GoPrimitiveDot /> 8.05pm
-                        </small>
-                      </div>
-                    </div>
-
-                    <div class="dropdown">
-                      <button
-                        class="note-option-button"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <HiDotsVertical className="fs-5" />
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="{#}">
-                            <FaEdit className="mb-1 me-1" /> Edit
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="{#}">
-                            {" "}
-                            <MdDelete className="mb-1 me-1" /> Delete
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="note-lower-part">
-                    <p className="mt-4">
-                      By combining state of the art artificial intelligence &
-                      ClipDrop provides a unique, continuous workflow that....
-                      ClipDrop provides a unique, continuous workflow that....
-                      ClipDrop provides a unique, continuous workflow that....
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Note inner part */}
+          <Note></Note>
         </Offcanvas.Body>
       </Offcanvas>
       {/* Note end */}
@@ -932,187 +288,8 @@ const ContactDetails = () => {
           <Offcanvas.Title className="ms-3 py-1">Add Milestone</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div className="ms-3 mt-3">
-            <form>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultProspect"
-                />
-                <label class="form-check-label" for="flexCheckDefaultProspect">
-                  Prospect
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultTransfer"
-                />
-                <label class="form-check-label" for="flexCheckDefaultTransfer">
-                  Transfer call
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultAppointment"
-                />
-                <label
-                  class="form-check-label"
-                  for="flexCheckDefaultAppointment"
-                >
-                  Appointment
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultPending"
-                />
-                <label class="form-check-label" for="flexCheckDefaultPending">
-                  Pending Application
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultReady"
-                />
-                <label class="form-check-label" for="flexCheckDefaultReady">
-                  Application Ready
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultProcessing"
-                />
-                <label
-                  class="form-check-label"
-                  for="flexCheckDefaultProcessing"
-                >
-                  Processing
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultDocuments"
-                />
-                <label class="form-check-label" for="flexCheckDefaultDocuments">
-                  Pending Documents
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultSuspended"
-                />
-                <label class="form-check-label" for="flexCheckDefaultSuspended">
-                  Application Suspended
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultApproval"
-                />
-                <label class="form-check-label" for="flexCheckDefaultApproval">
-                  Submitted For Approval
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultSignature"
-                />
-                <label class="form-check-label" for="flexCheckDefaultSignature">
-                  Approved-Signature Required
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultLoan"
-                />
-                <label class="form-check-label" for="flexCheckDefaultLoan">
-                  Signed Loan Documents
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultFunded"
-                />
-                <label class="form-check-label" for="flexCheckDefaultFunded">
-                  Loan closed and Funded
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultCommission"
-                />
-                <label
-                  class="form-check-label"
-                  for="flexCheckDefaultCommission"
-                >
-                  Commission Paid
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultQC"
-                />
-                <label class="form-check-label" for="flexCheckDefaultQC">
-                  QC and Closed File
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefaultWithdrawal"
-                />
-                <label
-                  class="form-check-label"
-                  for="flexCheckDefaultWithdrawal"
-                >
-                  Loan Withdrawal
-                </label>
-              </div>
-            </form>
-          </div>
+          {/* add milestone inner part */}
+          <AddMilestone></AddMilestone>
         </Offcanvas.Body>
       </Offcanvas>
       {/* off canvas end */}

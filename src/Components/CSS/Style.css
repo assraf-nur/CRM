@@ -871,7 +871,7 @@ div {
   text-decoration: none;
   padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 .contact-details-page-links2 a {
   text-decoration: none;
