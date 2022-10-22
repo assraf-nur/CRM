@@ -1,7 +1,8 @@
 import React from "react";
-import { HiPlus } from "react-icons/hi";
-import { Form } from "react-bootstrap";
-import { MdCancel } from "react-icons/md";
+import { HiDotsVertical, HiPlus } from "react-icons/hi";
+import { Card, Form } from "react-bootstrap";
+import { MdCancel, MdDelete } from "react-icons/md";
+import { FaEdit } from 'react-icons/fa';
 
 const Appointments = () => {
   return (
@@ -87,6 +88,244 @@ const Appointments = () => {
           <MdCancel className="me-1 mb-1" />
           Cancel
         </button>
+      </div>
+
+      {/* Appointment List */}
+      <div className="mt-4">
+        <Card style={{ width: "100%" }}>
+          <Card.Body>
+            <div className="note-upper-part">
+              <div className="">
+                <h6>
+                  {" "}
+                  <strong>Date:</strong> 22/10/2022
+                </h6>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="note-option-button"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <HiDotsVertical className="fs-5" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="{#}">
+                      <FaEdit className="mb-1 me-1" /> Edit
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{#}">
+                      {" "}
+                      <MdDelete className="mb-1 me-1" /> Delete
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h6>
+              {" "}
+              <strong>Start Time:</strong> 10.00 AM
+            </h6>
+            <h6>
+              {" "}
+              <strong>End Time:</strong> 1.00 PM
+            </h6>
+            <h6>
+              {" "}
+              <strong>Team:</strong>{" "}
+              <span>Rifa</span>{" "}
+            </h6>
+            <h6 className="mt-3">
+              {" "}
+              <strong>Description:</strong>
+            </h6>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </div>
+      <div className="mt-4">
+        <Card style={{ width: "100%" }}>
+          <Card.Body>
+            <div className="note-upper-part">
+              <div className="">
+                <h6>
+                  {" "}
+                  <strong>Date:</strong> 22/10/2022
+                </h6>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="note-option-button"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <HiDotsVertical className="fs-5" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="{#}">
+                      <FaEdit className="mb-1 me-1" /> Edit
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{#}">
+                      {" "}
+                      <MdDelete className="mb-1 me-1" /> Delete
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h6>
+              {" "}
+              <strong>Start Time:</strong> 10.00 AM
+            </h6>
+            <h6>
+              {" "}
+              <strong>End Time:</strong> 1.00 PM
+            </h6>
+            <h6>
+              {" "}
+              <strong>Team:</strong>{" "}
+              <span>Rifa</span>{" "}
+            </h6>
+            <h6 className="mt-3">
+              {" "}
+              <strong>Description:</strong>
+            </h6>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </div>
+      <div className="mt-4">
+        <Card style={{ width: "100%" }}>
+          <Card.Body>
+            <div className="note-upper-part">
+              <div className="">
+                <h6>
+                  {" "}
+                  <strong>Date:</strong> 22/10/2022
+                </h6>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="note-option-button"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <HiDotsVertical className="fs-5" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="{#}">
+                      <FaEdit className="mb-1 me-1" /> Edit
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{#}">
+                      {" "}
+                      <MdDelete className="mb-1 me-1" /> Delete
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h6>
+              {" "}
+              <strong>Start Time:</strong> 10.00 AM
+            </h6>
+            <h6>
+              {" "}
+              <strong>End Time:</strong> 1.00 PM
+            </h6>
+            <h6>
+              {" "}
+              <strong>Team:</strong>{" "}
+              <span>Rifa</span>{" "}
+            </h6>
+            <h6 className="mt-3">
+              {" "}
+              <strong>Description:</strong>
+            </h6>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </div>
+      <div className="mt-4">
+        <Card style={{ width: "100%" }}>
+          <Card.Body>
+            <div className="note-upper-part">
+              <div className="">
+                <h6>
+                  {" "}
+                  <strong>Date:</strong> 22/10/2022
+                </h6>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="note-option-button"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <HiDotsVertical className="fs-5" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="{#}">
+                      <FaEdit className="mb-1 me-1" /> Edit
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="{#}">
+                      {" "}
+                      <MdDelete className="mb-1 me-1" /> Delete
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h6>
+              {" "}
+              <strong>Start Time:</strong> 10.00 AM
+            </h6>
+            <h6>
+              {" "}
+              <strong>End Time:</strong> 1.00 PM
+            </h6>
+            <h6>
+              {" "}
+              <strong>Team:</strong>{" "}
+              <span>Rifa</span>{" "}
+            </h6>
+            <h6 className="mt-3">
+              {" "}
+              <strong>Description:</strong>
+            </h6>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </div>
     </div>
   );
