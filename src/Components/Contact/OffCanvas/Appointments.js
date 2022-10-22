@@ -8,7 +8,7 @@ const Appointments = () => {
     <div>
       <Form>
         <div>
-          <button className="add-new-button px-2 py-2">
+          <button className="add-new-button px-2 py-1">
             <HiPlus />
             Add Appointments
           </button>
