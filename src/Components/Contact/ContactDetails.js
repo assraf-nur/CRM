@@ -3,11 +3,12 @@ import contactProfile from "../Images/Profile/contact-profile.jpg";
 import { FcCellPhone } from "react-icons/fc";
 import { CgProfile } from "react-icons/cg";
 import { HiDotsVertical } from "react-icons/hi";
+import { AiOutlineMail } from "react-icons/ai";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-import { Offcanvas, ProgressBar } from "react-bootstrap";
+import { Button, Modal, Offcanvas, ProgressBar } from "react-bootstrap";
 import profilePic from "../Images/Profile/profile-pic.png";
 import profilePic2 from "../Images/Profile/profile-pic2.png";
 import "../CSS/Style.css";
@@ -16,6 +17,7 @@ import ToDoList from "./OffCanvas/ToDoList";
 import Note from "./OffCanvas/Note";
 import AddMilestone from "./OffCanvas/AddMilestone";
 import Appointments from "./OffCanvas/Appointments";
+import EmailModal from "./Modals/EmailModal";
 
 const ContactDetails = () => {
   const [datas, setDatas] = useState([]);
@@ -35,6 +37,7 @@ const ContactDetails = () => {
   const [showNote, setShowAddNote] = useState(false);
   const [showToDo, setShowToDo] = useState(false);
   const [showAppointment, setShowAppointment] = useState(false);
+  const [showEmailModal, setShowEmailModal] = useState(false);
 
   const handleClose1 = () => setShowMileStone(false);
   const handleShow1 = () => setShowMileStone(true);
@@ -50,6 +53,9 @@ const ContactDetails = () => {
 
   const handleCloseAppointment = () => setShowAppointment(false);
   const handleShowAppointment = () => setShowAppointment(true);
+
+  const handleCloseEmailModal = () => setShowEmailModal(false);
+  const handleShowEmailModal = () => setShowEmailModal(true);
 
   return (
     <div className="p-3 contact-details-page">
@@ -147,6 +153,9 @@ const ContactDetails = () => {
         <a className="page-links2" href="{}">
           <CgProfile className="mb-1" /> Profile
         </a>
+        <a className="page-links2" onClick={handleShowEmailModal}>
+          <AiOutlineMail className="mb-1" /> Email
+        </a>
         <a className="page-links2" onClick={handleShowAppointment}>
           <FiCheckSquare className="mb-1" /> Appointment
         </a>
@@ -235,6 +244,12 @@ const ContactDetails = () => {
           </div>
         </div>
       </div>
+      {/* email modal start */}
+      <Modal className="email-modal" show={showEmailModal} onHide={handleCloseEmailModal}>
+        <EmailModal></EmailModal>
+      </Modal>
+      {/* email modal ens */}
+
       {/* off canvas start */}
       <Offcanvas
         className="off-canvas"

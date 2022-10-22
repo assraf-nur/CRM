@@ -1078,3 +1078,8 @@ div {
   border: none;
   background-color: #25252500;
 }
+/* email modal start */
+.email-modal{
+  margin-top: 150px;
+}
+/* email modal end */
