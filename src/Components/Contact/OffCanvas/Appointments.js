@@ -1,7 +1,7 @@
 import React from "react";
 import { HiPlus } from "react-icons/hi";
 import { Form } from "react-bootstrap";
-import { MdCancel } from 'react-icons/md';
+import { MdCancel } from "react-icons/md";
 
 const Appointments = () => {
   return (
@@ -18,9 +18,16 @@ const Appointments = () => {
           </Form.Group>
           <Form.Group className="mb-2" controlId="formBasicEmail">
             <Form.Label className="mb-0">When</Form.Label>
-            <div className="d-flex gap-2">
-              <Form.Control className="col-sm" type="date" placeholder="" />
-              <Form.Control className="col-sm" type="time" placeholder="" />
+            <Form.Control className="col-sm" type="date" placeholder="" />
+            <div className="d-flex gap-2 mt-2">
+              <div className="w-100">
+                <Form.Label className="mb-0">From</Form.Label>
+                <Form.Control className="col-sm" type="time" placeholder="" />
+              </div>
+              <div className="w-100">
+                <Form.Label className="mb-0">To</Form.Label>
+                <Form.Control className="col-sm" type="time" placeholder="" />
+              </div>
             </div>
           </Form.Group>
           <Form.Label className="mb-1">Assigned To</Form.Label>
