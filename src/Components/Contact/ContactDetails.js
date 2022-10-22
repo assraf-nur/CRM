@@ -1,23 +1,21 @@
 import React, { useEffect, useState } from "react";
 import contactProfile from "../Images/Profile/contact-profile.jpg";
 import { FcCellPhone } from "react-icons/fc";
-import { FaEdit } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
-import { HiDotsVertical, HiPlus } from "react-icons/hi";
+import { HiDotsVertical } from "react-icons/hi";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
-import { MdCancel, MdDelete } from "react-icons/md";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-import { Card, Form, Offcanvas, ProgressBar } from "react-bootstrap";
+import { Offcanvas, ProgressBar } from "react-bootstrap";
 import profilePic from "../Images/Profile/profile-pic.png";
 import profilePic2 from "../Images/Profile/profile-pic2.png";
-import profilePic3 from "../Images/Profile/pro-icon.png";
 import "../CSS/Style.css";
 import MilestoneCanvas from "./OffCanvas/MilestoneCanvas";
 import ToDoList from "./OffCanvas/ToDoList";
 import Note from "./OffCanvas/Note";
 import AddMilestone from "./OffCanvas/AddMilestone";
+import Appointments from "./OffCanvas/Appointments";
 
 const ContactDetails = () => {
   const [datas, setDatas] = useState([]);
@@ -36,6 +34,7 @@ const ContactDetails = () => {
   const [showAddMileStone, setShowAddMileStone] = useState(false);
   const [showNote, setShowAddNote] = useState(false);
   const [showToDo, setShowToDo] = useState(false);
+  const [showAppointment, setShowAppointment] = useState(false);
 
   const handleClose1 = () => setShowMileStone(false);
   const handleShow1 = () => setShowMileStone(true);
@@ -48,6 +47,9 @@ const ContactDetails = () => {
 
   const handleClose4 = () => setShowToDo(false);
   const handleShow4 = () => setShowToDo(true);
+
+  const handleCloseAppointment = () => setShowAppointment(false);
+  const handleShowAppointment = () => setShowAppointment(true);
 
   return (
     <div className="p-3 contact-details-page">
@@ -145,7 +147,7 @@ const ContactDetails = () => {
         <a className="page-links2" href="{}">
           <CgProfile className="mb-1" /> Profile
         </a>
-        <a className="page-links2" href="{}">
+        <a className="page-links2" onClick={handleShowAppointment}>
           <FiCheckSquare className="mb-1" /> Appointment
         </a>
         <a className="page-links2" href="{}">
@@ -246,6 +248,20 @@ const ContactDetails = () => {
         <Offcanvas.Body>
           {/* Milestone inner part */}
           <MilestoneCanvas></MilestoneCanvas>
+        </Offcanvas.Body>
+      </Offcanvas>
+      <Offcanvas
+        className="off-canvas"
+        placement="end"
+        show={showAppointment}
+        onHide={handleCloseAppointment}
+      >
+        <Offcanvas.Header className="canvas-banner" closeButton>
+          <Offcanvas.Title className="ms-3 py-1">Appointments</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          {/* Appointments inner part */}
+          <Appointments></Appointments>
         </Offcanvas.Body>
       </Offcanvas>
       <Offcanvas
