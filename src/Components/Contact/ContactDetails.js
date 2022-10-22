@@ -19,6 +19,7 @@ import AddMilestone from "./OffCanvas/AddMilestone";
 import Appointments from "./OffCanvas/Appointments";
 import EmailModal from "./Modals/EmailModal";
 import AddPapers from "./OffCanvas/AddPapers";
+import TextInformationModal from "./Modals/TextInformationModal";
 
 const ContactDetails = () => {
   const [datas, setDatas] = useState([]);
@@ -39,6 +40,8 @@ const ContactDetails = () => {
   const [showToDo, setShowToDo] = useState(false);
   const [showAppointment, setShowAppointment] = useState(false);
   const [showEmailModal, setShowEmailModal] = useState(false);
+  const [showTextInformationModal, setShowTextInformationModal] =
+    useState(false);
   const [showAddPapers, setShowAddPapers] = useState(false);
 
   const handleClose1 = () => setShowMileStone(false);
@@ -55,6 +58,11 @@ const ContactDetails = () => {
 
   const handleCloseAppointment = () => setShowAppointment(false);
   const handleShowAppointment = () => setShowAppointment(true);
+
+  const handleCloseTextInformationModal = () =>
+    setShowTextInformationModal(false);
+  const handleShowTextInformationModal = () =>
+    setShowTextInformationModal(true);
 
   const handleCloseEmailModal = () => setShowEmailModal(false);
   const handleShowEmailModal = () => setShowEmailModal(true);
@@ -182,8 +190,8 @@ const ContactDetails = () => {
           <FiFilePlus className="mb-1 me-1" />
           Millstone
         </a>
-        <a className="" href="{}">
-          <FiFilePlus className="mb-1" /> Lender
+        <a className="" onClick={handleShowTextInformationModal}>
+          <FiFilePlus className="mb-1" /> Text Information
         </a>
         <div className="ms-auto d-flex">
           <div class="form-check">
@@ -259,6 +267,16 @@ const ContactDetails = () => {
         <EmailModal></EmailModal>
       </Modal>
       {/* email modal ens */}
+
+      {/* Text information ModaL START */}
+      <Modal
+        className="email-modal"
+        show={showTextInformationModal}
+        onHide={handleCloseTextInformationModal}
+      >
+        <TextInformationModal></TextInformationModal>
+      </Modal>
+      {/* Text information ModaL END */}
 
       {/* off canvas start */}
       <Offcanvas
