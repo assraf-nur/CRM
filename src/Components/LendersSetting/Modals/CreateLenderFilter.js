@@ -1,17 +1,23 @@
 import React from "react";
 import { Form, Modal } from "react-bootstrap";
 
-const CreateLender = () => {
+const CreateLenderFilter = () => {
   return (
     <div className="">
       <Modal.Header className="canvas-banner" closeButton>
-        <Modal.Title>Create Lender Category</Modal.Title>
+        <Modal.Title>Create Lender Filter</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form.Group className="mb-2 mt-3" controlId="formBasicEmail">
-          <Form.Control type="text" placeholder="Lender Category Name" />
+          <Form.Select  aria-label="Default select example">
+            <option>Select Lender Category</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </Form.Select>
+          <Form.Control className="mt-3" type="text" placeholder="Lender Category Name" />
           <div>
-            <div className="mt-2 mx-auto">
+            <div className="mt-3 mx-auto">
               <textarea
                 class="form-control"
                 placeholder="Description"
@@ -53,4 +59,4 @@ const CreateLender = () => {
   );
 };
 
-export default CreateLender;
+export default CreateLenderFilter;
