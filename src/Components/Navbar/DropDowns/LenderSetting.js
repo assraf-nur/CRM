@@ -15,7 +15,7 @@ const LenderSetting = () => {
             className="py-3 left-list-link"
             to="/lenderCategory"
           >
-            <MdCategory className="icons ms-3 me-4 mb-1 fs-5" />
+            <MdCategory className="icons ms-3 me-5 mb-1 fs-5" />
             Lender Category
           </Link>
         </ListItem>
@@ -26,7 +26,7 @@ const LenderSetting = () => {
             className="py-3 left-list-link"
             to="/lenderFilter"
           >
-            <AiTwotoneFilter className="icons ms-3 me-4 mb-1 fs-5" />
+            <AiTwotoneFilter className="icons ms-3 me-5 mb-1 fs-5" />
             Lender Filter
           </Link>
         </ListItem>
@@ -37,7 +37,7 @@ const LenderSetting = () => {
             className="py-3 left-list-link"
             to="/lendersList"
           >
-            <AiOutlineOrderedList className="icons ms-3 me-4 mb-1 fs-5" />
+            <AiOutlineOrderedList className="icons ms-3 me-5 mb-1 fs-5" />
             Lender List
           </Link>
         </ListItem>
