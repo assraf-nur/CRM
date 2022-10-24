@@ -53,7 +53,7 @@ import LenderCategory from "../LendersSetting/LenderCategory";
 import LenderFilter from "../LendersSetting/LenderFilter";
 import LendersList from "../LendersSetting/LendersList";
 
-const drawerWidth = 240;
+const drawerWidth = 260;
 
 const openedMixin = (theme) => ({
   width: drawerWidth,
