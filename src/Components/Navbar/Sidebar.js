@@ -52,6 +52,7 @@ import { RiUserSettingsFill } from "react-icons/ri";
 import LenderCategory from "../LendersSetting/LenderCategory";
 import LenderFilter from "../LendersSetting/LenderFilter";
 import LendersList from "../LendersSetting/LendersList";
+import AddLenderList from "../LendersSetting/AddLenderList";
 
 const drawerWidth = 260;
 
@@ -333,6 +334,7 @@ export default function MiniDrawer() {
           <Route path="lenderCategory" element={<LenderCategory></LenderCategory>}/>
           <Route path="lenderFilter" element={<LenderFilter></LenderFilter>}/>
           <Route path="lendersList" element={<LendersList></LendersList>}/>
+          <Route path="addLenderList" element={<AddLenderList></AddLenderList>}/>
         </Routes>
       </Box>
     </Box>
