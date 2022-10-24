@@ -37,17 +37,21 @@ import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import Setting from "../Setting/Setting";
 import ReportList from "../Reports/ReportList";
 import ContactDetails from "../Contact/ContactDetails";
-import { Card, Collapse } from "react-bootstrap";
+import { Collapse } from "react-bootstrap";
 import AddLender from "../Setting/AddLender";
-import { AiOutlineUserAdd } from "react-icons/ai";
+import { AiFillCaretDown } from "react-icons/ai";
 import LenderList from "../Setting/LenderList";
 import SmtpSetting from "../Setting/SmtpSetting";
 import SmsConfiguration from "../Setting/SmsConfiguration";
 import CompanySetting from "../Setting/CompanySetting";
-import { MdSettingsSuggest } from "react-icons/md";
-import { RiListSettingsLine, RiMailSettingsLine } from "react-icons/ri";
 import Login from "../Login/Login";
 import SignUp from "../Login/SignUp";
+import SettingDropDown from "./DropDowns/SettingDropDown";
+import LenderSetting from "./DropDowns/LenderSetting";
+import { RiUserSettingsFill } from "react-icons/ri";
+import LenderCategory from "../LendersSetting/LenderCategory";
+import LenderFilter from "../LendersSetting/LenderFilter";
+import LendersList from "../LendersSetting/LendersList";
 
 const drawerWidth = 240;
 
@@ -118,13 +122,16 @@ const Drawer = styled(MuiDrawer, {
 
 export default function MiniDrawer() {
   const theme = useTheme();
+  const [openUp, setOpenUp] = React.useState(false);
   const [open, setOpen] = React.useState(false);
+  const [openDownLenderSetting, setOpenDownLenderSetting] =
+    React.useState(false);
 
-  const handleDrawerOpen = () => {
+  const handleDrawerOpen2 = () => {
     setOpen(true);
   };
 
-  const handleDrawerClose = () => {
+  const handleDrawerClose2 = () => {
     setOpen(false);
   };
 
@@ -136,7 +143,7 @@ export default function MiniDrawer() {
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            onClick={handleDrawerOpen}
+            onClick={handleDrawerOpen2}
             edge="start"
             sx={{
               marginRight: 0,
@@ -152,7 +159,7 @@ export default function MiniDrawer() {
       </AppBar>
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={handleDrawerClose2}>
             {theme.direction === "rtl" ? (
               <ChevronRightIcon />
             ) : (
@@ -238,58 +245,49 @@ export default function MiniDrawer() {
             <ListItem disablePadding>
               <Tooltip title="Setting" placement="top" arrow>
                 <Link
-                  onClick={() => setOpen(!open)}
-                  aria-controls="example-collapse-text"
-                  aria-expanded={open}
+                  onClick={() => setOpenUp(!openUp)}
+                  aria-controls="example-collapse-text1"
+                  aria-expanded={openUp}
                   className="py-3 left-list-link"
                   to="/setting"
                 >
                   <SettingsApplicationsIcon className="icons me-4" />
-                  Setting
+                  Setting <AiFillCaretDown className="ms-5" />
                 </Link>
               </Tooltip>
             </ListItem>
             <>
               <div>
-                <Collapse in={open}>
-                  <div id="example-collapse-text">
-                    <Card className="mt-1 mx-1">
-                      <List>
-                        <ListItem className="px-0 py-0">
-                          <Link className="py-3 left-list-link" to="/addLender">
-                            <AiOutlineUserAdd className="icons me-3 mb-1 fs-5" />
-                            Add Lenders
-                          </Link>
-                        </ListItem>
-                        <Divider />
-                        <ListItem className="px-0 py-0">
-                          <Link
-                            className="py-3 left-list-link"
-                            to="/smtpSetting"
-                          >
-                            <MdSettingsSuggest className="icons me-3 mb-1 fs-5" />
-                            SMTP Setting
-                          </Link>
-                        </ListItem>
-                        <Divider />
-                        <ListItem className="px-0 py-0">
-                          <Link className="py-3 left-list-link" to="/smsConfig">
-                            <RiMailSettingsLine className="icons me-3 mb-1 fs-5" />
-                            SMS Configuration
-                          </Link>
-                        </ListItem>
-                        <Divider />
-                        <ListItem className="px-0 py-0">
-                          <Link
-                            className="py-3 left-list-link"
-                            to="/companySetting"
-                          >
-                            <RiListSettingsLine className="icons me-3 mb-1 fs-5" />
-                            Company Setting
-                          </Link>
-                        </ListItem>
-                      </List>
-                    </Card>
+                <Collapse in={openUp}>
+                  <div id="example-collapse-text1">
+                    <SettingDropDown></SettingDropDown>
+                  </div>
+                </Collapse>
+              </div>
+            </>
+            <Divider />
+            <ListItem disablePadding>
+              <Tooltip title="Setting" placement="top" arrow>
+                <Link
+                  onClick={() =>
+                    setOpenDownLenderSetting(!openDownLenderSetting)
+                  }
+                  aria-controls="example-collapse-text2"
+                  aria-expanded={openDownLenderSetting}
+                  className="py-3 left-list-link"
+                  to="/setting"
+                >
+                  <RiUserSettingsFill className="icons me-4 fs-4" />
+                  Lender Setting <AiFillCaretDown className="ms-3" />
+                </Link>
+              </Tooltip>
+            </ListItem>
+            <Divider />
+            <>
+              <div>
+                <Collapse in={openDownLenderSetting}>
+                  <div id="example-collapse-text2">
+                    <LenderSetting></LenderSetting>
                   </div>
                 </Collapse>
               </div>
@@ -333,6 +331,9 @@ export default function MiniDrawer() {
             path="companySetting"
             element={<CompanySetting></CompanySetting>}
           />
+          <Route path="lenderCategory" element={<LenderCategory></LenderCategory>}/>
+          <Route path="lenderFilter" element={<LenderFilter></LenderFilter>}/>
+          <Route path="lendersList" element={<LendersList></LendersList>}/>
         </Routes>
       </Box>
     </Box>
