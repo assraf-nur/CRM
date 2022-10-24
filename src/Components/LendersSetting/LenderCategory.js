@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Modal } from "react-bootstrap";
 import { BiEditAlt } from "react-icons/bi";
 import { HiPlus } from "react-icons/hi";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import CreateLender from "./Modals/CreateLender";
 
 const LenderCategory = () => {
   const [showLenderAddModal, setShowLenderAddModal] = useState(false);
@@ -14,11 +16,21 @@ const LenderCategory = () => {
       <div className="bg-white p-3">
         <div className="border-bottom pb-2 d-flex justify-content-between">
           <h5>Lender Category</h5>
-          <button onClick={handleShowLenderAddModal} className="add-new-button px-2">
+          <button
+            onClick={handleShowLenderAddModal}
+            className="add-new-button px-2"
+          >
             <HiPlus className="me-1" />
             Add Lender Category
           </button>
         </div>
+        <Modal
+          className="email-modal"
+          show={showLenderAddModal}
+          onHide={handleCloseLenderAddModal}
+        >
+          <CreateLender></CreateLender>
+        </Modal>
         <table className="table">
           <thead>
             <tr>
@@ -38,7 +50,7 @@ const LenderCategory = () => {
               <td className="py-3">24/10/2022</td>
               <td className="py-3">
                 <span className="status-de-active px-2 py-1 rounded">
-                  Deactivate
+                  Inactive
                 </span>
               </td>
               <td className="py-3 text-center">
@@ -91,7 +103,7 @@ const LenderCategory = () => {
               <td className="py-3">24/10/2022</td>
               <td className="py-3">
                 <span className="status-de-active px-2 py-1 rounded">
-                  Deactivate
+                  Inactive
                 </span>
               </td>
               <td className="py-3 text-center">
