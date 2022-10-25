@@ -54,6 +54,7 @@ import LenderFilter from "../LendersSetting/LenderFilter";
 import LendersList from "../LendersSetting/LendersList";
 import AddLendersList from "../LendersSetting/AddLendersList";
 import ApplicationStatus from "../Setting/ApplicationStatus";
+import LeadSource from "../Setting/LeadSource";
 
 const drawerWidth = 260;
 
@@ -344,6 +345,10 @@ export default function MiniDrawer() {
           <Route
             path="applicationStatus"
             element={<ApplicationStatus></ApplicationStatus>}
+          />
+          <Route
+            path="leadSource"
+            element={<LeadSource></LeadSource>}
           />
         </Routes>
       </Box>

@@ -2,7 +2,7 @@ import { Divider, List, ListItem } from "@mui/material";
 import React from "react";
 import { Card } from "react-bootstrap";
 import { AiFillHdd, AiOutlineUserAdd } from "react-icons/ai";
-import { MdSettingsSuggest } from "react-icons/md";
+import { MdOutlineLeaderboard, MdSettingsSuggest } from "react-icons/md";
 import { RiListSettingsLine, RiMailSettingsLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
@@ -64,6 +64,17 @@ const SettingDropDown = () => {
           >
             <AiFillHdd className="icons ms-3 me-4 mb-1 fs-5" />
             Application Status
+          </Link>
+        </ListItem>
+        <Divider />
+        <ListItem className="px-0 py-0">
+          <Link
+            className="py-3 left-list-link"
+            to="/leadSource"
+            title="Lead Source"
+          >
+            <MdOutlineLeaderboard className="icons ms-3 me-4 mb-1 fs-5" />
+            Lead Source
           </Link>
         </ListItem>
       </List>
