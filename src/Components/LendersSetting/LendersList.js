@@ -9,9 +9,9 @@ const LendersList = () => {
     <div className="p-3">
       <div className="bg-white p-3">
         <div className="border-bottom pb-2 d-flex justify-content-between">
-          <h5>Lender Category</h5>
+          <h5>Lender List</h5>
           <Link
-            to="/"
+            to="/addLendersList"
             className="add-new-button contact-list-button px-2"
           >
             <HiPlus className="me-1" />

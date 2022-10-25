@@ -52,6 +52,7 @@ import { RiUserSettingsFill } from "react-icons/ri";
 import LenderCategory from "../LendersSetting/LenderCategory";
 import LenderFilter from "../LendersSetting/LenderFilter";
 import LendersList from "../LendersSetting/LendersList";
+import AddLendersList from "../LendersSetting/AddLendersList";
 
 const drawerWidth = 260;
 
@@ -267,7 +268,7 @@ export default function MiniDrawer() {
             </>
             <Divider />
             <ListItem disablePadding>
-              <Tooltip title="Setting" placement="top" arrow>
+              <Tooltip title="Lender Setting" placement="top" arrow>
                 <Link
                   onClick={() =>
                     setOpenDownLenderSetting(!openDownLenderSetting)
@@ -333,6 +334,7 @@ export default function MiniDrawer() {
           <Route path="lenderCategory" element={<LenderCategory></LenderCategory>}/>
           <Route path="lenderFilter" element={<LenderFilter></LenderFilter>}/>
           <Route path="lendersList" element={<LendersList></LendersList>}/>
+          <Route path="addLendersList" element={<AddLendersList></AddLendersList>}/>
         </Routes>
       </Box>
     </Box>
