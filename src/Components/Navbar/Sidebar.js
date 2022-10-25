@@ -53,6 +53,7 @@ import LenderCategory from "../LendersSetting/LenderCategory";
 import LenderFilter from "../LendersSetting/LenderFilter";
 import LendersList from "../LendersSetting/LendersList";
 import AddLendersList from "../LendersSetting/AddLendersList";
+import ApplicationStatus from "../Setting/ApplicationStatus";
 
 const drawerWidth = 260;
 
@@ -73,7 +74,7 @@ const closedMixin = (theme) => ({
   overflowX: "hidden",
   width: `calc(${theme.spacing(7)} + 1px)`,
   [theme.breakpoints.up("sm")]: {
-    width: `calc(${theme.spacing(9)} + 1px)`,
+    width: `calc(${theme.spacing(8)} + 1px)`,
   },
 });
 
@@ -124,7 +125,7 @@ const Drawer = styled(MuiDrawer, {
 export default function MiniDrawer() {
   const theme = useTheme();
   const [openUp, setOpenUp] = React.useState(false);
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   const [openDownLenderSetting, setOpenDownLenderSetting] =
     React.useState(false);
 
@@ -168,13 +169,13 @@ export default function MiniDrawer() {
             )}
           </IconButton>
         </DrawerHeader>
-        <Divider />
-        <nav aria-label="main mailbox folders">
+        <Divider className="mt-1"/>
+        <nav className="left-list" aria-label="main mailbox folders">
           <List>
             <ListItem disablePadding>
               <Tooltip title="Home" placement="top" arrow>
                 <Link className="py-3 left-list-link" to="/home">
-                  <HomeIcon className="icons me-5 mb-1" />
+                  <HomeIcon className="icons me-4 mb-1" />
                   Home
                 </Link>
               </Tooltip>
@@ -183,7 +184,7 @@ export default function MiniDrawer() {
             <ListItem disablePadding>
               <Tooltip title="users" placement="top" arrow>
                 <Link className="py-3 left-list-link" to="/users">
-                  <PeopleAltIcon className="icons me-5 mb-1" />
+                  <PeopleAltIcon className="icons me-4 mb-1" />
                   Users
                 </Link>
               </Tooltip>
@@ -192,7 +193,7 @@ export default function MiniDrawer() {
             <ListItem disablePadding>
               <Tooltip title="Department" placement="top" arrow>
                 <Link className="py-3 left-list-link" to="/department">
-                  <FaUsersCog className="icons fs-4 me-5 mb-1" />
+                  <FaUsersCog className="icons fs-4 me-4 mb-1" />
                   Department
                 </Link>
               </Tooltip>
@@ -201,7 +202,7 @@ export default function MiniDrawer() {
             <ListItem disablePadding>
               <Tooltip title="Calendar" placement="top" arrow>
                 <Link className="py-3 left-list-link" to="/calendar">
-                  <FaCalendarAlt className="icons fs-5 me-5 mb-1" />
+                  <FaCalendarAlt className="icons fs-5 me-4 mb-1" />
                   Calendar
                 </Link>
               </Tooltip>
@@ -210,7 +211,7 @@ export default function MiniDrawer() {
             <ListItem disablePadding>
               <Tooltip title="Task" placement="top" arrow>
                 <Link className="py-3 left-list-link" to="/task">
-                  <TaskIcon className="icons me-5 mb-1" />
+                  <TaskIcon className="icons me-4 mb-1" />
                   Task
                 </Link>
               </Tooltip>
@@ -219,7 +220,7 @@ export default function MiniDrawer() {
             <ListItem disablePadding>
               <Tooltip title="Appointment" placement="top" arrow>
                 <Link className="py-3 left-list-link" to="/appointment">
-                  <EventIcon className="icons me-5" />
+                  <EventIcon className="icons me-4" />
                   Appointment
                 </Link>
               </Tooltip>
@@ -228,7 +229,7 @@ export default function MiniDrawer() {
             <ListItem disablePadding>
               <Tooltip title="Marketing" placement="top" arrow>
                 <Link className="py-3 left-list-link" to="/marketing">
-                  <CampaignIcon className="icons me-5" />
+                  <CampaignIcon className="icons me-4" />
                   Marketing
                 </Link>
               </Tooltip>
@@ -237,7 +238,7 @@ export default function MiniDrawer() {
             <ListItem disablePadding>
               <Tooltip title="Reports" placement="top" arrow>
                 <Link className="py-3 left-list-link" to="/reports">
-                  <AssignmentIcon className="icons me-5" />
+                  <AssignmentIcon className="icons me-4" />
                   Reports
                 </Link>
               </Tooltip>
@@ -252,8 +253,8 @@ export default function MiniDrawer() {
                   className="py-3 left-list-link"
                   to="/setting"
                 >
-                  <SettingsApplicationsIcon className="icons me-5" />
-                  Setting <AiFillCaretDown className="ms-5" />
+                  <SettingsApplicationsIcon className="icons me-4" />
+                  Setting <AiFillCaretDown className="ms-3" />
                 </Link>
               </Tooltip>
             </ListItem>
@@ -277,8 +278,8 @@ export default function MiniDrawer() {
                   aria-expanded={openDownLenderSetting}
                   className="py-3 left-list-link"
                 >
-                  <RiUserSettingsFill className="icons me-5 fs-4" />
-                  Lender Setting <AiFillCaretDown className="ms-3" />
+                  <RiUserSettingsFill className="icons me-4 fs-4" />
+                  Lender Setting <AiFillCaretDown className="ms-2" />
                 </Link>
               </Tooltip>
             </ListItem>
@@ -335,6 +336,7 @@ export default function MiniDrawer() {
           <Route path="lenderFilter" element={<LenderFilter></LenderFilter>}/>
           <Route path="lendersList" element={<LendersList></LendersList>}/>
           <Route path="addLendersList" element={<AddLendersList></AddLendersList>}/>
+          <Route path="applicationStatus" element={<ApplicationStatus></ApplicationStatus>}/>
         </Routes>
       </Box>
     </Box>

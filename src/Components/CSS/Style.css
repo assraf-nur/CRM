@@ -5,6 +5,15 @@ div {
 .nav-container {
   font-family: "Inter";
 }
+.left-list {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+.left-list::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
 #button-addon2 {
   background-color: #5156be;
   color: white;

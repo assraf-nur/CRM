@@ -5,7 +5,7 @@ import MiniDrawer from "./Components/Navbar/Sidebar";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar></Navbar>
       <MiniDrawer />
     </div>
