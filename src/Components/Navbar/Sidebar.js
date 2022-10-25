@@ -169,7 +169,7 @@ export default function MiniDrawer() {
             )}
           </IconButton>
         </DrawerHeader>
-        <Divider className="mt-1"/>
+        <Divider className="mt-1" />
         <nav className="left-list" aria-label="main mailbox folders">
           <List>
             <ListItem disablePadding>
@@ -251,7 +251,6 @@ export default function MiniDrawer() {
                   aria-controls="example-collapse-text1"
                   aria-expanded={openUp}
                   className="py-3 left-list-link"
-                  to="/setting"
                 >
                   <SettingsApplicationsIcon className="icons me-4" />
                   Setting <AiFillCaretDown className="ms-3" />
@@ -332,11 +331,20 @@ export default function MiniDrawer() {
             path="companySetting"
             element={<CompanySetting></CompanySetting>}
           />
-          <Route path="lenderCategory" element={<LenderCategory></LenderCategory>}/>
-          <Route path="lenderFilter" element={<LenderFilter></LenderFilter>}/>
-          <Route path="lendersList" element={<LendersList></LendersList>}/>
-          <Route path="addLendersList" element={<AddLendersList></AddLendersList>}/>
-          <Route path="applicationStatus" element={<ApplicationStatus></ApplicationStatus>}/>
+          <Route
+            path="lenderCategory"
+            element={<LenderCategory></LenderCategory>}
+          />
+          <Route path="lenderFilter" element={<LenderFilter></LenderFilter>} />
+          <Route path="lendersList" element={<LendersList></LendersList>} />
+          <Route
+            path="addLendersList"
+            element={<AddLendersList></AddLendersList>}
+          />
+          <Route
+            path="applicationStatus"
+            element={<ApplicationStatus></ApplicationStatus>}
+          />
         </Routes>
       </Box>
     </Box>
