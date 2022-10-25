@@ -16,7 +16,7 @@ const SettingDropDown = () => {
             className="py-3 left-list-link"
             to="/addLender"
           >
-            <AiOutlineUserAdd className="icons ms-3 me-5 mb-1 fs-5" />
+            <AiOutlineUserAdd className="icons ms-3 me-4 mb-1 fs-5" />
             Add Lenders
           </Link>
         </ListItem>
@@ -27,7 +27,7 @@ const SettingDropDown = () => {
             to="/smtpSetting"
             title="SMTP Setting"
           >
-            <MdSettingsSuggest className="icons ms-3 me-5 mb-1 fs-5" />
+            <MdSettingsSuggest className="icons ms-3 me-4 mb-1 fs-5" />
             SMTP Setting
           </Link>
         </ListItem>
@@ -38,7 +38,7 @@ const SettingDropDown = () => {
             className="py-3 left-list-link"
             to="/smsConfig"
           >
-            <RiMailSettingsLine className="icons ms-3 me-5 mb-1 fs-5" />
+            <RiMailSettingsLine className="icons ms-3 me-4 mb-1 fs-5" />
             SMS Configuration
           </Link>
         </ListItem>
@@ -50,7 +50,7 @@ const SettingDropDown = () => {
             to="/companySetting"
             title="Company Setting"
           >
-            <RiListSettingsLine className="icons ms-3 me-5 mb-1 fs-5" />
+            <RiListSettingsLine className="icons ms-3 me-4 mb-1 fs-5" />
             Company Setting
           </Link>
         </ListItem>
@@ -62,7 +62,7 @@ const SettingDropDown = () => {
             to="/applicationStatus"
             title="Application Status"
           >
-            <AiFillHdd className="icons ms-3 me-5 mb-1 fs-5" />
+            <AiFillHdd className="icons ms-3 me-4 mb-1 fs-5" />
             Application Status
           </Link>
         </ListItem>
