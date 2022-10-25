@@ -2,6 +2,8 @@ import { Divider, List, ListItem } from "@mui/material";
 import React from "react";
 import { Card } from "react-bootstrap";
 import { AiFillHdd, AiOutlineDollarCircle, AiOutlineUserAdd } from "react-icons/ai";
+import { FaPeopleArrows } from "react-icons/fa";
+import { GoMilestone } from "react-icons/go";
 import { MdOutlineLeaderboard, MdSettingsSuggest } from "react-icons/md";
 import { RiListSettingsLine, RiMailSettingsLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -86,6 +88,28 @@ const SettingDropDown = () => {
           >
             <AiOutlineDollarCircle className="icons ms-3 me-4 mb-1 fs-5" />
             Types of Loan
+          </Link>
+        </ListItem>
+        <Divider />
+        <ListItem className="px-0 py-0">
+          <Link
+            className="py-3 left-list-link"
+            to="/milestone"
+            title="Lead Source"
+          >
+            <GoMilestone className="icons ms-3 me-4 mb-1 fs-5" />
+            Milestone
+          </Link>
+        </ListItem>
+        <Divider />
+        <ListItem className="px-0 py-0">
+          <Link
+            className="py-3 left-list-link"
+            to="/marketingSetting"
+            title="Lead Source"
+          >
+            <FaPeopleArrows className="icons ms-3 me-4 mb-1 fs-5" />
+            Marketing
           </Link>
         </ListItem>
       </List>

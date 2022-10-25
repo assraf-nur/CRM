@@ -56,6 +56,8 @@ import AddLendersList from "../LendersSetting/AddLendersList";
 import ApplicationStatus from "../Setting/ApplicationStatus";
 import LeadSource from "../Setting/LeadSource";
 import TypesOfLoan from "../Setting/TypesOfLoan";
+import Milestone from "../Setting/Milestone";
+import MarketingSetting from "../Setting/MarketingSetting";
 
 const drawerWidth = 260;
 
@@ -354,6 +356,14 @@ export default function MiniDrawer() {
           <Route
             path="typesOfLoan"
             element={<TypesOfLoan></TypesOfLoan>}
+          />
+          <Route
+            path="milestone"
+            element={<Milestone></Milestone>}
+          />
+          <Route
+            path="marketingSetting"
+            element={<MarketingSetting></MarketingSetting>}
           />
         </Routes>
       </Box>
