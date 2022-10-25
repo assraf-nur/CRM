@@ -32,7 +32,7 @@ const ApplicationStatus = () => {
           <AddApplicationStatus></AddApplicationStatus>
         </Modal>
         <div>
-          <table className="table border w-25 mx-auto mt-5">
+          <table className="table border w-25 mx-auto mt-4">
             <thead>
               <tr>
                 <th>Name</th>
