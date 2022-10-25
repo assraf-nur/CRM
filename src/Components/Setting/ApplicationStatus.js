@@ -32,8 +32,8 @@ const ApplicationStatus = () => {
           <AddApplicationStatus></AddApplicationStatus>
         </Modal>
         <div>
-          <table className="table border w-25 mx-auto mt-4">
-            <thead>
+          <table className="table table-striped border w-25 mx-auto mt-4">
+            <thead className="bg-dark text-white">
               <tr>
                 <th>Name</th>
                 <th className="text-end">Action</th>
