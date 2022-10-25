@@ -11,7 +11,7 @@ const LendersList = () => {
         <div className="border-bottom pb-2 d-flex justify-content-between">
           <h5>Lender Category</h5>
           <Link
-            to="/addLenderList"
+            to="/"
             className="add-new-button contact-list-button px-2"
           >
             <HiPlus className="me-1" />
