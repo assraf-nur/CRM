@@ -59,10 +59,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck112"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck112">
+                    <label className="form-check-label ms-5" for="exampleCheck112">
                       1
                     </label>
                   </td>
@@ -87,10 +87,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck123"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck123">
+                    <label className="form-check-label ms-5" for="exampleCheck123">
                       2
                     </label>
                   </td>
@@ -115,10 +115,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck134"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck134">
+                    <label className="form-check-label ms-5" for="exampleCheck134">
                       3
                     </label>
                   </td>
@@ -143,10 +143,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck145"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck145">
+                    <label className="form-check-label ms-5" for="exampleCheck145">
                       4
                     </label>
                   </td>
@@ -262,10 +262,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck199"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck199">
+                    <label className="form-check-label ms-5" for="exampleCheck199">
                       1
                     </label>
                   </td>
@@ -290,10 +290,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck188"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck188">
+                    <label className="form-check-label ms-5" for="exampleCheck188">
                       2
                     </label>
                   </td>
@@ -318,10 +318,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck177"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck177">
+                    <label className="form-check-label ms-5" for="exampleCheck177">
                       3
                     </label>
                   </td>
@@ -346,10 +346,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck166"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck166">
+                    <label className="form-check-label ms-5" for="exampleCheck166">
                       4
                     </label>
                   </td>
@@ -401,10 +401,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck144"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck144">
+                    <label className="form-check-label ms-5" for="exampleCheck144">
                       1
                     </label>
                   </td>
@@ -429,10 +429,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck133"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck133">
+                    <label className="form-check-label ms-5" for="exampleCheck133">
                       2
                     </label>
                   </td>
@@ -457,10 +457,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck122"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck122">
+                    <label className="form-check-label ms-5" for="exampleCheck122">
                       3
                     </label>
                   </td>
@@ -485,10 +485,10 @@ const Marketing = () => {
                   <td className="p-2 py-3">
                     <input
                       type="checkbox"
-                      class="form-check-input ms-3"
+                      className="form-check-input ms-3"
                       id="exampleCheck111"
                     />
-                    <label class="form-check-label ms-5" for="exampleCheck111">
+                    <label className="form-check-label ms-5" for="exampleCheck111">
                       4
                     </label>
                   </td>

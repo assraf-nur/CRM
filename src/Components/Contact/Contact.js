@@ -82,7 +82,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div class="dropdown">
+        <div className="dropdown">
           <button
             className="upper-toggle dropdown-toggle px-3"
             type="button"
@@ -105,7 +105,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div class="dropdown">
+        <div className="dropdown">
           <button
             className="upper-toggle dropdown-toggle px-3"
             type="button"

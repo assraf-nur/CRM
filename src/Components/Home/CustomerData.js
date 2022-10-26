@@ -320,13 +320,13 @@ const CustomerData = () => {
                 <MoreVertIcon />
               </div>
               <div>
-                <div class="step completed">
-                  <div class="v-stepper">
-                    <div class="circle"></div>
-                    <div class="line"></div>
+                <div className="step completed">
+                  <div className="v-stepper">
+                    <div className="circle"></div>
+                    <div className="line"></div>
                   </div>
 
-                  <div class="content w-100">
+                  <div className="content w-100">
                     <div className="row">
                       <p className="col-sm-9 step-title">
                         Mrinmoy Krishna join in Jibble
@@ -347,13 +347,13 @@ const CustomerData = () => {
                   </div>
                 </div>
 
-                <div class="step pending">
-                  <div class="v-stepper">
-                    <div class="circle"></div>
-                    <div class="line"></div>
+                <div className="step pending">
+                  <div className="v-stepper">
+                    <div className="circle"></div>
+                    <div className="line"></div>
                   </div>
 
-                  <div class="content w-100">
+                  <div className="content w-100">
                     <div className="row">
                       <p className="col-sm-9 step-title">Client Meeting</p>
                       <p className="col-sm-3 text-end">
@@ -375,13 +375,13 @@ const CustomerData = () => {
                   </div>
                 </div>
 
-                <div class="step">
-                  <div class="v-stepper">
-                    <div class="circle"></div>
-                    <div class="line"></div>
+                <div className="step">
+                  <div className="v-stepper">
+                    <div className="circle"></div>
+                    <div className="line"></div>
                   </div>
 
-                  <div class="content w-100">
+                  <div className="content w-100">
                     <div className="row">
                       <p className="col-sm-9 step-title">
                         Create a new project for client
@@ -394,13 +394,13 @@ const CustomerData = () => {
                   </div>
                 </div>
 
-                <div class="step">
-                  <div class="v-stepper">
-                    <div class="circle"></div>
-                    <div class="line"></div>
+                <div className="step">
+                  <div className="v-stepper">
+                    <div className="circle"></div>
+                    <div className="line"></div>
                   </div>
 
-                  <div class="content w-100">
+                  <div className="content w-100">
                     <div className="row">
                       <p className="col-sm-9 step-title">
                         Running out of juice

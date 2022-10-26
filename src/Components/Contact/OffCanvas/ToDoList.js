@@ -16,24 +16,24 @@ const ToDoList = () => {
           Add To-Do
         </button>
         <form className="mt-4">
-          <div class="mb-2">
-            <label for="exampleInputSummery" class="form-label mb-0">
+          <div className="mb-2">
+            <label for="exampleInputSummery" className="form-label mb-0">
               Summery
             </label>
             <input
               type="text"
-              class="form-control mt-0 rounded"
+              className="form-control mt-0 rounded"
               id="exampleInputSummery"
               aria-describedby="emailHelp"
             />
           </div>
-          <div class="mb-2">
-            <label for="exampleInputPriority" class="form-label mb-0">
+          <div className="mb-2">
+            <label for="exampleInputPriority" className="form-label mb-0">
               Priority
             </label>
             <input
               type="text"
-              class="form-control mt-0 rounded"
+              className="form-control mt-0 rounded"
               id="exampleInputPriority"
               aria-describedby="emailHelp"
             />
@@ -50,24 +50,24 @@ const ToDoList = () => {
               <option value="3">Three</option>
             </Form.Select>
           </div>
-          <div class="mb-2">
-            <label for="exampleInputDate" class="form-label mb-0">
+          <div className="mb-2">
+            <label for="exampleInputDate" className="form-label mb-0">
               Due Date
             </label>
             <input
               type="date"
-              class="form-control mt-0 rounded"
+              className="form-control mt-0 rounded"
               id="exampleInputDate"
               aria-describedby="emailHelp"
             />
           </div>
 
           <div>
-            <label for="exampleInputSummery" class="form-label mb-0">
+            <label for="exampleInputSummery" className="form-label mb-0">
               Details
             </label>
             <textarea
-              class="form-control rounded"
+              className="form-control rounded"
               placeholder="Details"
               id="floatingTextarea2"
               style={{ height: "100px" }}
@@ -98,23 +98,23 @@ const ToDoList = () => {
                   </h6>
                 </div>
 
-                <div class="dropdown">
+                <div className="dropdown">
                   <button
-                    class="note-option-button"
+                    className="note-option-button"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     <HiDotsVertical className="fs-5" />
                   </button>
-                  <ul class="dropdown-menu">
+                  <ul className="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="{#}">
+                      <a className="dropdown-item" href="{#}">
                         <FaEdit className="mb-1 me-1" /> Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="{#}">
+                      <a className="dropdown-item" href="{#}">
                         {" "}
                         <MdDelete className="mb-1 me-1" /> Delete
                       </a>
@@ -167,23 +167,23 @@ const ToDoList = () => {
                   </h6>
                 </div>
 
-                <div class="dropdown">
+                <div className="dropdown">
                   <button
-                    class="note-option-button"
+                    className="note-option-button"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     <HiDotsVertical className="fs-5" />
                   </button>
-                  <ul class="dropdown-menu">
+                  <ul className="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="{#}">
+                      <a className="dropdown-item" href="{#}">
                         <FaEdit className="mb-1 me-1" /> Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="{#}">
+                      <a className="dropdown-item" href="{#}">
                         {" "}
                         <MdDelete className="mb-1 me-1" /> Delete
                       </a>
@@ -236,23 +236,23 @@ const ToDoList = () => {
                   </h6>
                 </div>
 
-                <div class="dropdown">
+                <div className="dropdown">
                   <button
-                    class="note-option-button"
+                    className="note-option-button"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     <HiDotsVertical className="fs-5" />
                   </button>
-                  <ul class="dropdown-menu">
+                  <ul className="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="{#}">
+                      <a className="dropdown-item" href="{#}">
                         <FaEdit className="mb-1 me-1" /> Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="{#}">
+                      <a className="dropdown-item" href="{#}">
                         {" "}
                         <MdDelete className="mb-1 me-1" /> Delete
                       </a>
@@ -305,23 +305,23 @@ const ToDoList = () => {
                   </h6>
                 </div>
 
-                <div class="dropdown">
+                <div className="dropdown">
                   <button
-                    class="note-option-button"
+                    className="note-option-button"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     <HiDotsVertical className="fs-5" />
                   </button>
-                  <ul class="dropdown-menu">
+                  <ul className="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="{#}">
+                      <a className="dropdown-item" href="{#}">
                         <FaEdit className="mb-1 me-1" /> Edit
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="{#}">
+                      <a className="dropdown-item" href="{#}">
                         {" "}
                         <MdDelete className="mb-1 me-1" /> Delete
                       </a>

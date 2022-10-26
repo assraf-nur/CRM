@@ -40,7 +40,7 @@ const TextInformationModal = () => {
           </div>
           <div className="mt-2 mx-auto">
             <textarea
-              class="form-control"
+              className="form-control"
               placeholder="Message"
               id="floatingTextarea2"
               style={{ height: "100px" }}

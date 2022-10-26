@@ -4,131 +4,131 @@ const AddPapers = () => {
   return (
     <div className="ms-3 mt-3">
       <form>
-        <div class="form-check">
+        <div className="form-check">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="Driving"
           />
-          <label class="form-check-label" for="Driving">
+          <label className="form-check-label" for="Driving">
             Driving License or Passport, Green card (Front and Back)
           </label>
         </div>
-        <div class="form-check mt-3">
+        <div className="form-check mt-3">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="Equipments"
           />
-          <label class="form-check-label" for="Equipments">
+          <label className="form-check-label" for="Equipments">
             Equipments/Vehicles Purchase Order
           </label>
         </div>
-        <div class="form-check mt-3">
+        <div className="form-check mt-3">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="Letter"
           />
-          <label class="form-check-label" for="Letter">
+          <label className="form-check-label" for="Letter">
             IRS Letter With EIN No
           </label>
         </div>
-        <div class="form-check mt-3">
+        <div className="form-check mt-3">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="Statements"
           />
-          <label class="form-check-label" for="Statements">
+          <label className="form-check-label" for="Statements">
             Two Years Profit and Loss Statements
           </label>
         </div>
-        <div class="form-check mt-3">
+        <div className="form-check mt-3">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="Profit"
           />
-          <label class="form-check-label" for="Profit">
+          <label className="form-check-label" for="Profit">
             Year-To-Date Profit and Loss Statement
           </label>
         </div>
-        <div class="form-check mt-3">
+        <div className="form-check mt-3">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="Application"
           />
-          <label class="form-check-label" for="Application">
+          <label className="form-check-label" for="Application">
             Equipment Lease Application
           </label>
         </div>
-        <div class="form-check mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="Bank" />
-          <label class="form-check-label" for="Bank">
+        <div className="form-check mt-3">
+          <input className="form-check-input" type="checkbox" value="" id="Bank" />
+          <label className="form-check-label" for="Bank">
             3 Months Business Bank Statement
           </label>
         </div>
-        <div class="form-check mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="List" />
-          <label class="form-check-label" for="List">
+        <div className="form-check mt-3">
+          <input className="form-check-input" type="checkbox" value="" id="List" />
+          <label className="form-check-label" for="List">
             Equipment List
           </label>
         </div>
-        <div class="form-check mt-3">
+        <div className="form-check mt-3">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="Ownership"
           />
-          <label class="form-check-label" for="Ownership">
+          <label className="form-check-label" for="Ownership">
             Company Articles or Proof or Ownership
           </label>
         </div>
-        <div class="form-check mt-3">
+        <div className="form-check mt-3">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="Passport"
           />
-          <label class="form-check-label" for="Passport">
+          <label className="form-check-label" for="Passport">
             Work permit, Green Card and / or Passport (Valid for 6 month)
           </label>
         </div>
-        <div class="form-check mt-3">
-          <input class="form-check-input" type="checkbox" value="" id="Void" />
-          <label class="form-check-label" for="Void">
+        <div className="form-check mt-3">
+          <input className="form-check-input" type="checkbox" value="" id="Void" />
+          <label className="form-check-label" for="Void">
             Void Check
           </label>
         </div>
-        <div class="form-check mt-3">
+        <div className="form-check mt-3">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="Business"
           />
-          <label class="form-check-label" for="Business">
+          <label className="form-check-label" for="Business">
             Complete Business Application
           </label>
         </div>
-        <div class="form-check mt-3">
+        <div className="form-check mt-3">
           <input
-            class="form-check-input"
+            className="form-check-input"
             type="checkbox"
             value=""
             id="Financial"
           />
-          <label class="form-check-label" for="Financial">
+          <label className="form-check-label" for="Financial">
             Complete Personal Financial Statement
           </label>
         </div>

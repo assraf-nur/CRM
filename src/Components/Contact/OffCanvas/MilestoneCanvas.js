@@ -5,13 +5,13 @@ import profilePic2 from "../../Images/Profile/profile-pic2.png";
 const MilestoneCanvas = () => {
     return (
         <div>
-            <div class="step">
-              <div class="v-stepper">
-                <div class="circle"></div>
-                <div class="line"></div>
+            <div className="step">
+              <div className="v-stepper">
+                <div className="circle"></div>
+                <div className="line"></div>
               </div>
 
-              <div class="content w-100">
+              <div className="content w-100">
                 <div className="row">
                   <p className="col-sm-5 step-title">21 Jan 2055</p>
                   <p className="col-sm-7">
@@ -36,13 +36,13 @@ const MilestoneCanvas = () => {
                 </div>
               </div>
             </div>
-            <div class="step">
-              <div class="v-stepper">
-                <div class="circle"></div>
-                <div class="line"></div>
+            <div className="step">
+              <div className="v-stepper">
+                <div className="circle"></div>
+                <div className="line"></div>
               </div>
 
-              <div class="content w-100">
+              <div className="content w-100">
                 <div className="row">
                   <p className="col-sm-5 step-title">31 Feb 2050</p>
                   <p className="col-sm-7">
@@ -67,13 +67,13 @@ const MilestoneCanvas = () => {
                 </div>
               </div>
             </div>
-            <div class="step">
-              <div class="v-stepper">
-                <div class="circle"></div>
-                <div class="line"></div>
+            <div className="step">
+              <div className="v-stepper">
+                <div className="circle"></div>
+                <div className="line"></div>
               </div>
 
-              <div class="content w-100">
+              <div className="content w-100">
                 <div className="row">
                   <p className="col-sm-5 step-title">31 Dec 2050</p>
                   <p className="col-sm-7">
@@ -98,13 +98,13 @@ const MilestoneCanvas = () => {
                 </div>
               </div>
             </div>
-            <div class="step">
-              <div class="v-stepper">
-                <div class="circle"></div>
-                <div class="line"></div>
+            <div className="step">
+              <div className="v-stepper">
+                <div className="circle"></div>
+                <div className="line"></div>
               </div>
 
-              <div class="content w-100">
+              <div className="content w-100">
                 <div className="row">
                   <p className="col-sm-5 step-title">3 Sep 2060</p>
                   <p className="col-sm-7">
@@ -130,13 +130,13 @@ const MilestoneCanvas = () => {
               </div>
             </div>
 
-            <div class="step">
-              <div class="v-stepper">
-                <div class="circle"></div>
-                <div class="line"></div>
+            <div className="step">
+              <div className="v-stepper">
+                <div className="circle"></div>
+                <div className="line"></div>
               </div>
 
-              <div class="content w-100">
+              <div className="content w-100">
                 <div className="row">
                   <p className="col-sm-5 step-title">1 Oct 2090</p>
                   <p className="col-sm-7">

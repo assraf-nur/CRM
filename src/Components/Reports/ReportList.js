@@ -109,7 +109,7 @@ const ReportList = () => {
         <BootstrapTable
           hover
           condensed
-          classes="bg-white"
+          classNamees="bg-white"
           keyField="id"
           data={datas}
           columns={columns}

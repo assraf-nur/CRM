@@ -194,65 +194,65 @@ const ContactDetails = () => {
           <FiFilePlus className="mb-1" /> Text Information
         </a>
         <div className="ms-auto d-flex">
-          <div class="form-check">
+          <div className="form-check">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="radio"
               name="flexRadioDefault"
               id="flexRadioExcellent"
             />
             <label
-              class="form-check-label text-success"
+              className="form-check-label text-success"
               for="flexRadioExcellent"
             >
               Excellent
             </label>
           </div>
-          <div class="form-check ms-3">
+          <div className="form-check ms-3">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="radio"
               name="flexRadioDefault"
               id="flexRadioGood"
               checked
             />
-            <label class="form-check-label text-info" for="flexRadioGood">
+            <label className="form-check-label text-info" for="flexRadioGood">
               Good
             </label>
           </div>
-          <div class="form-check ms-3">
+          <div className="form-check ms-3">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="radio"
               name="flexRadioDefault"
               id="flexRadioAverage"
               checked
             />
-            <label class="form-check-label text-primary" for="flexRadioAverage">
+            <label className="form-check-label text-primary" for="flexRadioAverage">
               Average
             </label>
           </div>
-          <div class="form-check ms-3">
+          <div className="form-check ms-3">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="radio"
               name="flexRadioDefault"
               id="flexRadioPoor"
               checked
             />
-            <label class="form-check-label text-warning" for="flexRadioPoor">
+            <label className="form-check-label text-warning" for="flexRadioPoor">
               Poor
             </label>
           </div>
-          <div class="form-check ms-3">
+          <div className="form-check ms-3">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="radio"
               name="flexRadioDefault"
               id="flexRadioDeclined"
               checked
             />
-            <label class="form-check-label text-danger" for="flexRadioDeclined">
+            <label className="form-check-label text-danger" for="flexRadioDeclined">
               Declined
             </label>
           </div>
@@ -542,13 +542,13 @@ const ContactDetails = () => {
                     <HiDotsVertical className="fs-5" />
                   </div>
                   <div>
-                    <div class="step completed">
-                      <div class="v-stepper">
-                        <div class="circle"></div>
-                        <div class="line"></div>
+                    <div className="step completed">
+                      <div className="v-stepper">
+                        <div className="circle"></div>
+                        <div className="line"></div>
                       </div>
 
-                      <div class="content w-100">
+                      <div className="content w-100">
                         <div className="row">
                           <p className="col-sm-9 step-title">
                             Mrinmoy Krishna join in Jibble
@@ -573,13 +573,13 @@ const ContactDetails = () => {
                       </div>
                     </div>
 
-                    <div class="step pending">
-                      <div class="v-stepper">
-                        <div class="circle"></div>
-                        <div class="line"></div>
+                    <div className="step pending">
+                      <div className="v-stepper">
+                        <div className="circle"></div>
+                        <div className="line"></div>
                       </div>
 
-                      <div class="content w-100">
+                      <div className="content w-100">
                         <div className="row">
                           <p className="col-sm-9 step-title">Client Meeting</p>
                           <p className="col-sm-3 text-end">
@@ -605,13 +605,13 @@ const ContactDetails = () => {
                       </div>
                     </div>
 
-                    <div class="step completed">
-                      <div class="v-stepper">
-                        <div class="circle"></div>
-                        <div class="line"></div>
+                    <div className="step completed">
+                      <div className="v-stepper">
+                        <div className="circle"></div>
+                        <div className="line"></div>
                       </div>
 
-                      <div class="content w-100">
+                      <div className="content w-100">
                         <div className="row">
                           <p className="col-sm-9 step-title">
                             Mrinmoy Krishna join in Jibble
@@ -636,13 +636,13 @@ const ContactDetails = () => {
                       </div>
                     </div>
 
-                    <div class="step">
-                      <div class="v-stepper">
-                        <div class="circle"></div>
-                        <div class="line"></div>
+                    <div className="step">
+                      <div className="v-stepper">
+                        <div className="circle"></div>
+                        <div className="line"></div>
                       </div>
 
-                      <div class="content w-100">
+                      <div className="content w-100">
                         <div className="row">
                           <p className="col-sm-9 step-title">
                             Create a new project for client
@@ -665,114 +665,114 @@ const ContactDetails = () => {
                   <HiDotsVertical className="fs-5" />
                 </div>
                 <div className="mt-2">
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList1"
                     />
-                    <label class="form-check-label" for="flexRadioDefaultList1">
+                    <label className="form-check-label" for="flexRadioDefaultList1">
                       Appointment
                     </label>
                   </div>
-                  <div class="form-check call-history-radio-button">
+                  <div className="form-check call-history-radio-button">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList2"
                     />
-                    <label class="form-check-label" for="flexRadioDefaultList2">
+                    <label className="form-check-label" for="flexRadioDefaultList2">
                       Left Message
                     </label>
                   </div>
-                  <div class="form-check call-history-radio-button">
+                  <div className="form-check call-history-radio-button">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList3"
                     />
-                    <label class="form-check-label" for="flexRadioDefaultList3">
+                    <label className="form-check-label" for="flexRadioDefaultList3">
                       Busy Telephone Line
                     </label>
                   </div>
-                  <div class="form-check call-history-radio-button">
+                  <div className="form-check call-history-radio-button">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList4"
                     />
-                    <label class="form-check-label" for="flexRadioDefaultList4">
+                    <label className="form-check-label" for="flexRadioDefaultList4">
                       Reminder
                     </label>
                   </div>
-                  <div class="form-check call-history-radio-button">
+                  <div className="form-check call-history-radio-button">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList5"
                     />
-                    <label class="form-check-label" for="flexRadioDefaultList5">
+                    <label className="form-check-label" for="flexRadioDefaultList5">
                       Will Call Back
                     </label>
                   </div>
-                  <div class="form-check call-history-radio-button">
+                  <div className="form-check call-history-radio-button">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList6"
                     />
-                    <label class="form-check-label" for="flexRadioDefaultList6">
+                    <label className="form-check-label" for="flexRadioDefaultList6">
                       Not Interested
                     </label>
                   </div>
-                  <div class="form-check call-history-radio-button">
+                  <div className="form-check call-history-radio-button">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList7"
                     />
-                    <label class="form-check-label" for="flexRadioDefaultList7">
+                    <label className="form-check-label" for="flexRadioDefaultList7">
                       No Answer/Voicemail
                     </label>
                   </div>
-                  <div class="form-check call-history-radio-button">
+                  <div className="form-check call-history-radio-button">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList8"
                     />
-                    <label class="form-check-label" for="flexRadioDefaultList8">
+                    <label className="form-check-label" for="flexRadioDefaultList8">
                       Do Not Call
                     </label>
                   </div>
-                  <div class="form-check call-history-radio-button">
+                  <div className="form-check call-history-radio-button">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList9"
                     />
-                    <label class="form-check-label" for="flexRadioDefaultList9">
+                    <label className="form-check-label" for="flexRadioDefaultList9">
                       Wrong Number
                     </label>
                   </div>
-                  <div class="form-check call-history-radio-button">
+                  <div className="form-check call-history-radio-button">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList10"
                     />
                     <label
-                      class="form-check-label"
+                      className="form-check-label"
                       for="flexRadioDefaultList10"
                     >
                       Discussed in details
@@ -893,57 +893,57 @@ const ContactDetails = () => {
               <h6>Email : Submission Email :</h6>
               <div className="row border-bottom border-top">
                 <div className="col-md p-3 border-end">
-                  <div class="form-check mb-4">
+                  <div className="form-check mb-4">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio"
                       id="flexRadioDefault1_Submitted"
                     />
                     <label
-                      class="form-check-label"
+                      className="form-check-label"
                       for="flexRadioDefault1_Submitted"
                     >
                       Submitted
                     </label>
                   </div>
-                  <div class="form-check mb-4">
+                  <div className="form-check mb-4">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio"
                       id="flexRadioDefault1_Pending"
                     />
                     <label
-                      class="form-check-label"
+                      className="form-check-label"
                       for="flexRadioDefault1_Pending"
                     >
                       Pending
                     </label>
                   </div>
-                  <div class="form-check mb-4">
+                  <div className="form-check mb-4">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio"
                       id="flexRadioDefault1_Approved"
                     />
                     <label
-                      class="form-check-label"
+                      className="form-check-label"
                       for="flexRadioDefault1_Approved"
                     >
                       Approved
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio"
                       id="flexRadioDefault1_Funded"
                     />
                     <label
-                      class="form-check-label"
+                      className="form-check-label"
                       for="flexRadioDefault1_Funded"
                     >
                       Funded
@@ -975,47 +975,47 @@ const ContactDetails = () => {
               <h6 className="mt-4">Velocity Mortgage Capital Email:</h6>
               <div className="row border-bottom border-top">
                 <div className="col-md p-3 border-end">
-                  <div class="form-check mb-4">
+                  <div className="form-check mb-4">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio23"
                       id="flexRadio_Submitted"
                     />
-                    <label class="form-check-label" for="flexRadio_Submitted">
+                    <label className="form-check-label" for="flexRadio_Submitted">
                       Submitted
                     </label>
                   </div>
-                  <div class="form-check mb-4">
+                  <div className="form-check mb-4">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio23"
                       id="flexRadio_Pending"
                     />
-                    <label class="form-check-label" for="flexRadio_Pending">
+                    <label className="form-check-label" for="flexRadio_Pending">
                       Pending
                     </label>
                   </div>
-                  <div class="form-check mb-4">
+                  <div className="form-check mb-4">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio23"
                       id="flexRadio_Approved"
                     />
-                    <label class="form-check-label" for="flexRadio_Approved">
+                    <label className="form-check-label" for="flexRadio_Approved">
                       Approved
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio23"
                       id="flexRadio_Funded"
                     />
-                    <label class="form-check-label" for="flexRadio_Funded">
+                    <label className="form-check-label" for="flexRadio_Funded">
                       Funded
                     </label>
                   </div>
@@ -1045,57 +1045,57 @@ const ContactDetails = () => {
               <h6 className="mt-4">Email : Submission Email :</h6>
               <div className="row border-bottom border-top">
                 <div className="col-md p-3 border-end">
-                  <div class="form-check mb-4">
+                  <div className="form-check mb-4">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio3"
                       id="flexRadioDefault_Submitted"
                     />
                     <label
-                      class="form-check-label"
+                      className="form-check-label"
                       for="flexRadioDefault_Submitted"
                     >
                       Submitted
                     </label>
                   </div>
-                  <div class="form-check mb-4">
+                  <div className="form-check mb-4">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio3"
                       id="flexRadioDefault_Pending"
                     />
                     <label
-                      class="form-check-label"
+                      className="form-check-label"
                       for="flexRadioDefault_Pending"
                     >
                       Pending
                     </label>
                   </div>
-                  <div class="form-check mb-4">
+                  <div className="form-check mb-4">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio3"
                       id="flexRadioDefault_Approved"
                     />
                     <label
-                      class="form-check-label"
+                      className="form-check-label"
                       for="flexRadioDefault_Approved"
                     >
                       Approved
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="flexRadio3"
                       id="flexRadioDefault_Funded"
                     />
                     <label
-                      class="form-check-label"
+                      className="form-check-label"
                       for="flexRadioDefault_Funded"
                     >
                       Funded

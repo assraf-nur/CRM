@@ -15,10 +15,10 @@ const Note = () => {
           <HiPlus />
           Add New Note
         </button>
-        <div class="form-floating mt-2">
+        <div className="form-floating mt-2">
           <form>
             <textarea
-              class="form-control rounded"
+              className="form-control rounded"
               placeholder="Leave your Note here"
               id="floatingTextarea2"
               style={{ height: "100px" }}
@@ -61,23 +61,23 @@ const Note = () => {
                 </div>
               </div>
 
-              <div class="dropdown">
+              <div className="dropdown">
                 <button
-                  class="note-option-button"
+                  className="note-option-button"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   <HiDotsVertical className="fs-5" />
                 </button>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       <FaEdit className="mb-1 me-1" /> Edit
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       {" "}
                       <MdDelete className="mb-1 me-1" /> Delete
                     </a>
@@ -119,23 +119,23 @@ const Note = () => {
                 </div>
               </div>
 
-              <div class="dropdown">
+              <div className="dropdown">
                 <button
-                  class="note-option-button"
+                  className="note-option-button"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   <HiDotsVertical className="fs-5" />
                 </button>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       <FaEdit className="mb-1 me-1" /> Edit
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       {" "}
                       <MdDelete className="mb-1 me-1" /> Delete
                     </a>
@@ -177,23 +177,23 @@ const Note = () => {
                 </div>
               </div>
 
-              <div class="dropdown">
+              <div className="dropdown">
                 <button
-                  class="note-option-button"
+                  className="note-option-button"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   <HiDotsVertical className="fs-5" />
                 </button>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       <FaEdit className="mb-1 me-1" /> Edit
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       {" "}
                       <MdDelete className="mb-1 me-1" /> Delete
                     </a>

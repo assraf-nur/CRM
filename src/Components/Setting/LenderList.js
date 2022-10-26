@@ -31,10 +31,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check1"
                 />
-                <label class="form-check-label ms-5" for="Check1">
+                <label className="form-check-label ms-5" for="Check1">
                   1
                 </label>
               </td>
@@ -58,10 +58,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check12"
                 />
-                <label class="form-check-label ms-5" for="Check12">
+                <label className="form-check-label ms-5" for="Check12">
                   2
                 </label>
               </td>
@@ -85,10 +85,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check13"
                 />
-                <label class="form-check-label ms-5" for="Check13">
+                <label className="form-check-label ms-5" for="Check13">
                   3
                 </label>
               </td>
@@ -112,10 +112,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check4"
                 />
-                <label class="form-check-label ms-5" for="Check4">
+                <label className="form-check-label ms-5" for="Check4">
                   4
                 </label>
               </td>
@@ -139,10 +139,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check5"
                 />
-                <label class="form-check-label ms-5" for="Check5">
+                <label className="form-check-label ms-5" for="Check5">
                   5
                 </label>
               </td>
@@ -166,10 +166,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check6"
                 />
-                <label class="form-check-label ms-5" for="Check6">
+                <label className="form-check-label ms-5" for="Check6">
                   6
                 </label>
               </td>
@@ -193,10 +193,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check7"
                 />
-                <label class="form-check-label ms-5" for="Check7">
+                <label className="form-check-label ms-5" for="Check7">
                   7
                 </label>
               </td>
@@ -220,10 +220,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check8"
                 />
-                <label class="form-check-label ms-5" for="Check8">
+                <label className="form-check-label ms-5" for="Check8">
                   8
                 </label>
               </td>
@@ -247,10 +247,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check9"
                 />
-                <label class="form-check-label ms-5" for="Check9">
+                <label className="form-check-label ms-5" for="Check9">
                   9
                 </label>
               </td>
@@ -274,10 +274,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check10"
                 />
-                <label class="form-check-label ms-5" for="Check10">
+                <label className="form-check-label ms-5" for="Check10">
                   10
                 </label>
               </td>
@@ -301,10 +301,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check11"
                 />
-                <label class="form-check-label ms-5" for="Check11">
+                <label className="form-check-label ms-5" for="Check11">
                   11
                 </label>
               </td>
@@ -328,10 +328,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check12"
                 />
-                <label class="form-check-label ms-5" for="Check12">
+                <label className="form-check-label ms-5" for="Check12">
                   12
                 </label>
               </td>
@@ -355,10 +355,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check13"
                 />
-                <label class="form-check-label ms-5" for="Check13">
+                <label className="form-check-label ms-5" for="Check13">
                   13
                 </label>
               </td>
@@ -382,10 +382,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check14"
                 />
-                <label class="form-check-label ms-5" for="Check14">
+                <label className="form-check-label ms-5" for="Check14">
                   14
                 </label>
               </td>
@@ -409,10 +409,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check15"
                 />
-                <label class="form-check-label ms-5" for="Check15">
+                <label className="form-check-label ms-5" for="Check15">
                   15
                 </label>
               </td>
@@ -436,10 +436,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check16"
                 />
-                <label class="form-check-label ms-5" for="Check16">
+                <label className="form-check-label ms-5" for="Check16">
                   16
                 </label>
               </td>
@@ -463,10 +463,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check17"
                 />
-                <label class="form-check-label ms-5" for="Check17">
+                <label className="form-check-label ms-5" for="Check17">
                   17
                 </label>
               </td>
@@ -490,10 +490,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check18"
                 />
-                <label class="form-check-label ms-5" for="Check18">
+                <label className="form-check-label ms-5" for="Check18">
                   18
                 </label>
               </td>
@@ -517,10 +517,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check19"
                 />
-                <label class="form-check-label ms-5" for="Check19">
+                <label className="form-check-label ms-5" for="Check19">
                   19
                 </label>
               </td>
@@ -544,10 +544,10 @@ const LenderList = () => {
               <td className="p-2 py-3">
                 <input
                   type="checkbox"
-                  class="form-check-input ms-3"
+                  className="form-check-input ms-3"
                   id="Check20"
                 />
-                <label class="form-check-label ms-5" for="Check20">
+                <label className="form-check-label ms-5" for="Check20">
                   20
                 </label>
               </td>

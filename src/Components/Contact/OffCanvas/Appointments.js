@@ -42,36 +42,36 @@ const Appointments = () => {
             <option value="3">Three</option>
           </Form.Select>
           <div>
-            <label for="exampleInputSummery" class="form-label mb-0">
+            <label for="exampleInputSummery" className="form-label mb-0">
               Details
             </label>
             <textarea
-              class="form-control"
+              className="form-control"
               placeholder="Details"
               id="floatingTextarea2"
               style={{ height: "100px" }}
             ></textarea>
           </div>
           <div className="mt-3">
-            <div class="form-check">
+            <div className="form-check">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="flexCheckDefault"
               />
-              <label class="form-check-label" for="flexCheckDefault">
+              <label className="form-check-label" for="flexCheckDefault">
                 <strong>Email to Team members</strong>
               </label>
             </div>
-            <div class="form-check mt-2">
+            <div className="form-check mt-2">
               <input
-                class="form-check-input"
+                className="form-check-input"
                 type="checkbox"
                 value=""
                 id="flexCheckChecked"
               />
-              <label class="form-check-label" for="flexCheckChecked">
+              <label className="form-check-label" for="flexCheckChecked">
                 <strong>Email to Contact</strong>
               </label>
             </div>
@@ -102,23 +102,23 @@ const Appointments = () => {
                 </h6>
               </div>
 
-              <div class="dropdown">
+              <div className="dropdown">
                 <button
-                  class="note-option-button"
+                  className="note-option-button"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   <HiDotsVertical className="fs-5" />
                 </button>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       <FaEdit className="mb-1 me-1" /> Edit
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       {" "}
                       <MdDelete className="mb-1 me-1" /> Delete
                     </a>
@@ -161,23 +161,23 @@ const Appointments = () => {
                 </h6>
               </div>
 
-              <div class="dropdown">
+              <div className="dropdown">
                 <button
-                  class="note-option-button"
+                  className="note-option-button"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   <HiDotsVertical className="fs-5" />
                 </button>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       <FaEdit className="mb-1 me-1" /> Edit
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       {" "}
                       <MdDelete className="mb-1 me-1" /> Delete
                     </a>
@@ -220,23 +220,23 @@ const Appointments = () => {
                 </h6>
               </div>
 
-              <div class="dropdown">
+              <div className="dropdown">
                 <button
-                  class="note-option-button"
+                  className="note-option-button"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   <HiDotsVertical className="fs-5" />
                 </button>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       <FaEdit className="mb-1 me-1" /> Edit
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       {" "}
                       <MdDelete className="mb-1 me-1" /> Delete
                     </a>
@@ -279,23 +279,23 @@ const Appointments = () => {
                 </h6>
               </div>
 
-              <div class="dropdown">
+              <div className="dropdown">
                 <button
-                  class="note-option-button"
+                  className="note-option-button"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   <HiDotsVertical className="fs-5" />
                 </button>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       <FaEdit className="mb-1 me-1" /> Edit
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{#}">
+                    <a className="dropdown-item" href="{#}">
                       {" "}
                       <MdDelete className="mb-1 me-1" /> Delete
                     </a>

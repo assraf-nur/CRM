@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import { HiPlus, HiViewList } from "react-icons/hi";
+import {  HiViewList } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const AddLendersList = () => {
@@ -25,416 +25,416 @@ const AddLendersList = () => {
             </Form.Label>
             <div className="row gap-0">
               <div className="col-md mt-0 px-3">
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="flexCheckDefault"
                   />
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <label className="form-check-label" for="flexCheckDefault">
                     1. Working Capital
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Business"
                   />
-                  <label class="form-check-label" for="Business">
+                  <label className="form-check-label" for="Business">
                     2. Business Loan Term
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="SBA"
                   />
-                  <label class="form-check-label" for="SBA">
+                  <label className="form-check-label" for="SBA">
                     3. SBA Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Equipment"
                   />
-                  <label class="form-check-label" for="Equipment">
+                  <label className="form-check-label" for="Equipment">
                     4. Equipment Finance
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Equipment"
                   />
-                  <label class="form-check-label" for="Equipment">
+                  <label className="form-check-label" for="Equipment">
                     5. No Doc Commercial Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Other"
                   />
-                  <label class="form-check-label" for="Other">
+                  <label className="form-check-label" for="Other">
                     6. Other Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Conventional"
                   />
-                  <label class="form-check-label" for="Conventional">
+                  <label className="form-check-label" for="Conventional">
                     7. Conventional Commercial Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Credit"
                   />
-                  <label class="form-check-label" for="Credit">
+                  <label className="form-check-label" for="Credit">
                     8. Business Line of Credit
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Doctor"
                   />
-                  <label class="form-check-label" for="Doctor">
+                  <label className="form-check-label" for="Doctor">
                     9. Doctor or Healthcare Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Lease"
                   />
-                  <label class="form-check-label" for="Lease">
+                  <label className="form-check-label" for="Lease">
                     10. Equipment Lease
                   </label>
                 </div>
               </div>
               <div className="col-md mt-0 px-3">
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Factoring"
                   />
-                  <label class="form-check-label" for="Factoring">
+                  <label className="form-check-label" for="Factoring">
                     11. Factoring Invoice
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Fix"
                   />
-                  <label class="form-check-label" for="Fix">
+                  <label className="form-check-label" for="Fix">
                     12. Fix and Flip Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Hard"
                   />
-                  <label class="form-check-label" for="Hard">
+                  <label className="form-check-label" for="Hard">
                     13. Hard Money Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Assets"
                   />
-                  <label class="form-check-label" for="Assets">
+                  <label className="form-check-label" for="Assets">
                     14. Assets Based Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Commercial_Loans"
                   />
-                  <label class="form-check-label" for="Commercial_Loans">
+                  <label className="form-check-label" for="Commercial_Loans">
                     15. Commercial Loans
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Truck"
                   />
-                  <label class="form-check-label" for="Truck">
+                  <label className="form-check-label" for="Truck">
                     16. Truck Financing
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Line"
                   />
-                  <label class="form-check-label" for="Line">
+                  <label className="form-check-label" for="Line">
                     17. Business Line of Credit
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Estate"
                   />
-                  <label class="form-check-label" for="Estate">
+                  <label className="form-check-label" for="Estate">
                     18. Real Estate Investor
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Healthcare"
                   />
-                  <label class="form-check-label" for="Healthcare">
+                  <label className="form-check-label" for="Healthcare">
                     19. Healthcare
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Technology"
                   />
-                  <label class="form-check-label" for="Technology">
+                  <label className="form-check-label" for="Technology">
                     20. Technology
                   </label>
                 </div>
               </div>
               <div className="col-md px-3 mt-0">
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Based Lending"
                   />
-                  <label class="form-check-label" for="Based Lending">
+                  <label className="form-check-label" for="Based Lending">
                     21. Assets Based Lending
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="USDA"
                   />
-                  <label class="form-check-label" for="USDA">
+                  <label className="form-check-label" for="USDA">
                     22. USDA Loans
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Hard_Money"
                   />
-                  <label class="form-check-label" for="Hard_Money">
+                  <label className="form-check-label" for="Hard_Money">
                     23. Hard Money Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="n"
                   />
-                  <label class="form-check-label" for="n">
+                  <label className="form-check-label" for="n">
                     24. Fix n Flip Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Stated"
                   />
-                  <label class="form-check-label" for="Stated">
+                  <label className="form-check-label" for="Stated">
                     25. Stated Income Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Refinancing"
                   />
-                  <label class="form-check-label" for="Refinancing">
+                  <label className="form-check-label" for="Refinancing">
                     26. Commercial Refinancing
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Unsecured"
                   />
-                  <label class="form-check-label" for="Unsecured">
+                  <label className="form-check-label" for="Unsecured">
                     27. Unsecured Line of Credit
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Lite"
                   />
-                  <label class="form-check-label" for="Lite">
+                  <label className="form-check-label" for="Lite">
                     28. Commercial Lite
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Invest"
                   />
-                  <label class="form-check-label" for="Invest">
+                  <label className="form-check-label" for="Invest">
                     29. Residential Invest
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Mixed"
                   />
-                  <label class="form-check-label" for="Mixed">
+                  <label className="form-check-label" for="Mixed">
                     30. Mixed Properties
                   </label>
                 </div>
               </div>
               <div className="col-md px-3 mt-0">
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Commercial"
                   />
-                  <label class="form-check-label" for="Commercial">
+                  <label className="form-check-label" for="Commercial">
                     31. Commercial Construction Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Home"
                   />
-                  <label class="form-check-label" for="Home">
+                  <label className="form-check-label" for="Home">
                     32. New Home Loans
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Term2"
                   />
-                  <label class="form-check-label" for="Term2">
+                  <label className="form-check-label" for="Term2">
                     33. Term Loans
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Govt"
                   />
-                  <label class="form-check-label" for="Govt">
+                  <label className="form-check-label" for="Govt">
                     34. Govt contract finance
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Bridge"
                   />
-                  <label class="form-check-label" for="Bridge">
+                  <label className="form-check-label" for="Bridge">
                     35. Bridge Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Doc"
                   />
-                  <label class="form-check-label" for="Doc">
+                  <label className="form-check-label" for="Doc">
                     36. Full Doc Loan
                   </label>
                 </div>
-                <div class="form-check mt-3">
+                <div className="form-check mt-3">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="checkbox"
                     value=""
                     id="Consolidation"
                   />
-                  <label class="form-check-label" for="Consolidation">
+                  <label className="form-check-label" for="Consolidation">
                     37. MCA Consolidation
                   </label>
                 </div>
@@ -573,25 +573,25 @@ const AddLendersList = () => {
                   placeholder="Enter User Password"
                 />
 
-                <div class="form-check mt-4">
+                <div className="form-check mt-4">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="flexRadioDefault"
                     id="flexRadioDefault1"
                   />
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <label className="form-check-label" for="flexRadioDefault1">
                     Active
                   </label>
                 </div>
-                <div class="form-check">
+                <div className="form-check">
                   <input
-                    class="form-check-input"
+                    className="form-check-input"
                     type="radio"
                     name="flexRadioDefault"
                     id="flexRadioDefault2"
                   />
-                  <label class="form-check-label" for="flexRadioDefault2">
+                  <label className="form-check-label" for="flexRadioDefault2">
                     Inactive
                   </label>
                 </div>
