@@ -163,37 +163,37 @@ const ContactDetails = () => {
         </a>
       </div>
       <div className="m-1 mt-2 contact-details-page-links2">
-        <a className="page-links2" href="{}">
+        <button className="border-end border-stat py-1">
           <CgProfile className="mb-1" /> Profile
-        </a>
-        <a className="page-links2" onClick={handleShowEmailModal}>
+        </button>
+        <button className="border-end border-stat py-1" onClick={handleShowEmailModal}>
           <AiOutlineMail className="mb-1" /> Email
-        </a>
-        <a className="page-links2" onClick={handleShowAppointment}>
+        </button>
+        <button className="border-end border-stat py-1" onClick={handleShowAppointment}>
           <FiCheckSquare className="mb-1" /> Appointment
-        </a>
-        <a className="page-links2" onClick={handleShowAddPapers}>
+        </button>
+        <button className="border-end border-stat py-1" onClick={handleShowAddPapers}>
           <FiFilePlus className="mb-1" />
           Add Papers
-        </a>
-        <a className="page-links2" onClick={handleShow4}>
+        </button>
+        <button className="border-end border-stat py-1" onClick={handleShow4}>
           <FiFilePlus className="mb-1" /> To-Do List
-        </a>
-        <a className="page-links2" onClick={handleShow3}>
+        </button>
+        <button className="border-end border-stat py-1" onClick={handleShow3}>
           <FiFilePlus className="mb-1" /> Note
-        </a>
-        <a className="page-links2" onClick={handleShow2}>
+        </button>
+        <button className="border-end border-stat py-1" onClick={handleShow2}>
           <FiFilePlus className="mb-1 me-1" />
           Add Millstone
-        </a>
-        <a className="page-links2" onClick={handleShow1}>
+        </button>
+        <button className="border-end border-stat py-1" onClick={handleShow1}>
           <FiFilePlus className="mb-1 me-1" />
           Millstone
-        </a>
-        <a className="" onClick={handleShowTextInformationModal}>
+        </button>
+        <button className="border-end border-stat py-1" onClick={handleShowTextInformationModal}>
           <FiFilePlus className="mb-1" /> Text Information
-        </a>
-        <div className="ms-auto d-flex">
+        </button>
+        <div className="ms-auto mt-1 d-flex">
           <div className="form-check">
             <input
               className="form-check-input"

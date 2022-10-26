@@ -882,16 +882,19 @@ div {
   display: flex;
   justify-content: start;
 }
-.contact-details-page-links2 a {
+.contact-details-page-links2 button {
+  border: none;
   text-decoration: none;
   color: #495057;
   height: 100%;
-  margin-left: 10px;
   padding-right: 10px;
   cursor: pointer;
+  background-color: #0ab39c00;
 }
-.page-links2 {
-  border-right: 1px solid darkblue;
+.contact-details-page-links2 button:hover{
+  background-color: #5156BE;
+  border-radius: 3px;
+  color: white;
 }
 /* .loan-status{
   height: 450px;

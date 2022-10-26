@@ -129,7 +129,7 @@ const Drawer = styled(MuiDrawer, {
 export default function MiniDrawer() {
   const theme = useTheme();
   const [openUp, setOpenUp] = React.useState(false);
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const [openDownLenderSetting, setOpenDownLenderSetting] =
     React.useState(false);
 
