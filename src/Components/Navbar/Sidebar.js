@@ -58,6 +58,7 @@ import LeadSource from "../Setting/LeadSource";
 import TypesOfLoan from "../Setting/TypesOfLoan";
 import Milestone from "../Setting/Milestone";
 import MarketingSetting from "../Setting/MarketingSetting";
+import ScrollRestore from "../Hook/ScrollRestore/ScrollRestore";
 
 const drawerWidth = 260;
 
@@ -300,6 +301,7 @@ export default function MiniDrawer() {
         </nav>
       </Drawer>
       <Box className="right-box pb-3" component="main" sx={{ flexGrow: 1 }}>
+        <ScrollRestore />
         <div className="subs-nav">
           <SubNav />
         </div>
@@ -349,18 +351,9 @@ export default function MiniDrawer() {
             path="applicationStatus"
             element={<ApplicationStatus></ApplicationStatus>}
           />
-          <Route
-            path="leadSource"
-            element={<LeadSource></LeadSource>}
-          />
-          <Route
-            path="typesOfLoan"
-            element={<TypesOfLoan></TypesOfLoan>}
-          />
-          <Route
-            path="milestone"
-            element={<Milestone></Milestone>}
-          />
+          <Route path="leadSource" element={<LeadSource></LeadSource>} />
+          <Route path="typesOfLoan" element={<TypesOfLoan></TypesOfLoan>} />
+          <Route path="milestone" element={<Milestone></Milestone>} />
           <Route
             path="marketingSetting"
             element={<MarketingSetting></MarketingSetting>}
