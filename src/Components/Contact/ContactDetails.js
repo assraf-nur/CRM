@@ -7,7 +7,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar";  
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import { Modal, Offcanvas, ProgressBar } from "react-bootstrap";
 import profilePic from "../Images/Profile/profile-pic.png";
 import profilePic2 from "../Images/Profile/profile-pic2.png";
@@ -166,13 +166,22 @@ const ContactDetails = () => {
         <button className="border-end border-stat py-1">
           <CgProfile className="mb-1" /> Profile
         </button>
-        <button className="border-end border-stat py-1" onClick={handleShowEmailModal}>
+        <button
+          className="border-end border-stat py-1"
+          onClick={handleShowEmailModal}
+        >
           <AiOutlineMail className="mb-1" /> Email
         </button>
-        <button className="border-end border-stat py-1" onClick={handleShowAppointment}>
+        <button
+          className="border-end border-stat py-1"
+          onClick={handleShowAppointment}
+        >
           <FiCheckSquare className="mb-1" /> Appointment
         </button>
-        <button className="border-end border-stat py-1" onClick={handleShowAddPapers}>
+        <button
+          className="border-end border-stat py-1"
+          onClick={handleShowAddPapers}
+        >
           <FiFilePlus className="mb-1" />
           Add Papers
         </button>
@@ -190,7 +199,10 @@ const ContactDetails = () => {
           <FiFilePlus className="mb-1 me-1" />
           Millstone
         </button>
-        <button className="border-end border-stat py-1" onClick={handleShowTextInformationModal}>
+        <button
+          className="border-end border-stat py-1"
+          onClick={handleShowTextInformationModal}
+        >
           <FiFilePlus className="mb-1" /> Text Information
         </button>
         <div className="ms-auto mt-1 d-flex">
@@ -228,7 +240,10 @@ const ContactDetails = () => {
               id="flexRadioAverage"
               checked
             />
-            <label className="form-check-label text-primary" for="flexRadioAverage">
+            <label
+              className="form-check-label text-primary"
+              for="flexRadioAverage"
+            >
               Average
             </label>
           </div>
@@ -240,7 +255,10 @@ const ContactDetails = () => {
               id="flexRadioPoor"
               checked
             />
-            <label className="form-check-label text-warning" for="flexRadioPoor">
+            <label
+              className="form-check-label text-warning"
+              for="flexRadioPoor"
+            >
               Poor
             </label>
           </div>
@@ -252,7 +270,10 @@ const ContactDetails = () => {
               id="flexRadioDeclined"
               checked
             />
-            <label className="form-check-label text-danger" for="flexRadioDeclined">
+            <label
+              className="form-check-label text-danger"
+              for="flexRadioDeclined"
+            >
               Declined
             </label>
           </div>
@@ -672,7 +693,10 @@ const ContactDetails = () => {
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList1"
                     />
-                    <label className="form-check-label" for="flexRadioDefaultList1">
+                    <label
+                      className="form-check-label"
+                      for="flexRadioDefaultList1"
+                    >
                       Appointment
                     </label>
                   </div>
@@ -683,7 +707,10 @@ const ContactDetails = () => {
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList2"
                     />
-                    <label className="form-check-label" for="flexRadioDefaultList2">
+                    <label
+                      className="form-check-label"
+                      for="flexRadioDefaultList2"
+                    >
                       Left Message
                     </label>
                   </div>
@@ -694,7 +721,10 @@ const ContactDetails = () => {
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList3"
                     />
-                    <label className="form-check-label" for="flexRadioDefaultList3">
+                    <label
+                      className="form-check-label"
+                      for="flexRadioDefaultList3"
+                    >
                       Busy Telephone Line
                     </label>
                   </div>
@@ -705,7 +735,10 @@ const ContactDetails = () => {
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList4"
                     />
-                    <label className="form-check-label" for="flexRadioDefaultList4">
+                    <label
+                      className="form-check-label"
+                      for="flexRadioDefaultList4"
+                    >
                       Reminder
                     </label>
                   </div>
@@ -716,7 +749,10 @@ const ContactDetails = () => {
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList5"
                     />
-                    <label className="form-check-label" for="flexRadioDefaultList5">
+                    <label
+                      className="form-check-label"
+                      for="flexRadioDefaultList5"
+                    >
                       Will Call Back
                     </label>
                   </div>
@@ -727,7 +763,10 @@ const ContactDetails = () => {
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList6"
                     />
-                    <label className="form-check-label" for="flexRadioDefaultList6">
+                    <label
+                      className="form-check-label"
+                      for="flexRadioDefaultList6"
+                    >
                       Not Interested
                     </label>
                   </div>
@@ -738,7 +777,10 @@ const ContactDetails = () => {
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList7"
                     />
-                    <label className="form-check-label" for="flexRadioDefaultList7">
+                    <label
+                      className="form-check-label"
+                      for="flexRadioDefaultList7"
+                    >
                       No Answer/Voicemail
                     </label>
                   </div>
@@ -749,7 +791,10 @@ const ContactDetails = () => {
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList8"
                     />
-                    <label className="form-check-label" for="flexRadioDefaultList8">
+                    <label
+                      className="form-check-label"
+                      for="flexRadioDefaultList8"
+                    >
                       Do Not Call
                     </label>
                   </div>
@@ -760,7 +805,10 @@ const ContactDetails = () => {
                       name="flexRadioDefaultList"
                       id="flexRadioDefaultList9"
                     />
-                    <label className="form-check-label" for="flexRadioDefaultList9">
+                    <label
+                      className="form-check-label"
+                      for="flexRadioDefaultList9"
+                    >
                       Wrong Number
                     </label>
                   </div>
@@ -982,7 +1030,10 @@ const ContactDetails = () => {
                       name="flexRadio23"
                       id="flexRadio_Submitted"
                     />
-                    <label className="form-check-label" for="flexRadio_Submitted">
+                    <label
+                      className="form-check-label"
+                      for="flexRadio_Submitted"
+                    >
                       Submitted
                     </label>
                   </div>
@@ -1004,7 +1055,10 @@ const ContactDetails = () => {
                       name="flexRadio23"
                       id="flexRadio_Approved"
                     />
-                    <label className="form-check-label" for="flexRadio_Approved">
+                    <label
+                      className="form-check-label"
+                      for="flexRadio_Approved"
+                    >
                       Approved
                     </label>
                   </div>

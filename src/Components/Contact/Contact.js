@@ -24,7 +24,10 @@ const Contact = () => {
           >
             Select a Team
           </button>
-          <div className="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+          <div
+            className="dropdown-menu mt-2"
+            aria-labelledby="dropdownMenuButton"
+          >
             <a className="dropdown-item" href="{}">
               Action
             </a>
@@ -47,7 +50,10 @@ const Contact = () => {
           >
             Select a Collaborator
           </button>
-          <div className="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+          <div
+            className="dropdown-menu mt-2"
+            aria-labelledby="dropdownMenuButton"
+          >
             <a className="dropdown-item" href="{}">
               Action
             </a>
@@ -70,7 +76,10 @@ const Contact = () => {
           >
             Loan Status
           </button>
-          <div className="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+          <div
+            className="dropdown-menu mt-2"
+            aria-labelledby="dropdownMenuButton"
+          >
             <a className="dropdown-item" href="{}">
               Action
             </a>
@@ -93,7 +102,10 @@ const Contact = () => {
           >
             Application Status
           </button>
-          <div className="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+          <div
+            className="dropdown-menu mt-2"
+            aria-labelledby="dropdownMenuButton"
+          >
             <a className="dropdown-item" href="{}">
               Action
             </a>
@@ -116,7 +128,10 @@ const Contact = () => {
           >
             Types of Loan
           </button>
-          <div className="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+          <div
+            className="dropdown-menu mt-2"
+            aria-labelledby="dropdownMenuButton"
+          >
             <a className="dropdown-item" href="{}">
               Action
             </a>
@@ -132,8 +147,17 @@ const Contact = () => {
       <div className="bg-white mt-3 p-3 contact-form">
         <div className="form-header">
           <h4 className="mt-2">Add Contact</h4>
-          <Link className="contact-list-button" to='/users'> <FaRegListAlt className="fs-6 me-1 mb-1"/> Contact List</Link>
-          <Link className="contact-list-button justify-end" to='/contact-details'> <FaRegListAlt className="fs-6 me-1 mb-1"/> Contact Details</Link>
+          <Link className="contact-list-button" to="/users">
+            {" "}
+            <FaRegListAlt className="fs-6 me-1 mb-1" /> Contact List
+          </Link>
+          <Link
+            className="contact-list-button justify-end"
+            to="/contact-details"
+          >
+            {" "}
+            <FaRegListAlt className="fs-6 me-1 mb-1" /> Contact Details
+          </Link>
         </div>
 
         <form className="mt-2 p-1">
@@ -142,6 +166,7 @@ const Contact = () => {
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label className="mb-1">Borrower's First Name</Form.Label>
                 <Form.Control
+                  name="name"
                   className="py-2"
                   type="text"
                   placeholder="Enter first name"
@@ -253,13 +278,10 @@ const Contact = () => {
                   placeholder="Source"
                 />
               </Form.Group>
-              {/* <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label className="mb-1">Set Team *</Form.Label>
-                <Form.Control className="py-2" type="text" placeholder="Team" />
-              </Form.Group> */}
               <Form.Label className="mb-1">Set Team *</Form.Label>
               <Form.Select
-                className="py-2 fs-6 text-grey"
+                style={{ color: "#848C92" }}
+                className="py-2 text-grey"
                 aria-label="Floating label select example"
               >
                 <option>--Select--</option>
@@ -290,7 +312,12 @@ const Contact = () => {
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label className="mb-1">Date of Birth</Form.Label>
-                <Form.Control className="py-2" type="date" placeholder="" />
+                <Form.Control
+                  style={{ color: "#848C92" }}
+                  className="py-2"
+                  type="date"
+                  placeholder=""
+                />
               </Form.Group>
             </div>
             <div className="col-xl">
@@ -377,7 +404,8 @@ const Contact = () => {
             <div className="col-xl-3">
               <Form.Label className="mb-1">Set Collaborator</Form.Label>
               <Form.Select
-                className="py-2 fs-6 text-grey mb-3"
+                style={{ color: "#848C92" }}
+                className="py-2 text-grey mb-3"
                 aria-label="Floating label select example"
               >
                 <option>--Select--</option>

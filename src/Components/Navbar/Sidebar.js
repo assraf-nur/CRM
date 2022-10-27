@@ -153,7 +153,6 @@ export default function MiniDrawer() {
             onClick={handleDrawerOpen2}
             edge="start"
             sx={{
-              backgroundColor: "#E4E8FF",
               marginRight: 0,
               ...(open && { display: "none" }),
             }}

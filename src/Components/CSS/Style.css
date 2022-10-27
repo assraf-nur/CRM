@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-div {
+#crm {
+  background-color: #f4f5f7;
   font-family: "Inter";
 }
-#root{
-  background-color: #F4F5F7;
+#root {
+  background-color: #f4f5f7;
+  font-family: "Inter";
 }
 .nav-container {
   font-family: "Inter";
@@ -43,7 +45,7 @@ div {
   height: 40px;
 }
 #sub-nav {
-  background-color: #1C253D;
+  background-color: #1c253d;
   border-bottom: 1px solid #e9e9ef;
   border-top: 1px solid #e9e9ef;
   margin-top: -1px;
@@ -89,26 +91,26 @@ div {
 }
 .left-list-link {
   text-decoration: none;
-  color: #E9EAEC;
+  color: #e9eaec;
   font-family: "Inter";
   width: 100%;
 }
-.listing .icons{
+.listing .icons {
   color: #495057;
 }
-.listing .left-list-link{
+.listing .left-list-link {
   color: #495057;
 }
 .left-list-link:hover {
-  background-color: #E9EAEC;
+  background-color: #e9eaec;
   color: #495057;
 }
-.left-list-link:hover .icons{
+.left-list-link:hover .icons {
   color: #495057;
 }
 .icons {
   margin-left: 20px;
-  color: #E9EAEC;
+  color: #e9eaec;
 }
 .dash-card {
   background-color: #ffffff;
