@@ -32,7 +32,7 @@ const ContactDetails = () => {
       });
   }, []);
 
-  const now = 67;
+  const now = 67;   
 
   const [showMileStone, setShowMileStone] = useState(false);
   const [showAddMileStone, setShowAddMileStone] = useState(false);
