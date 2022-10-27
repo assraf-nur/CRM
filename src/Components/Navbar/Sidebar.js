@@ -153,6 +153,7 @@ export default function MiniDrawer() {
             onClick={handleDrawerOpen2}
             edge="start"
             sx={{
+              backgroundColor: "#E4E8FF",
               marginRight: 0,
               ...(open && { display: "none" }),
             }}
@@ -169,7 +170,6 @@ export default function MiniDrawer() {
         PaperProps={{
           sx: {
             backgroundColor: "#1C253D",
-            color: "red",
           },
         }}
         variant="permanent"

@@ -2,6 +2,9 @@
 div {
   font-family: "Inter";
 }
+#root{
+  background-color: #F4F5F7;
+}
 .nav-container {
   font-family: "Inter";
 }
@@ -9,6 +12,7 @@ div {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll;
+  margin-top: -3px;
 }
 .left-list::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
@@ -76,6 +80,10 @@ div {
   color: #495057;
 }
 .router-link-sub-nav {
+  text-decoration: none;
+  color: #e9eaec;
+}
+.router-link-sub-nav:hover {
   text-decoration: none;
   color: #e9eaec;
 }
