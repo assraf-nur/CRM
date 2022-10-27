@@ -7,7 +7,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 import { FiCheckSquare, FiFilePlus } from "react-icons/fi";
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";  
 import { Modal, Offcanvas, ProgressBar } from "react-bootstrap";
 import profilePic from "../Images/Profile/profile-pic.png";
 import profilePic2 from "../Images/Profile/profile-pic2.png";

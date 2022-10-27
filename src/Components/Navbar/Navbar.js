@@ -31,6 +31,7 @@ function CollapsibleExample() {
             <Nav.Link href="#features">
               <InputGroup className="">
                 <Form.Control
+                  className="rounded"
                   id="search-bar"
                   placeholder="Search.."
                   aria-label="Recipient's username"

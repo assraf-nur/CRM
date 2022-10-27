@@ -164,9 +164,19 @@ export default function MiniDrawer() {
           </div>
         </Toolbar>
       </AppBar>
-      <Drawer variant="permanent" open={open}>
+
+      <Drawer
+        PaperProps={{
+          sx: {
+            backgroundColor: "#1C253D",
+            color: "red",
+          },
+        }}
+        variant="permanent"
+        open={open}
+      >
         <DrawerHeader>
-          <IconButton onClick={handleDrawerClose2}>
+          <IconButton className="text-dark bg-white" onClick={handleDrawerClose2}>
             {theme.direction === "rtl" ? (
               <ChevronRightIcon />
             ) : (
@@ -174,7 +184,7 @@ export default function MiniDrawer() {
             )}
           </IconButton>
         </DrawerHeader>
-        <Divider className="mt-1" />
+        <Divider className="mt-0" />
         <nav className="left-list" aria-label="main mailbox folders">
           <List>
             <ListItem disablePadding>

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const LenderSetting = () => {
   return (
     <Card className="mt-1 mx-1">
-      <List>
+      <List className="listing">
         <ListItem className="px-0 py-0">
           <Link
             title="Lender Category"
