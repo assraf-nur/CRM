@@ -1127,6 +1127,18 @@
 
 /* user rola modal size */
 .role-modal{
-  width: 90vw !important;
-  max-width: 90vw !important;
+  width: 80vw !important;
+  max-width: 80vw !important;
+}
+.arrow-button{
+  border: none;
+  background-color: #0ab39c;
+  color: white;
+  border-radius: 5px;
+}
+.role-update-button{
+  border: none;
+  background-color: #5156be;
+  color: white;
+  border-radius: 5px;
 }

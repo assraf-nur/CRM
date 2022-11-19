@@ -17,7 +17,7 @@ const UserRole = () => {
         setDatas(data);
       });
   }, []);
-
+  
   const columns = [
     {
       dataField: "title",
@@ -91,7 +91,7 @@ const UserRole = () => {
   return (
     <div className="p-3">
       <div className="p-3 bg-white">
-        <div className="border-bottom pb-2 d-flex justify-content-between">
+        <div className="border-bottom pb-2 d-flex justify-content-between mb-4">
           <h4>User Role</h4>
           <button onClick={() => setShow(true)} className="add-new-button px-3 py-2">
             <HiPlus className="me-1" />
