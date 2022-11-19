@@ -3,9 +3,12 @@ import { HiPlus } from "react-icons/hi";
 import { RiArrowUpDownFill } from "react-icons/ri";
 import BootstrapTable from "react-bootstrap-table-next";
 import paginationFactory from "react-bootstrap-table2-paginator";
+import { Modal } from "react-bootstrap";
+import AddUserRole from "./Modals/AddUserRole";
 
 const UserRole = () => {
   const [datas, setDatas] = useState([]);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     fetch("UserRoleData.json")
@@ -90,10 +93,19 @@ const UserRole = () => {
       <div className="p-3 bg-white">
         <div className="border-bottom pb-2 d-flex justify-content-between">
           <h4>User Role</h4>
-          <button className="add-new-button px-3 py-2">
+          <button onClick={() => setShow(true)} className="add-new-button px-3 py-2">
             <HiPlus className="me-1" />
             Create New Role
           </button>
+          <Modal
+            dialogClassName="role-modal"
+            show={show}
+            onHide={() => setShow(false)}
+            aria-labelledby="example-custom-modal-styling-title"
+            centered
+          >
+            <AddUserRole></AddUserRole>
+          </Modal>
         </div>
 
         <BootstrapTable

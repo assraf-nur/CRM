@@ -1124,3 +1124,9 @@
   margin-top: 150px;
 }
 /* email modal end */
+
+/* user rola modal size */
+.role-modal{
+  width: 90vw !important;
+  max-width: 90vw !important;
+}
