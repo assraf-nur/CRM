@@ -14,6 +14,13 @@ const ReportList = () => {
       });
   }, []);
 
+  const defaultSorted = [
+    {
+      dataField: "name",
+      order: "desc",
+    },
+  ];
+
   const columns = [
     {
       dataField: "first_name",
@@ -67,7 +74,6 @@ const ReportList = () => {
     },
   ];
 
-
   const options = {
     paginationSize: 5,
     pageStartIndex: 1,
@@ -113,6 +119,7 @@ const ReportList = () => {
           keyField="id"
           data={datas}
           columns={columns}
+          defaultSorted={defaultSorted}
           pagination={paginationFactory(options)}
         />
       </div>

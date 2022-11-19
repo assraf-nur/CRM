@@ -59,6 +59,7 @@ import TypesOfLoan from "../Setting/TypesOfLoan";
 import Milestone from "../Setting/Milestone";
 import MarketingSetting from "../Setting/MarketingSetting";
 import ScrollRestore from "../Hook/ScrollRestore/ScrollRestore";
+import UserRole from "../Setting/UserRole";
 
 const drawerWidth = 260;
 
@@ -360,6 +361,7 @@ export default function MiniDrawer() {
             path="applicationStatus"
             element={<ApplicationStatus></ApplicationStatus>}
           />
+          <Route path="userRole" element={<UserRole></UserRole>} />
           <Route path="leadSource" element={<LeadSource></LeadSource>} />
           <Route path="typesOfLoan" element={<TypesOfLoan></TypesOfLoan>} />
           <Route path="milestone" element={<Milestone></Milestone>} />
