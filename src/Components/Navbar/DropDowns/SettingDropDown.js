@@ -57,28 +57,28 @@ const SettingDropDown = () => {
         </ListItem>
         <Divider />
         <ListItem className="px-0 py-0">
-          <Link className="py-3 left-list-link" to="/typesOfLoan" title="Lead Source">
+          <Link className="py-3 left-list-link" to="/typesOfLoan" title="Types of Loan">
             <AiOutlineDollarCircle className="icons ms-3 me-4 mb-1 fs-5" />
             Types of Loan
           </Link>
         </ListItem>
         <Divider />
         <ListItem className="px-0 py-0">
-          <Link className="py-3 left-list-link" to="/milestone" title="Lead Source">
+          <Link className="py-3 left-list-link" to="/milestone" title="Milestone">
             <GoMilestone className="icons ms-3 me-4 mb-1 fs-5" />
             Milestone
           </Link>
         </ListItem>
         <Divider />
         <ListItem className="px-0 py-0">
-          <Link className="py-3 left-list-link" to="/marketingSetting" title="Lead Source">
+          <Link className="py-3 left-list-link" to="/marketingSetting" title="Marketing">
             <FaPeopleArrows className="icons ms-3 me-4 mb-1 fs-5" />
             Marketing
           </Link>
         </ListItem>
         <Divider />
         <ListItem className="px-0 py-0">
-          <Link className="py-3 left-list-link" to="/userRole" title="Lead Source">
+          <Link className="py-3 left-list-link" to="/userRole" title="User Role">
             <FaUniversalAccess className="icons ms-3 me-4 mb-1 fs-5" />
             User Role
           </Link>

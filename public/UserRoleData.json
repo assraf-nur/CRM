@@ -1,0 +1,962 @@
+[
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "All setting Rules",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "In-house Loan Officer",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Sam Haq Team",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Manager",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Mortgage Loan Processor",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Processing and Closing",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "OFFLINE",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "OFFLINE",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Outsource",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Pause",
+    "description": "Outsource",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Referral Partners",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Referral ",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Sales Associates",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Associates",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  },
+  {
+    "title": "Admin",
+    "_id": "6340fb867386adbafd4a5a16",
+    "index": 0,
+    "status": "Active",
+    "description": "Manager",
+    "created_at": "2022-11-19  12:51PM"
+  }
+]
