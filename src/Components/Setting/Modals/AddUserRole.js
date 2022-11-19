@@ -34,7 +34,44 @@ const AddUserRole = () => {
                   <small>Select role and click arrow</small>{" "}
                 </span>{" "}
               </h4>
-              <div id="nonSelected" style={{ height: "450px" }} className="border p-3 rounded overflow-auto"></div>
+              <div id="nonSelected" style={{ height: "450px" }} className="border p-3 rounded overflow-auto">
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">Dashboard Data View</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">User Manage</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">User Role Manage</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">User Role Create</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">User Role Edit</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">User Role Delete</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">Contact Report</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">Team Manage</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">Team Edit</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">Team Delete</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">Team Appointment List</h5>
+                </div>
+                <div className="border rounded mb-2 p-2">
+                  <h5 className="mb-0">My Appointment List</h5>
+                </div>
+              </div>
             </div>
             <div className="col-md">
               <h4 className="fw-bold">Assigned Role</h4>
@@ -52,7 +89,9 @@ const AddUserRole = () => {
           </div>
 
           <div className="mt-4 d-flex justify-content-center">
-            <button className="role-update-button px-3 py-2" type="submit">Update Role</button>
+            <button className="role-update-button px-3 py-2" type="submit">
+              Update Role
+            </button>
           </div>
         </div>
       </Modal.Body>
