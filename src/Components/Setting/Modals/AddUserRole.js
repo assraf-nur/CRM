@@ -1,6 +1,5 @@
 import React from "react";
 import { Form, Modal } from "react-bootstrap";
-import { ImArrowRight, ImArrowLeft } from "react-icons/im";
 
 const AddUserRole = () => {
   return (
@@ -24,7 +23,11 @@ const AddUserRole = () => {
           </div>
         </div>
 
-        <div className="mt-5">
+        <div>
+
+        </div>
+
+        {/* <div className="mt-5">
           <div className="row">
             <div className="col-md">
               <h4 className="fw-bold">
@@ -93,7 +96,7 @@ const AddUserRole = () => {
               Update Role
             </button>
           </div>
-        </div>
+        </div> */}
       </Modal.Body>
     </div>
   );

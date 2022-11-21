@@ -19,6 +19,7 @@
     "lodash": "^4.17.21",
     "rc-pagination": "^3.1.17",
     "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
     "react-bootstrap": "^2.5.0",
     "react-bootstrap-table-next": "^4.0.3",
     "react-bootstrap-table2-paginator": "^2.1.2",
